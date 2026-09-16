@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<title>Território 10.16</title>
+<style>
+  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
+     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  @page {
+    size: 210mm 148mm;
+    margin: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10mm;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000;
+  }
+
+  .card {
+    display: flex;
+    width: 210mm;
+    height: 148mm;
+    border: 1.2mm solid #000;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1.2mm solid #000;
+    box-sizing: border-box;
+  }
+
+  .section {
+    border-bottom: 1mm solid #000;
+    padding: 3mm 3.5mm;
+    box-sizing: border-box;
+  }
+
+  /* Título grande: é o que se procura num maço de cartões */
+  .header {
+    background-color: #d9d9d9;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21pt;
+    line-height: 1.1;
+    padding: 4mm 2mm;
+  }
+
+  .locations {
+    background-color: #ffe699;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* "Localizações" e "Referência" são títulos de secção: ficam maiores do que
+     o conteúdo que encabeçam */
+  .rotulo {
+    display: block;
+    font-size: 15pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3pt;
+    margin-bottom: 2.5mm;
+  }
+
+  .ruas {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 13pt;
+    font-weight: bold;
+    line-height: 1.25;
+    flex: 0 1 auto;
+    min-height: 0;
+  }
+
+  /* Espaço entre ruas proporcional à letra: com 15 ruas, 2,2 mm fixos
+     gastavam 33 mm só em espaços em branco */
+  .ruas li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.45em;
+    break-inside: avoid;
+  }
+
+  .ruas .traco {
+    flex: 0 0 auto;
+    width: 4mm;
+    margin-right: 1mm;
+  }
+
+  /* O mesmo número aparece no mapa, dentro de um círculo amarelo */
+  .ruas .num {
+    flex: 0 0 auto;
+    width: 6.2mm;
+    height: 6.2mm;
+    margin-right: 2mm;
+    border: 0.4mm solid #000;
+    border-radius: 50%;
+    background-color: #fcca03;
+    text-align: center;
+    line-height: 6.2mm;
+    font-size: 10.5pt;
+  }
+
+  .ruas .nome {
+    flex: 1 1 auto;
+  }
+
+  .reference {
+    background-color: #dbe5f1;
+    flex: 0 0 auto;
+  }
+
+  /* Espaço livre para escrever, sem caixa desenhada */
+  .reference .caixa {
+    min-height: 9mm;
+    padding: 0.5mm 0;
+    font-size: 12pt;
+    box-sizing: border-box;
+  }
+
+  .fogos {
+    background-color: #dbe5f1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16pt;
+    border-bottom: none;
+    padding: 3.5mm 2mm;
+    flex: 0 0 auto;
+  }
+
+  .map-container {
+    width: 66%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f0f0;
+  }
+
+  /* "fill" (e não "cover") para a imagem ocupar exatamente esta área: as
+     etiquetas são posicionadas em percentagem e têm de assentar no sítio */
+  .map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+  }
+
+  /* --- Etiquetas do mapa (ruas e números de porta) ----------------------
+     São texto por cima da imagem e não fazem parte do PNG: dá para corrigir,
+     acrescentar, arrastar e apagar sem voltar a gerar o cartão. */
+  .chamadas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .etiqueta {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(var(--ang, 0deg));
+    text-align: center;
+    line-height: 1.15;
+    cursor: move;
+    white-space: nowrap;
+  }
+
+  .etiqueta .txt {
+    display: inline-block;
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* Contorno branco à volta das letras, como nos mapas: acompanha a estrada
+     e deixa ver o que está por baixo */
+  .etiqueta.rua .txt {
+    font-size: 10.5pt;
+    -webkit-text-stroke: 3.2px #fff;
+    paint-order: stroke fill;
+  }
+
+  /* Ruas da vizinhança: servem para dar referências a quem procura o
+     território, por isso são visivelmente secundárias — mais pequenas e a
+     cinzento, para não se confundirem com as ruas a trabalhar */
+  .etiqueta.vizinha .txt {
+    font-size: 9pt;
+    font-weight: normal;
+    color: #3c3c3c;
+    -webkit-text-stroke: 3px #fff;
+    paint-order: stroke fill;
+  }
+
+  .etiqueta.porta .txt {
+    font-size: 8.5pt;
+    background-color: #fff;
+    border: 0.35mm solid #000;
+    border-radius: 0.6mm;
+    padding: 0.2mm 0.9mm;
+  }
+
+  .etiqueta.numero .txt {
+    width: 7mm;
+    height: 7mm;
+    line-height: 7mm;
+    font-size: 12pt;
+    background-color: #fcca03;
+    border: 0.5mm solid #000;
+    border-radius: 50%;
+  }
+
+  .etiqueta .txt:hover {
+    outline: 0.3mm dashed #0066cc;
+  }
+  .etiqueta .txt:focus {
+    outline: 0.4mm solid #0066cc;
+    background-color: #fff;
+  }
+
+  .etiqueta .apagar,
+  .etiqueta .rodar {
+    position: absolute;
+    width: 4.2mm;
+    height: 4.2mm;
+    padding: 0;
+    display: none;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 8pt;
+    line-height: 4.2mm;
+    text-align: center;
+  }
+  .etiqueta .apagar {
+    top: -2.2mm;
+    right: -3mm;
+    background-color: #c00;
+    cursor: pointer;
+  }
+  /* Pega de rodar por cima da etiqueta: arrasta-se para a inclinar, como num
+     editor de imagem. Antes a rotação só existia na roda do rato, que não se
+     vê e não funciona bem em trackpad. */
+  .etiqueta .rodar {
+    top: -5.5mm;
+    left: 50%;
+    margin-left: -2.1mm;
+    background-color: #0066cc;
+    cursor: grab;
+  }
+  .etiqueta .rodar:active {
+    cursor: grabbing;
+  }
+  .etiqueta:hover .apagar,
+  .etiqueta:hover .rodar,
+  .etiqueta.a-rodar .rodar {
+    display: block;
+  }
+  /* Traço a ligar a pega à etiqueta, para se perceber que pertencem uma à
+     outra */
+  .etiqueta .rodar::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 0.3mm;
+    height: 1.3mm;
+    margin-left: -0.15mm;
+    background-color: #0066cc;
+  }
+
+  .ferramentas {
+    position: absolute;
+    left: 2mm;
+    bottom: 2mm;
+    display: flex;
+    gap: 1.5mm;
+  }
+  .ferramentas button,
+  .btn-linha {
+    font-family: inherit;
+    font-size: 8.5pt;
+    font-weight: bold;
+    padding: 1mm 2mm;
+    border: 0.3mm solid #333;
+    border-radius: 1mm;
+    background-color: rgba(255, 255, 255, 0.92);
+    cursor: pointer;
+  }
+
+  .ruas .apagar-linha {
+    flex: 0 0 auto;
+    visibility: hidden;
+    margin-left: 1mm;
+    padding: 0 1mm;
+    border: none;
+    background: none;
+    color: #c00;
+    font-size: 11pt;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .ruas li:hover .apagar-linha {
+    visibility: visible;
+  }
+
+  .btn-linha {
+    align-self: flex-start;
+    margin-top: 1mm;
+  }
+
+  .editable {
+    border: 0.3mm solid transparent;
+    border-radius: 1mm;
+  }
+  .editable:hover {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-color: #666;
+    border-style: dashed;
+    cursor: text;
+  }
+  .editable:focus {
+    background-color: #fff;
+    border-color: #333;
+    outline: none;
+  }
+
+  /* Verso */
+  .verso {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .verso .titulo-verso {
+    font-size: 24pt;
+    font-weight: bold;
+    margin: 0 0 6mm;
+  }
+  .verso .aviso {
+    font-size: 17pt;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 6mm;
+    text-transform: uppercase;
+  }
+  .verso img {
+    width: 52mm;
+    height: 52mm;
+    border: 1mm solid #fcca03;
+    border-radius: 3mm;
+    padding: 2mm;
+  }
+  .verso .legenda {
+    font-size: 13pt;
+    font-weight: bold;
+    margin-top: 4mm;
+  }
+
+  @media print {
+    /* Sem isto o Chrome imprime os fundos (cinza, amarelo, azul) em branco */
+    * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body {
+      margin: 0;
+      background-color: #fff;
+    }
+    .card {
+      margin: 0 !important;
+      border-width: 0.8mm;
+    }
+    /* As ajudas de edição não vão para o papel, mas só elas: a regra não pode
+       apagar os fundos desenhados (o azul dos "Fogos"). */
+    .editable:hover,
+    .editable:focus,
+    .etiqueta .txt:hover,
+    .etiqueta .txt:focus {
+      background-color: inherit;
+      border-color: transparent;
+      outline: none;
+    }
+    .ferramentas,
+    .btn-linha,
+    .apagar,
+    .apagar-linha {
+      display: none !important;
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- Frente -->
+  <div class="card" style="page-break-after: always; margin-bottom: 10mm;">
+    <div class="sidebar">
+      <div class="section header editable" contenteditable="true" spellcheck="false">Território 10.16</div>
+      <div class="section locations">
+        <span class="rotulo">Localizações:</span>
+        <ol class="ruas">
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Gomes Freire Andrade</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua João Luis Ricardo</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+        </ol>
+        <button class="btn-linha" onclick="novaRua()">+ Rua</button>
+      </div>
+      <div class="section reference">
+        <span class="rotulo">Referência:</span>
+        <div class="caixa editable" contenteditable="true" spellcheck="false"></div>
+      </div>
+      <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 33</div>
+    </div>
+    <div class="map-container" id="mapa">
+      <img class="map-image" src="mapa_10.16.jpg" alt="Mapa do território Território 10.16" />
+      <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      
+      <div class="etiqueta porta" style="left: 50.685%; top: 43.59%; --ang: 0.0deg" data-ax="50.685" data-ay="43.59"><span class="txt" contenteditable="true" spellcheck="false">nº76</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta porta" style="left: 52.329%; top: 62.308%; --ang: 0.0deg" data-ax="52.329" data-ay="62.308"><span class="txt" contenteditable="true" spellcheck="false">nº58</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 35.414%; top: 51.93%; --ang: -89.8deg" data-ax="35.414" data-ay="51.93"><span class="txt" contenteditable="true" spellcheck="false">R. João Luis Ricardo</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 49.863%; top: 30.744%; --ang: -2.3deg" data-ax="49.863" data-ay="30.744"><span class="txt" contenteditable="true" spellcheck="false">R. Gomes Freire<br>Andrade</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 70.634%; top: 18.395%; --ang: 75.8deg" data-ax="62.917" data-ay="17.655"><span class="txt" contenteditable="true" spellcheck="false">R. Doutor Jacinto Nunes</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 85.67%; top: 21.841%; --ang: 87.0deg" data-ax="85.67" data-ay="21.841"><span class="txt" contenteditable="true" spellcheck="false">Av. Amadeu Duarte</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 7.688%; top: 57.269%; --ang: -72.9deg" data-ax="7.688" data-ay="57.269"><span class="txt" contenteditable="true" spellcheck="false">R. Moreira Pinto</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="ferramentas">
+        <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
+        <button onclick="novaEtiqueta('porta')">+ Nº</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Verso -->
+  <div class="card verso">
+    <p class="titulo-verso">Território 10.16</p>
+    <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADT0lEQVR4nO2cTY6kOBCFvxiQammkOUAdBW5WmiPNDeAodQNYlmT0ZuEfTLfUUneOMrPIYIEyCz6VrQzCL55tTPz2sfz1+ww45JBD3xTaLB/TZmY2AMsA6cK0mcHWU27q7908h+4PdZIkAZ2A3Rg/e8zeJc3pb8AoSVrv3zyHHgDlZ5/dNG99vjSuu0H4MptCJKeMhzTPoTtCffslxN5G7T2wG2wDLBOI7e/4mOY59Fho62GxEiTLu2Qfitj0v/8nh54WSj9/lgoh9mIbsPHfLsLWRy3DKiACQcB23+Y59BBoT1UEbG+yqUhJmwD7+OyxKSWPUol8hz459KdQn5/9dERYhg6W96obwpdpGTpaJ+vJ++TQLRDS2klz+tJJc4gwrl0tRjtJium+fMuT98mhWyAkJZEgzUFiVCSd0q8PpFOyIoI8Il4B0lzNhlxrdJLW3aiJwqYgSZ/uWV4cSs9+PiXjEjSHSEkZ0k8Dy5P3yaFboEYfMK4lLMZDM6Rs0Z1i48n75NAtUFGWSUdEIKWH2AiMcl+OF4+IS0M0hcS4ApzCglH10wr4qHF5qIwaIdLOc65ALkZ1yiAeEVeHOERCygdprKCMEFJJD2MRGB4Rl4Yah6pZJJGUZThpzCQ5XUdcHcoR8YNN1X4qdehxs0fElaFGVBbHgbxeam4q0lp/eERcHWp8KZI/WWuNYyIjGdhl6PCIuDSUfYazSUkTG0AbID6vcXWo1ZPtiVxcHA6VjxqvAbXl5pxOdfr7iIiaLbz6vDyUZ7lrPvhh5rtciI3a9Ii4NFT9iLJYhjK11ejJuTqa7kdcHqo54rAmTypSR47wNVQvAZ2LzLq7K5QRInvcvqruZaAmHyTZmFLGWoNhPawrHzVeAaoTWu1SqSwrTotum2UzHhEXh4694YB9KHuWECJmQ9m5MQF5V+jz98mhP4Z6oEtug0He3WXjuvcQ8j15v8YGOVSevE8O3Q6VveFg0/ZWBOSWV2WTtn0NlJXa36JPDt1ca5z05Hnl7bGexj3Ll4LqtOc/w255G0/4Si+a0ZySxwOb59D9oDK5sRvLsJt9rJBeHsD2pvTegAnwncDXh8ocBvy027M6VLkiDbVAffI+OXQLZP72QocccugXx3+z2RMCDwNCqgAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
+    <p class="legenda">Faça scan para abrir no Google Maps</p>
+  </div>
+
+<script>
+  window.addEventListener('message', function(event) {
+    if (event.data === 'print') {
+      window.print();
+    } else if (event.data === 'download') {
+      // Mesmo nome do ficheiro original: é para substituir o cartão na pasta
+      // da zona, e assim as alterações passam a contar nas próximas
+      // gerações e no mapa exportado. (O browser não pode escrever
+      // diretamente no ficheiro, daí a passagem pela pasta de descargas.)
+      const blob = new Blob(['<!DOCTYPE html>\n' + document.documentElement.outerHTML],
+                            {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Cartao_10.16.html';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  });
+
+  // Ajusta o corpo de letra da lista ao espaço disponível: cresce quando há
+  // poucas ruas e só encolhe o necessário quando há muitas. Nunca passa dos
+  // 13,5 pt, para ficar sempre abaixo do rótulo "LOCALIZAÇÕES".
+  function ajustarLista() {
+    const caixa = document.querySelector('.locations');
+    const lista = document.querySelector('.ruas');
+    if (!caixa || !lista || !lista.lastElementChild) return;
+
+    // Medir pela posição do último item: com colunas, o que não cabe passa
+    // para uma coluna seguinte em vez de aumentar a altura, e nem
+    // scrollHeight nem scrollWidth dão por isso.
+    function cabe() {
+      const ultimo = lista.lastElementChild.getBoundingClientRect();
+      const dentro = caixa.getBoundingClientRect();
+      return ultimo.bottom <= dentro.bottom - 1 && ultimo.right <= dentro.right - 1;
+    }
+
+    // Uma coluna à largura toda aproveita melhor o espaço do que duas
+    // colunas estreitas, onde nomes como "Av. Comandante Gilberto Duarte e
+    // Duarte" ocupam quatro linhas
+    lista.style.columns = '';
+    for (let pt = 13.5; pt >= 7.5; pt -= 0.5) {
+      lista.style.fontSize = pt + 'pt';
+      if (cabe()) return;
+    }
+    // Só em último caso: duas colunas, para nada ficar de fora
+    lista.style.columns = '2';
+    lista.style.columnGap = '3mm';
+    for (let pt = 10; pt >= 6.5; pt -= 0.5) {
+      lista.style.fontSize = pt + 'pt';
+      if (cabe()) return;
+    }
+  }
+
+  // --- Lista de ruas -------------------------------------------------------
+  function novaRua() {
+    const lista = document.querySelector('.ruas');
+    const numerada = !!lista.querySelector('.num');
+    const li = document.createElement('li');
+    li.innerHTML = (numerada
+        ? '<span class="num">' + (lista.children.length + 1) + '</span>'
+        : '<span class="traco">&ndash;</span>') +
+      '<span class="nome" contenteditable="true" spellcheck="false">Nova rua</span>' +
+      '<button class="apagar-linha" title="Remover rua">&times;</button>';
+    lista.appendChild(li);
+    ajustarLista();
+    const nome = li.querySelector('.nome');
+    nome.focus();
+    document.getSelection().selectAllChildren(nome);
+  }
+
+  // Se a lista for numerada, os números têm de acompanhar as remoções
+  function renumerar() {
+    document.querySelectorAll('.ruas .num').forEach(function(n, i) {
+      n.textContent = i + 1;
+    });
+  }
+
+  document.addEventListener('click', function(ev) {
+    const linha = ev.target.closest('.apagar-linha');
+    if (linha) {
+      linha.closest('li').remove();
+      renumerar();
+      ajustarLista();
+      return;
+    }
+    const etiqueta = ev.target.closest('.etiqueta .apagar');
+    if (etiqueta) {
+      etiqueta.closest('.etiqueta').remove();
+      desenharChamadas();
+    }
+  });
+
+  // --- Etiquetas do mapa ---------------------------------------------------
+  function novaEtiqueta(tipo) {
+    const mapa = document.getElementById('mapa');
+    const div = document.createElement('div');
+    div.className = 'etiqueta ' + tipo;
+    div.style.left = '50%';
+    div.style.top = '50%';
+    div.style.setProperty('--ang', '0deg');
+    div.innerHTML = '<span class="txt" contenteditable="true" spellcheck="false">' +
+      (tipo === 'porta' ? 'Nº 1' : 'Nome da rua') + '</span>' +
+      '<button class="rodar" title="Arrastar para rodar">&#8635;</button>' +
+      '<button class="apagar" title="Remover etiqueta">&times;</button>';
+    mapa.appendChild(div);
+    const txt = div.querySelector('.txt');
+    txt.focus();
+    document.getSelection().selectAllChildren(txt);
+  }
+
+  // Arrastar para acertar a posição; roda do rato por cima roda a etiqueta
+  let arrasto = null;
+
+  let rotacao = null;
+
+  document.addEventListener('mousedown', function(ev) {
+    const pega = ev.target.closest('.rodar');
+    if (pega) {
+      rotacao = pega.closest('.etiqueta');
+      rotacao.classList.add('a-rodar');
+      ev.preventDefault();
+      return;
+    }
+    const etiqueta = ev.target.closest('.etiqueta');
+    if (!etiqueta || ev.target.closest('.apagar')) return;
+    arrasto = {etiqueta: etiqueta, x0: ev.clientX, y0: ev.clientY, moveu: false};
+  });
+
+  document.addEventListener('mousemove', function(ev) {
+    if (rotacao) {
+      // A pega está por cima da etiqueta: o ângulo é o do ponteiro visto do
+      // centro, com os 90 graus dessa posição descontados
+      const caixa = rotacao.getBoundingClientRect();
+      const ang = Math.atan2(ev.clientY - (caixa.top + caixa.height / 2),
+                             ev.clientX - (caixa.left + caixa.width / 2)) * 180 / Math.PI + 90;
+      rotacao.style.setProperty('--ang', Math.round(ang * 10) / 10 + 'deg');
+      ev.preventDefault();
+      return;
+    }
+    if (!arrasto) return;
+    if (!arrasto.moveu &&
+        Math.abs(ev.clientX - arrasto.x0) + Math.abs(ev.clientY - arrasto.y0) < 4) return;
+    arrasto.moveu = true;
+    const area = document.getElementById('mapa').getBoundingClientRect();
+    arrasto.etiqueta.style.left =
+      Math.max(0, Math.min(100, (ev.clientX - area.left) / area.width * 100)) + '%';
+    arrasto.etiqueta.style.top =
+      Math.max(0, Math.min(100, (ev.clientY - area.top) / area.height * 100)) + '%';
+    desenharChamadas();
+    ev.preventDefault();
+  });
+
+  document.addEventListener('mouseup', function() {
+    if (rotacao) {
+      rotacao.classList.remove('a-rodar');
+      rotacao = null;
+    }
+    arrasto = null;
+  });
+
+  document.addEventListener('wheel', function(ev) {
+    const etiqueta = ev.target.closest('.etiqueta');
+    if (!etiqueta) return;
+    const atual = parseFloat(etiqueta.style.getPropertyValue('--ang')) || 0;
+    etiqueta.style.setProperty('--ang', (atual + (ev.deltaY > 0 ? 5 : -5)) + 'deg');
+    ev.preventDefault();
+  }, {passive: false});
+
+  // Linha a ligar a etiqueta ao ponto exato, quando foi afastada dele
+  function desenharChamadas() {
+    const svg = document.getElementById('chamadas');
+    if (!svg) return;
+    let linhas = '';
+    document.querySelectorAll('.etiqueta[data-ax]').forEach(function(e) {
+      const ax = parseFloat(e.dataset.ax), ay = parseFloat(e.dataset.ay);
+      const x = parseFloat(e.style.left), y = parseFloat(e.style.top);
+      if (Math.hypot(x - ax, y - ay) < 2.5) return;
+      linhas += '<line x1="' + ax + '" y1="' + ay + '" x2="' + x + '" y2="' + y +
+        '" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"/>' +
+        '<line x1="' + ax + '" y1="' + ay + '" x2="' + x + '" y2="' + y +
+        '" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"/>';
+    });
+    svg.innerHTML = linhas;
+  }
+
+  window.addEventListener('load', function() { ajustarLista(); desenharChamadas(); });
+  window.addEventListener('beforeprint', ajustarLista);
+  document.addEventListener('input', function(ev) {
+    const nome = ev.target.closest('.ruas .nome');
+    if (nome) nome.removeAttribute('data-completo');  // passou a ser o texto escrito
+    ajustarLista();
+  });
+</script>
+</body>
+</html>
