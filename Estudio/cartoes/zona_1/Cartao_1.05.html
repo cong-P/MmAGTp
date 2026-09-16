@@ -410,10 +410,6 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta Nova do Zambujal</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
-          
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Direita</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
-          
         </ol>
         <button class="btn-linha" onclick="novaRua()">+ Rua</button>
       </div>
@@ -427,17 +423,13 @@
       <img class="map-image" src="mapa_1.05.jpg" alt="Mapa do território Território 1.05" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 52.326%; top: 75.458%; --ang: 0.0deg" data-ax="49.343" data-ay="75.458"><span class="txt" contenteditable="true" spellcheck="false">Nº 50</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 49.343%; top: 75.458%; --ang: 0.0deg" data-ax="49.343" data-ay="75.458"><span class="txt" contenteditable="true" spellcheck="false">Nº 50</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 68.66%; top: 55.288%; --ang: 0.0deg" data-ax="68.66" data-ay="55.288"><span class="txt" contenteditable="true" spellcheck="false">Nº 34</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 61.039%; top: 26.509%; --ang: 0.0deg" data-ax="61.039" data-ay="26.509"><span class="txt" contenteditable="true" spellcheck="false">Nº 39</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 20.499%; top: 76.811%; --ang: 0.0deg" data-ax="22.009" data-ay="76.811"><span class="txt" contenteditable="true" spellcheck="false">Nº 13A</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta rua" style="left: 36.84%; top: 63.977%; --ang: -60.8deg" data-ax="38.312" data-ay="63.977"><span class="txt" contenteditable="true" spellcheck="false">Pct. Nova do Zambujal</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta rua" style="left: 41.755%; top: 13.152%; --ang: -8.1deg" data-ax="41.755" data-ay="13.152"><span class="txt" contenteditable="true" spellcheck="false">R. Direita</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 22.009%; top: 76.811%; --ang: 0.0deg" data-ax="22.009" data-ay="76.811"><span class="txt" contenteditable="true" spellcheck="false">Nº 13A</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
@@ -449,7 +441,7 @@
   <!-- Verso -->
   <div class="card verso">
     <p class="titulo-verso">Território 1.05</p>
-    <p class="aviso">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
+    <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEAklEQVR4nO2cTcqkSBBAX4xCLVOYA3xH0Zs1czM9yneAgXRZoMQsMiJNq+lN01LlELGQVOtRJgTxr6L8nix//SYIQQYZZJAv5ComE8Ay7MIyAKwisPbIVFcm/fueNsiPJDtVVdWiNGPuVH58i0BSBfaykiltMKqqan7n0wb5maSZFjplKSuQiV1kShv6j/TlUIzW9OanDfKzyP50tgtjHkRBgfVvFegUUkbGl+j7XvsM8jrypENp6y0UYu8hbbAM//Y6ZtBlyH/oP4P8P5KqumGrDCxDp6p5F8YMJaYev3sgqer85qcN8vPIvSRbsD5UJjqVH989Mq0PhfWhQKcyASwiIjK882mD/DSyh1QDnXUXlq+nKCsobOUAgC5DRxsS3WufQV5Krkci1rnNSc9SJLLSUHoKsItM7GGHgnwRKw1hoZBq7tTCo1If6hTShs5ps7tzUtX5XvsM8jqyhNOq2UyQzkmVMR/aZEG0qQ+hQ0G+iumQqwpjydBcpcxKufqobpgi3WufQV5Hmgebi8tSt0Nqh+aGZjiuhQ4FWaW4sfHFDiWzTYxaV8WXAYQOBdmKhTxqDdWiQ6MrDebVsJh6Bsxe3WufQV5H1nhow2JlD4VMh4ob8+SsOLQcdijIE7n2sMhDZVp7GPMuqvoUAHTG6o72uy/zdDfcZ5AXkaf6kB42R1XnVDM0rw9RcrWwQ0GeybUvgbXIsIvIsIvO7CLT+lCdS4m6U69n1ynH2+0zyIvIJqa2IlHyKxZEd6XkSI2RIrcP8ixHCu8uq9aHMjRKU/Uq8rIgz2LxkKdkR17m5UU3RjUUsmLSvfYZ5HVk00YtTdajNDQe3Veo6b8P5ocOBenSxEPmxqqWnLsetTcbPdcgz+JtVPAq4tGtr6FQ7tp+WeT2Qb6SR9gDZd6sZO/pKT6Yj5cXV4ncPsgXsb598rDHJoS2OpIGFiidRozCDgVZxbSEVpsah9ZkbaVzBpHbB/kTac0NmQA/+Nj0MuzCmHd/897t1R33GeQ1pLfitTblq+EptaAMnuWf4uywQ0G6uAdTtX68+zIrUaeNY9UOVd9rn0FeR9ZxfDjmGBubU4f1zUDhFaXQoSBd3LTAMTbdjLzq4eSyXYuYOsizNPlXdVTlhsU+QPNeRw4dCvJVjty+cWPV+jT1IXwKJHxZkD+Rx2tk/nL0Ij0yJVWRrw2dy5hafYforU8b5GeSzXfQ8MZrGaW2KMgGHK1mFN9jDPKX5C46rz3lKzJWY2xHh3wGLWbyg2zklL1b47W4tjJE1Aw4eok65oeCPMnRGzsGO5rCtI191J8cxcd77TPI68hTXlZX+Ni0Xaun5Xdhh4Js5PQdtPY7Z+pHPZ/+gf8MMsggg2zlP/4bDkkCob1XAAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
