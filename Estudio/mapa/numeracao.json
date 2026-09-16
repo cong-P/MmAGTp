@@ -1,0 +1,2431 @@
+{
+ "38.68282,-9.34063": {
+  "lat": 38.682816,
+  "lon": -9.340629,
+  "nome_original": "Territorio nº11.42",
+  "numero": 42,
+  "zona": 11
+ },
+ "38.68317,-9.34302": {
+  "lat": 38.683167,
+  "lon": -9.343017,
+  "nome_original": "Território nº11.26",
+  "numero": 26,
+  "zona": 11
+ },
+ "38.68332,-9.34645": {
+  "lat": 38.683319,
+  "lon": -9.346454,
+  "nome_original": "Território nº11.24",
+  "numero": 24,
+  "zona": 11
+ },
+ "38.68351,-9.34233": {
+  "lat": 38.683508,
+  "lon": -9.342326,
+  "nome_original": "Território nº11.27",
+  "numero": 27,
+  "zona": 11
+ },
+ "38.68357,-9.34409": {
+  "lat": 38.683575,
+  "lon": -9.344094,
+  "nome_original": "Território nº11.25",
+  "numero": 25,
+  "zona": 11
+ },
+ "38.68393,-9.34318": {
+  "lat": 38.683934,
+  "lon": -9.343182,
+  "nome_original": "Território nº11.29",
+  "numero": 29,
+  "zona": 11
+ },
+ "38.68400,-9.34601": {
+  "lat": 38.683996,
+  "lon": -9.346013,
+  "nome_original": "Território nº11.23",
+  "numero": 23,
+  "zona": 11
+ },
+ "38.68435,-9.34632": {
+  "lat": 38.68435,
+  "lon": -9.346319,
+  "nome_original": "Território nº11.22",
+  "numero": 22,
+  "zona": 11
+ },
+ "38.68439,-9.34247": {
+  "lat": 38.684395,
+  "lon": -9.342471,
+  "nome_original": "Território nº11.28",
+  "numero": 28,
+  "zona": 11
+ },
+ "38.68452,-9.34301": {
+  "lat": 38.684524,
+  "lon": -9.343009,
+  "nome_original": "COMERCIAL",
+  "numero": 40,
+  "zona": 5
+ },
+ "38.68458,-9.34604": {
+  "lat": 38.684584,
+  "lon": -9.34604,
+  "nome_original": "Território nº11.20",
+  "numero": 20,
+  "zona": 11
+ },
+ "38.68475,-9.34671": {
+  "lat": 38.684751,
+  "lon": -9.346709,
+  "nome_original": "Território nº11.21",
+  "numero": 21,
+  "zona": 11
+ },
+ "38.68476,-9.34431": {
+  "lat": 38.684758,
+  "lon": -9.344311,
+  "nome_original": "Território nº11.30",
+  "numero": 30,
+  "zona": 11
+ },
+ "38.68494,-9.34633": {
+  "lat": 38.68494,
+  "lon": -9.346326,
+  "nome_original": "Território nº11.19",
+  "numero": 19,
+  "zona": 11
+ },
+ "38.68495,-9.34000": {
+  "lat": 38.68495,
+  "lon": -9.340003,
+  "nome_original": "Território nº11.41",
+  "numero": 41,
+  "zona": 11
+ },
+ "38.68500,-9.34504": {
+  "lat": 38.685001,
+  "lon": -9.345039,
+  "nome_original": "Território nº11.31",
+  "numero": 31,
+  "zona": 11
+ },
+ "38.68501,-9.35054": {
+  "lat": 38.685012,
+  "lon": -9.350541,
+  "nome_original": "Território nº10.24",
+  "numero": 24,
+  "zona": 10
+ },
+ "38.68524,-9.34803": {
+  "lat": 38.685244,
+  "lon": -9.348028,
+  "nome_original": "Território nº11.13",
+  "numero": 13,
+  "zona": 11
+ },
+ "38.68528,-9.34672": {
+  "lat": 38.685283,
+  "lon": -9.346717,
+  "nome_original": "Território nº11.18",
+  "numero": 18,
+  "zona": 11
+ },
+ "38.68529,-9.34745": {
+  "lat": 38.685293,
+  "lon": -9.347445,
+  "nome_original": "Território nº11.14",
+  "numero": 14,
+  "zona": 11
+ },
+ "38.68544,-9.34427": {
+  "lat": 38.685441,
+  "lon": -9.344275,
+  "nome_original": "Território nº11.32",
+  "numero": 32,
+  "zona": 11
+ },
+ "38.68551,-9.34712": {
+  "lat": 38.685505,
+  "lon": -9.347117,
+  "nome_original": "Território nº11.15",
+  "numero": 15,
+  "zona": 11
+ },
+ "38.68552,-9.34478": {
+  "lat": 38.68552,
+  "lon": -9.344777,
+  "nome_original": "Território nº11.33",
+  "numero": 33,
+  "zona": 11
+ },
+ "38.68558,-9.35144": {
+  "lat": 38.685585,
+  "lon": -9.351438,
+  "nome_original": "Território nº10.23",
+  "numero": 23,
+  "zona": 10
+ },
+ "38.68561,-9.34538": {
+  "lat": 38.685612,
+  "lon": -9.34538,
+  "nome_original": "Território nº11.34",
+  "numero": 34,
+  "zona": 11
+ },
+ "38.68562,-9.34663": {
+  "lat": 38.68562,
+  "lon": -9.346627,
+  "nome_original": "Território nº11.17",
+  "numero": 17,
+  "zona": 11
+ },
+ "38.68581,-9.34853": {
+  "lat": 38.685813,
+  "lon": -9.34853,
+  "nome_original": "Território nº11.12",
+  "numero": 12,
+  "zona": 11
+ },
+ "38.68588,-9.35247": {
+  "lat": 38.685875,
+  "lon": -9.352467,
+  "nome_original": "Território nº10.19",
+  "numero": 19,
+  "zona": 10
+ },
+ "38.68590,-9.34757": {
+  "lat": 38.685905,
+  "lon": -9.347571,
+  "nome_original": "Território nº11.10",
+  "numero": 10,
+  "zona": 11
+ },
+ "38.68592,-9.34794": {
+  "lat": 38.685922,
+  "lon": -9.347936,
+  "nome_original": "Território nº11.11",
+  "numero": 11,
+  "zona": 11
+ },
+ "38.68596,-9.35108": {
+  "lat": 38.685958,
+  "lon": -9.351085,
+  "nome_original": "Território nº10.22",
+  "numero": 22,
+  "zona": 10
+ },
+ "38.68599,-9.34675": {
+  "lat": 38.685987,
+  "lon": -9.346747,
+  "nome_original": "Território nº11.16",
+  "numero": 16,
+  "zona": 11
+ },
+ "38.68600,-9.35288": {
+  "lat": 38.686002,
+  "lon": -9.352879,
+  "nome_original": "Território nº10.14",
+  "numero": 14,
+  "zona": 10
+ },
+ "38.68606,-9.34312": {
+  "lat": 38.686061,
+  "lon": -9.343122,
+  "nome_original": "Território nº11.43",
+  "numero": 43,
+  "zona": 11
+ },
+ "38.68606,-9.34542": {
+  "lat": 38.686063,
+  "lon": -9.345419,
+  "nome_original": "Território nº11.35",
+  "numero": 35,
+  "zona": 11
+ },
+ "38.68607,-9.34443": {
+  "lat": 38.686069,
+  "lon": -9.344426,
+  "nome_original": "Território nº11.37",
+  "numero": 37,
+  "zona": 11
+ },
+ "38.68620,-9.35257": {
+  "lat": 38.686197,
+  "lon": -9.352573,
+  "nome_original": "Território nº10.18",
+  "numero": 18,
+  "zona": 10
+ },
+ "38.68622,-9.35054": {
+  "lat": 38.686219,
+  "lon": -9.350536,
+  "nome_original": "Território nº10.02",
+  "numero": 2,
+  "zona": 10
+ },
+ "38.68624,-9.35199": {
+  "lat": 38.686244,
+  "lon": -9.351987,
+  "nome_original": "Território nº10.20",
+  "numero": 20,
+  "zona": 10
+ },
+ "38.68625,-9.34793": {
+  "lat": 38.68625,
+  "lon": -9.347935,
+  "nome_original": "11.09",
+  "numero": 9,
+  "zona": 11
+ },
+ "38.68630,-9.34497": {
+  "lat": 38.686301,
+  "lon": -9.344966,
+  "nome_original": "Território nº11.36",
+  "numero": 36,
+  "zona": 11
+ },
+ "38.68632,-9.35295": {
+  "lat": 38.686323,
+  "lon": -9.352955,
+  "nome_original": "território nº10.15",
+  "numero": 15,
+  "zona": 10
+ },
+ "38.68633,-9.35338": {
+  "lat": 38.686329,
+  "lon": -9.353385,
+  "nome_original": "Território nº10.13",
+  "numero": 13,
+  "zona": 10
+ },
+ "38.68637,-9.35009": {
+  "lat": 38.686374,
+  "lon": -9.350089,
+  "nome_original": "Território nº11.03",
+  "numero": 3,
+  "zona": 11
+ },
+ "38.68640,-9.34869": {
+  "lat": 38.686397,
+  "lon": -9.348695,
+  "nome_original": "Território nº11.08",
+  "numero": 8,
+  "zona": 11
+ },
+ "38.68645,-9.34547": {
+  "lat": 38.686453,
+  "lon": -9.345472,
+  "nome_original": "Território nº11.38",
+  "numero": 38,
+  "zona": 11
+ },
+ "38.68645,-9.34971": {
+  "lat": 38.68645,
+  "lon": -9.349715,
+  "nome_original": "Território nº11.05",
+  "numero": 5,
+  "zona": 11
+ },
+ "38.68646,-9.34935": {
+  "lat": 38.68646,
+  "lon": -9.34935,
+  "nome_original": "Território nº11.06",
+  "numero": 6,
+  "zona": 11
+ },
+ "38.68652,-9.35266": {
+  "lat": 38.686518,
+  "lon": -9.352658,
+  "nome_original": "Território nº10.17",
+  "numero": 17,
+  "zona": 10
+ },
+ "38.68660,-9.35292": {
+  "lat": 38.6866,
+  "lon": -9.352923,
+  "nome_original": "Território nº10.16",
+  "numero": 16,
+  "zona": 10
+ },
+ "38.68666,-9.34986": {
+  "lat": 38.686664,
+  "lon": -9.34986,
+  "nome_original": "Território nº11.04",
+  "numero": 4,
+  "zona": 11
+ },
+ "38.68679,-9.34908": {
+  "lat": 38.68679,
+  "lon": -9.349075,
+  "nome_original": "Território nº11.07",
+  "numero": 7,
+  "zona": 11
+ },
+ "38.68679,-9.35416": {
+  "lat": 38.686788,
+  "lon": -9.354158,
+  "nome_original": "Território nº10.11",
+  "numero": 11,
+  "zona": 10
+ },
+ "38.68689,-9.34947": {
+  "lat": 38.686892,
+  "lon": -9.349468,
+  "nome_original": "Território nº10.01",
+  "numero": 1,
+  "zona": 10
+ },
+ "38.68698,-9.34526": {
+  "lat": 38.686983,
+  "lon": -9.345259,
+  "nome_original": "Território nº11.39",
+  "numero": 39,
+  "zona": 11
+ },
+ "38.68703,-9.35201": {
+  "lat": 38.687034,
+  "lon": -9.352014,
+  "nome_original": "Território nº10.21",
+  "numero": 21,
+  "zona": 10
+ },
+ "38.68711,-9.33958": {
+  "lat": 38.687105,
+  "lon": -9.339577,
+  "nome_original": "Território nº11.40",
+  "numero": 40,
+  "zona": 11
+ },
+ "38.68715,-9.35518": {
+  "lat": 38.68715,
+  "lon": -9.355181,
+  "nome_original": "Território nº10.10",
+  "numero": 10,
+  "zona": 10
+ },
+ "38.68750,-9.35719": {
+  "lat": 38.687502,
+  "lon": -9.35719,
+  "nome_original": "Território nº10.06",
+  "numero": 6,
+  "zona": 10
+ },
+ "38.68759,-9.35328": {
+  "lat": 38.687589,
+  "lon": -9.353283,
+  "nome_original": "Território nº10.12",
+  "numero": 12,
+  "zona": 10
+ },
+ "38.68781,-9.34993": {
+  "lat": 38.687805,
+  "lon": -9.349927,
+  "nome_original": "Território nº142",
+  "numero": 3,
+  "zona": 7
+ },
+ "38.68782,-9.34626": {
+  "lat": 38.687816,
+  "lon": -9.346261,
+  "nome_original": "Território nº05.13",
+  "numero": 13,
+  "zona": 5
+ },
+ "38.68783,-9.34865": {
+  "lat": 38.687834,
+  "lon": -9.348646,
+  "nome_original": "Território nº144",
+  "numero": 1,
+  "zona": 7
+ },
+ "38.68792,-9.34395": {
+  "lat": 38.68792,
+  "lon": -9.34395,
+  "nome_original": "Território nº05.27",
+  "numero": 27,
+  "zona": 5
+ },
+ "38.68801,-9.34962": {
+  "lat": 38.688005,
+  "lon": -9.349621,
+  "nome_original": "Território nº143",
+  "numero": 2,
+  "zona": 7
+ },
+ "38.68812,-9.35920": {
+  "lat": 38.688121,
+  "lon": -9.359203,
+  "nome_original": "Território nº10.05",
+  "numero": 5,
+  "zona": 10
+ },
+ "38.68813,-9.34171": {
+  "lat": 38.688127,
+  "lon": -9.341706,
+  "nome_original": "Território nº05.28",
+  "numero": 28,
+  "zona": 5
+ },
+ "38.68817,-9.34575": {
+  "lat": 38.68817,
+  "lon": -9.345745,
+  "nome_original": "Território nº05.14",
+  "numero": 14,
+  "zona": 5
+ },
+ "38.68821,-9.34785": {
+  "lat": 38.68821,
+  "lon": -9.347849,
+  "nome_original": "Território nº05.12",
+  "numero": 12,
+  "zona": 5
+ },
+ "38.68829,-9.34362": {
+  "lat": 38.688295,
+  "lon": -9.34362,
+  "nome_original": "Território nº05.36",
+  "numero": 36,
+  "zona": 5
+ },
+ "38.68830,-9.34178": {
+  "lat": 38.688299,
+  "lon": -9.34178,
+  "nome_original": "Polígono 192",
+  "numero": 39,
+  "zona": 5
+ },
+ "38.68830,-9.35117": {
+  "lat": 38.688299,
+  "lon": -9.351173,
+  "nome_original": "Território nº141",
+  "numero": 4,
+  "zona": 7
+ },
+ "38.68843,-9.34219": {
+  "lat": 38.688429,
+  "lon": -9.342188,
+  "nome_original": "Território nº05.34",
+  "numero": 34,
+  "zona": 5
+ },
+ "38.68851,-9.34295": {
+  "lat": 38.688512,
+  "lon": -9.34295,
+  "nome_original": "Território nº05.35",
+  "numero": 35,
+  "zona": 5
+ },
+ "38.68862,-9.34630": {
+  "lat": 38.688623,
+  "lon": -9.346298,
+  "nome_original": "Território nº05.15",
+  "numero": 15,
+  "zona": 5
+ },
+ "38.68864,-9.35653": {
+  "lat": 38.688643,
+  "lon": -9.356531,
+  "nome_original": "Território nº10.08",
+  "numero": 8,
+  "zona": 10
+ },
+ "38.68866,-9.35517": {
+  "lat": 38.688664,
+  "lon": -9.355165,
+  "nome_original": "Território nº10.09",
+  "numero": 9,
+  "zona": 10
+ },
+ "38.68879,-9.34619": {
+  "lat": 38.688787,
+  "lon": -9.346193,
+  "nome_original": "Território nº05.16",
+  "numero": 16,
+  "zona": 5
+ },
+ "38.68886,-9.34364": {
+  "lat": 38.688862,
+  "lon": -9.343642,
+  "nome_original": "Território nº05.37",
+  "numero": 37,
+  "zona": 5
+ },
+ "38.68887,-9.35245": {
+  "lat": 38.688871,
+  "lon": -9.352448,
+  "nome_original": "Território nº136",
+  "numero": 6,
+  "zona": 7
+ },
+ "38.68890,-9.35194": {
+  "lat": 38.688898,
+  "lon": -9.351937,
+  "nome_original": "Território nº137",
+  "numero": 5,
+  "zona": 7
+ },
+ "38.68894,-9.34968": {
+  "lat": 38.688945,
+  "lon": -9.349675,
+  "nome_original": "Território nº147",
+  "numero": 31,
+  "zona": 7
+ },
+ "38.68900,-9.34497": {
+  "lat": 38.689,
+  "lon": -9.344972,
+  "nome_original": "Território nº05.26",
+  "numero": 26,
+  "zona": 5
+ },
+ "38.68900,-9.34951": {
+  "lat": 38.689005,
+  "lon": -9.34951,
+  "nome_original": "Território nº148",
+  "numero": 32,
+  "zona": 7
+ },
+ "38.68905,-9.34631": {
+  "lat": 38.689048,
+  "lon": -9.346311,
+  "nome_original": "Território nº05.10",
+  "numero": 10,
+  "zona": 5
+ },
+ "38.68906,-9.34148": {
+  "lat": 38.689064,
+  "lon": -9.341481,
+  "nome_original": "Território nº05.29",
+  "numero": 29,
+  "zona": 5
+ },
+ "38.68912,-9.34794": {
+  "lat": 38.689118,
+  "lon": -9.347937,
+  "nome_original": "Território nº05.11",
+  "numero": 11,
+  "zona": 5
+ },
+ "38.68913,-9.34197": {
+  "lat": 38.689133,
+  "lon": -9.341968,
+  "nome_original": "Território nº05.33",
+  "numero": 33,
+  "zona": 5
+ },
+ "38.68914,-9.36045": {
+  "lat": 38.689144,
+  "lon": -9.360445,
+  "nome_original": "Território nº10.02",
+  "numero": 2,
+  "zona": 10
+ },
+ "38.68917,-9.34674": {
+  "lat": 38.689169,
+  "lon": -9.34674,
+  "nome_original": "Território nº05.09",
+  "numero": 9,
+  "zona": 5
+ },
+ "38.68919,-9.35123": {
+  "lat": 38.689189,
+  "lon": -9.351231,
+  "nome_original": "Território nº140",
+  "numero": 29,
+  "zona": 7
+ },
+ "38.68925,-9.35401": {
+  "lat": 38.689252,
+  "lon": -9.354009,
+  "nome_original": "Território nº132",
+  "numero": 8,
+  "zona": 7
+ },
+ "38.68926,-9.34361": {
+  "lat": 38.689257,
+  "lon": -9.343614,
+  "nome_original": "Território nº05.38",
+  "numero": 38,
+  "zona": 5
+ },
+ "38.68928,-9.34721": {
+  "lat": 38.689276,
+  "lon": -9.34721,
+  "nome_original": "Território nº05.08",
+  "numero": 8,
+  "zona": 5
+ },
+ "38.68930,-9.34262": {
+  "lat": 38.689303,
+  "lon": -9.342618,
+  "nome_original": "Território nº05.32",
+  "numero": 32,
+  "zona": 5
+ },
+ "38.68932,-9.35359": {
+  "lat": 38.689322,
+  "lon": -9.353586,
+  "nome_original": "Território nº133",
+  "numero": 7,
+  "zona": 7
+ },
+ "38.68935,-9.35083": {
+  "lat": 38.689352,
+  "lon": -9.35083,
+  "nome_original": "Território nº146",
+  "numero": 30,
+  "zona": 7
+ },
+ "38.68942,-9.34784": {
+  "lat": 38.689423,
+  "lon": -9.347842,
+  "nome_original": "Território nº05.07",
+  "numero": 7,
+  "zona": 5
+ },
+ "38.68943,-9.35761": {
+  "lat": 38.689433,
+  "lon": -9.357609,
+  "nome_original": "Território nº10.07",
+  "numero": 7,
+  "zona": 10
+ },
+ "38.68952,-9.35867": {
+  "lat": 38.689524,
+  "lon": -9.358668,
+  "nome_original": "Território nº10.04",
+  "numero": 4,
+  "zona": 10
+ },
+ "38.68956,-9.34483": {
+  "lat": 38.68956,
+  "lon": -9.344834,
+  "nome_original": "Território nº05.23",
+  "numero": 23,
+  "zona": 5
+ },
+ "38.68957,-9.35973": {
+  "lat": 38.689569,
+  "lon": -9.359726,
+  "nome_original": "Território nº10.03",
+  "numero": 3,
+  "zona": 10
+ },
+ "38.68959,-9.34528": {
+  "lat": 38.68959,
+  "lon": -9.345281,
+  "nome_original": "Território nº05.24",
+  "numero": 24,
+  "zona": 5
+ },
+ "38.68959,-9.34614": {
+  "lat": 38.689592,
+  "lon": -9.346136,
+  "nome_original": "Território nº05.17",
+  "numero": 17,
+  "zona": 5
+ },
+ "38.68962,-9.34243": {
+  "lat": 38.689617,
+  "lon": -9.342432,
+  "nome_original": "Território nº05.31",
+  "numero": 31,
+  "zona": 5
+ },
+ "38.68964,-9.34176": {
+  "lat": 38.689639,
+  "lon": -9.341757,
+  "nome_original": "Território nº05.30",
+  "numero": 30,
+  "zona": 5
+ },
+ "38.68978,-9.34569": {
+  "lat": 38.689783,
+  "lon": -9.345685,
+  "nome_original": "Território nº05.25",
+  "numero": 25,
+  "zona": 5
+ },
+ "38.68989,-9.35168": {
+  "lat": 38.689893,
+  "lon": -9.351684,
+  "nome_original": "Território nº138",
+  "numero": 27,
+  "zona": 7
+ },
+ "38.68991,-9.34503": {
+  "lat": 38.689913,
+  "lon": -9.345028,
+  "nome_original": "Território nº05.22",
+  "numero": 22,
+  "zona": 5
+ },
+ "38.68992,-9.35134": {
+  "lat": 38.68992,
+  "lon": -9.351339,
+  "nome_original": "Território nº139",
+  "numero": 28,
+  "zona": 7
+ },
+ "38.68992,-9.35521": {
+  "lat": 38.689919,
+  "lon": -9.355212,
+  "nome_original": "Território nº131",
+  "numero": 24,
+  "zona": 9
+ },
+ "38.68993,-9.35308": {
+  "lat": 38.689933,
+  "lon": -9.353084,
+  "nome_original": "Território nº135",
+  "numero": 9,
+  "zona": 7
+ },
+ "38.69000,-9.34635": {
+  "lat": 38.689995,
+  "lon": -9.34635,
+  "nome_original": "Território nº05.18",
+  "numero": 18,
+  "zona": 5
+ },
+ "38.69017,-9.35343": {
+  "lat": 38.69017,
+  "lon": -9.353435,
+  "nome_original": "Território nº134",
+  "numero": 10,
+  "zona": 7
+ },
+ "38.69018,-9.34568": {
+  "lat": 38.690183,
+  "lon": -9.345678,
+  "nome_original": "Território nº05.19",
+  "numero": 19,
+  "zona": 5
+ },
+ "38.69022,-9.34843": {
+  "lat": 38.690218,
+  "lon": -9.348428,
+  "nome_original": "Território nº05.04",
+  "numero": 4,
+  "zona": 5
+ },
+ "38.69027,-9.34905": {
+  "lat": 38.690275,
+  "lon": -9.349051,
+  "nome_original": "Território nº05.06",
+  "numero": 6,
+  "zona": 5
+ },
+ "38.69028,-9.34514": {
+  "lat": 38.690283,
+  "lon": -9.345136,
+  "nome_original": "Território nº05.21",
+  "numero": 21,
+  "zona": 5
+ },
+ "38.69034,-9.34555": {
+  "lat": 38.690335,
+  "lon": -9.345553,
+  "nome_original": "Território nº05.20",
+  "numero": 20,
+  "zona": 5
+ },
+ "38.69041,-9.36220": {
+  "lat": 38.690407,
+  "lon": -9.3622,
+  "nome_original": "Território nº10.01",
+  "numero": 1,
+  "zona": 10
+ },
+ "38.69045,-9.35650": {
+  "lat": 38.690446,
+  "lon": -9.356502,
+  "nome_original": "Território nº93",
+  "numero": 21,
+  "zona": 9
+ },
+ "38.69045,-9.35730": {
+  "lat": 38.69045,
+  "lon": -9.357302,
+  "nome_original": "Território nº91",
+  "numero": 23,
+  "zona": 9
+ },
+ "38.69059,-9.35700": {
+  "lat": 38.690591,
+  "lon": -9.356997,
+  "nome_original": "Território nº92",
+  "numero": 22,
+  "zona": 9
+ },
+ "38.69063,-9.35189": {
+  "lat": 38.690634,
+  "lon": -9.351894,
+  "nome_original": "Território nº149",
+  "numero": 26,
+  "zona": 7
+ },
+ "38.69076,-9.35333": {
+  "lat": 38.690765,
+  "lon": -9.353331,
+  "nome_original": "Território nº129",
+  "numero": 11,
+  "zona": 7
+ },
+ "38.69078,-9.34931": {
+  "lat": 38.690777,
+  "lon": -9.34931,
+  "nome_original": "Território nº05.03",
+  "numero": 3,
+  "zona": 5
+ },
+ "38.69078,-9.35155": {
+  "lat": 38.690784,
+  "lon": -9.351551,
+  "nome_original": "Território nº150",
+  "numero": 25,
+  "zona": 7
+ },
+ "38.69086,-9.35438": {
+  "lat": 38.690857,
+  "lon": -9.354378,
+  "nome_original": "Território nº130",
+  "numero": 12,
+  "zona": 7
+ },
+ "38.69086,-9.35571": {
+  "lat": 38.690865,
+  "lon": -9.355709,
+  "nome_original": "Território nº09.20",
+  "numero": 20,
+  "zona": 9
+ },
+ "38.69090,-9.35939": {
+  "lat": 38.690896,
+  "lon": -9.359385,
+  "nome_original": "Território nº9.14",
+  "numero": 14,
+  "zona": 9
+ },
+ "38.69098,-9.36196": {
+  "lat": 38.690984,
+  "lon": -9.36196,
+  "nome_original": "Território nº9.01",
+  "numero": 1,
+  "zona": 9
+ },
+ "38.69127,-9.34801": {
+  "lat": 38.691275,
+  "lon": -9.348011,
+  "nome_original": "Território nº05.02",
+  "numero": 2,
+  "zona": 5
+ },
+ "38.69127,-9.36209": {
+  "lat": 38.691267,
+  "lon": -9.362092,
+  "nome_original": "Território nº9.02",
+  "numero": 2,
+  "zona": 9
+ },
+ "38.69133,-9.35672": {
+  "lat": 38.691331,
+  "lon": -9.356721,
+  "nome_original": "Território nº09.18",
+  "numero": 18,
+  "zona": 9
+ },
+ "38.69134,-9.35844": {
+  "lat": 38.691343,
+  "lon": -9.358442,
+  "nome_original": "Território nº9.13",
+  "numero": 13,
+  "zona": 9
+ },
+ "38.69134,-9.35931": {
+  "lat": 38.691335,
+  "lon": -9.359307,
+  "nome_original": "Território nº9.12",
+  "numero": 12,
+  "zona": 9
+ },
+ "38.69140,-9.35431": {
+  "lat": 38.691397,
+  "lon": -9.354305,
+  "nome_original": "Território nº128",
+  "numero": 13,
+  "zona": 7
+ },
+ "38.69140,-9.35799": {
+  "lat": 38.691405,
+  "lon": -9.357993,
+  "nome_original": "Território nº09.14",
+  "numero": 14,
+  "zona": 9
+ },
+ "38.69143,-9.35000": {
+  "lat": 38.691426,
+  "lon": -9.349999,
+  "nome_original": "Território nº122",
+  "numero": 23,
+  "zona": 7
+ },
+ "38.69170,-9.35095": {
+  "lat": 38.691695,
+  "lon": -9.350952,
+  "nome_original": "Território nº123",
+  "numero": 24,
+  "zona": 7
+ },
+ "38.69172,-9.36015": {
+  "lat": 38.69172,
+  "lon": -9.360147,
+  "nome_original": "Território nº9.06",
+  "numero": 6,
+  "zona": 9
+ },
+ "38.69175,-9.34780": {
+  "lat": 38.691751,
+  "lon": -9.347804,
+  "nome_original": "Território nº05.01",
+  "numero": 1,
+  "zona": 5
+ },
+ "38.69183,-9.35618": {
+  "lat": 38.691831,
+  "lon": -9.35618,
+  "nome_original": "Território nº09.19",
+  "numero": 19,
+  "zona": 9
+ },
+ "38.69184,-9.35288": {
+  "lat": 38.691838,
+  "lon": -9.352877,
+  "nome_original": "Território nº151",
+  "numero": 16,
+  "zona": 7
+ },
+ "38.69188,-9.35016": {
+  "lat": 38.691882,
+  "lon": -9.350164,
+  "nome_original": "Território nº121",
+  "numero": 22,
+  "zona": 7
+ },
+ "38.69189,-9.35721": {
+  "lat": 38.691887,
+  "lon": -9.357213,
+  "nome_original": "Território nº09.17",
+  "numero": 17,
+  "zona": 9
+ },
+ "38.69199,-9.35536": {
+  "lat": 38.691985,
+  "lon": -9.355364,
+  "nome_original": "Território nº88",
+  "numero": 25,
+  "zona": 9
+ },
+ "38.69200,-9.35948": {
+  "lat": 38.691997,
+  "lon": -9.359477,
+  "nome_original": "Território nº9.08",
+  "numero": 8,
+  "zona": 9
+ },
+ "38.69203,-9.35767": {
+  "lat": 38.692025,
+  "lon": -9.357666,
+  "nome_original": "Território nº09.15",
+  "numero": 15,
+  "zona": 9
+ },
+ "38.69219,-9.35445": {
+  "lat": 38.692193,
+  "lon": -9.35445,
+  "nome_original": "Território nº126",
+  "numero": 14,
+  "zona": 7
+ },
+ "38.69231,-9.34778": {
+  "lat": 38.692315,
+  "lon": -9.347781,
+  "nome_original": "Polígono 258",
+  "numero": 2,
+  "zona": 6
+ },
+ "38.69234,-9.34901": {
+  "lat": 38.692336,
+  "lon": -9.349005,
+  "nome_original": "Território nº120",
+  "numero": 21,
+  "zona": 7
+ },
+ "38.69238,-9.35981": {
+  "lat": 38.692377,
+  "lon": -9.359807,
+  "nome_original": "Território nº9.07",
+  "numero": 7,
+  "zona": 9
+ },
+ "38.69240,-9.35780": {
+  "lat": 38.692403,
+  "lon": -9.3578,
+  "nome_original": "Território nº09.16",
+  "numero": 16,
+  "zona": 9
+ },
+ "38.69241,-9.35496": {
+  "lat": 38.69241,
+  "lon": -9.354963,
+  "nome_original": "Território nº127",
+  "numero": 26,
+  "zona": 9
+ },
+ "38.69250,-9.35191": {
+  "lat": 38.692503,
+  "lon": -9.35191,
+  "nome_original": "Território nº124",
+  "numero": 17,
+  "zona": 7
+ },
+ "38.69252,-9.34698": {
+  "lat": 38.692521,
+  "lon": -9.346983,
+  "nome_original": "Polígono 217",
+  "numero": 1,
+  "zona": 6
+ },
+ "38.69252,-9.36140": {
+  "lat": 38.692525,
+  "lon": -9.361401,
+  "nome_original": "Território nº9.04",
+  "numero": 4,
+  "zona": 9
+ },
+ "38.69261,-9.35908": {
+  "lat": 38.692609,
+  "lon": -9.359075,
+  "nome_original": "Território nº9.11",
+  "numero": 11,
+  "zona": 9
+ },
+ "38.69266,-9.35332": {
+  "lat": 38.692656,
+  "lon": -9.353319,
+  "nome_original": "Território nº125",
+  "numero": 15,
+  "zona": 7
+ },
+ "38.69273,-9.34930": {
+  "lat": 38.69273,
+  "lon": -9.349296,
+  "nome_original": "Território nº119",
+  "numero": 20,
+  "zona": 7
+ },
+ "38.69281,-9.34267": {
+  "lat": 38.692808,
+  "lon": -9.342673,
+  "nome_original": "Polígono 954",
+  "numero": 35,
+  "zona": 4
+ },
+ "38.69281,-9.34353": {
+  "lat": 38.692813,
+  "lon": -9.343528,
+  "nome_original": "Polígono 127",
+  "numero": 34,
+  "zona": 4
+ },
+ "38.69286,-9.34414": {
+  "lat": 38.692858,
+  "lon": -9.344142,
+  "nome_original": "Polígono 128",
+  "numero": 33,
+  "zona": 4
+ },
+ "38.69290,-9.35887": {
+  "lat": 38.692898,
+  "lon": -9.358874,
+  "nome_original": "Território nº9.10",
+  "numero": 10,
+  "zona": 9
+ },
+ "38.69301,-9.36029": {
+  "lat": 38.693011,
+  "lon": -9.360288,
+  "nome_original": "Território nº9.05",
+  "numero": 5,
+  "zona": 9
+ },
+ "38.69303,-9.35559": {
+  "lat": 38.693026,
+  "lon": -9.355589,
+  "nome_original": "Território nº8.14",
+  "numero": 14,
+  "zona": 8
+ },
+ "38.69309,-9.35449": {
+  "lat": 38.693089,
+  "lon": -9.354494,
+  "nome_original": "Território nº8.15",
+  "numero": 15,
+  "zona": 8
+ },
+ "38.69311,-9.35233": {
+  "lat": 38.693111,
+  "lon": -9.352332,
+  "nome_original": "Território nº117",
+  "numero": 18,
+  "zona": 7
+ },
+ "38.69315,-9.34733": {
+  "lat": 38.693149,
+  "lon": -9.347334,
+  "nome_original": "Polígono 216",
+  "numero": 3,
+  "zona": 6
+ },
+ "38.69315,-9.35039": {
+  "lat": 38.693149,
+  "lon": -9.350385,
+  "nome_original": "Território nº118",
+  "numero": 19,
+  "zona": 7
+ },
+ "38.69325,-9.34528": {
+  "lat": 38.693252,
+  "lon": -9.345277,
+  "nome_original": "Polígono 108",
+  "numero": 32,
+  "zona": 4
+ },
+ "38.69331,-9.34932": {
+  "lat": 38.693311,
+  "lon": -9.349325,
+  "nome_original": "Polígono 251",
+  "numero": 7,
+  "zona": 6
+ },
+ "38.69337,-9.36159": {
+  "lat": 38.693366,
+  "lon": -9.361595,
+  "nome_original": "Território nº8.04",
+  "numero": 4,
+  "zona": 8
+ },
+ "38.69343,-9.35901": {
+  "lat": 38.693426,
+  "lon": -9.35901,
+  "nome_original": "Território nº9.09",
+  "numero": 9,
+  "zona": 9
+ },
+ "38.69345,-9.34299": {
+  "lat": 38.693451,
+  "lon": -9.342986,
+  "nome_original": "Polígono 134",
+  "numero": 28,
+  "zona": 4
+ },
+ "38.69351,-9.35369": {
+  "lat": 38.693511,
+  "lon": -9.353693,
+  "nome_original": "Território nº8.16",
+  "numero": 16,
+  "zona": 8
+ },
+ "38.69353,-9.34853": {
+  "lat": 38.69353,
+  "lon": -9.348528,
+  "nome_original": "Polígono 240",
+  "numero": 6,
+  "zona": 6
+ },
+ "38.69354,-9.34766": {
+  "lat": 38.693537,
+  "lon": -9.347659,
+  "nome_original": "Polígono 215",
+  "numero": 4,
+  "zona": 6
+ },
+ "38.69356,-9.35026": {
+  "lat": 38.693556,
+  "lon": -9.350263,
+  "nome_original": "nº19",
+  "numero": 10,
+  "zona": 6
+ },
+ "38.69358,-9.35697": {
+  "lat": 38.693575,
+  "lon": -9.356973,
+  "nome_original": "Território nº8.13",
+  "numero": 13,
+  "zona": 8
+ },
+ "38.69360,-9.34245": {
+  "lat": 38.693603,
+  "lon": -9.342445,
+  "nome_original": "Polígono 101",
+  "numero": 27,
+  "zona": 4
+ },
+ "38.69360,-9.35092": {
+  "lat": 38.693598,
+  "lon": -9.350919,
+  "nome_original": "fgdad",
+  "numero": 11,
+  "zona": 6
+ },
+ "38.69362,-9.34950": {
+  "lat": 38.693617,
+  "lon": -9.349496,
+  "nome_original": "Polígono 235",
+  "numero": 8,
+  "zona": 6
+ },
+ "38.69366,-9.34375": {
+  "lat": 38.69366,
+  "lon": -9.343755,
+  "nome_original": "Polígono 133",
+  "numero": 30,
+  "zona": 4
+ },
+ "38.69366,-9.35869": {
+  "lat": 38.69366,
+  "lon": -9.358694,
+  "nome_original": "Território nº8.12",
+  "numero": 12,
+  "zona": 8
+ },
+ "38.69379,-9.35532": {
+  "lat": 38.693793,
+  "lon": -9.355316,
+  "nome_original": "Território nº8.19",
+  "numero": 19,
+  "zona": 8
+ },
+ "38.69380,-9.34324": {
+  "lat": 38.693801,
+  "lon": -9.343245,
+  "nome_original": "Polígono 129",
+  "numero": 29,
+  "zona": 4
+ },
+ "38.69383,-9.35433": {
+  "lat": 38.69383,
+  "lon": -9.354332,
+  "nome_original": "Território nº8.18",
+  "numero": 18,
+  "zona": 8
+ },
+ "38.69384,-9.35848": {
+  "lat": 38.693837,
+  "lon": -9.358481,
+  "nome_original": "Território nº8.11",
+  "numero": 11,
+  "zona": 8
+ },
+ "38.69385,-9.34452": {
+  "lat": 38.693846,
+  "lon": -9.344516,
+  "nome_original": "Polígono 104",
+  "numero": 31,
+  "zona": 4
+ },
+ "38.69390,-9.35794": {
+  "lat": 38.693903,
+  "lon": -9.357936,
+  "nome_original": "Território nº8.10",
+  "numero": 10,
+  "zona": 8
+ },
+ "38.69391,-9.34947": {
+  "lat": 38.693906,
+  "lon": -9.349468,
+  "nome_original": "Polígono 224",
+  "numero": 9,
+  "zona": 6
+ },
+ "38.69398,-9.34809": {
+  "lat": 38.693982,
+  "lon": -9.348086,
+  "nome_original": "Polígono 801",
+  "numero": 5,
+  "zona": 6
+ },
+ "38.69405,-9.35233": {
+  "lat": 38.694045,
+  "lon": -9.352334,
+  "nome_original": "Polígono 276",
+  "numero": 15,
+  "zona": 6
+ },
+ "38.69407,-9.34561": {
+  "lat": 38.694067,
+  "lon": -9.345612,
+  "nome_original": "Polígono 103",
+  "numero": 14,
+  "zona": 4
+ },
+ "38.69410,-9.34258": {
+  "lat": 38.694099,
+  "lon": -9.342582,
+  "nome_original": "Polígono 98",
+  "numero": 25,
+  "zona": 4
+ },
+ "38.69411,-9.35124": {
+  "lat": 38.694114,
+  "lon": -9.351241,
+  "nome_original": "Polígono 231",
+  "numero": 13,
+  "zona": 6
+ },
+ "38.69419,-9.35063": {
+  "lat": 38.694192,
+  "lon": -9.350635,
+  "nome_original": "Polígono 232",
+  "numero": 12,
+  "zona": 6
+ },
+ "38.69419,-9.35468": {
+  "lat": 38.694191,
+  "lon": -9.354684,
+  "nome_original": "Território nº8.24",
+  "numero": 24,
+  "zona": 8
+ },
+ "38.69431,-9.35219": {
+  "lat": 38.694308,
+  "lon": -9.352192,
+  "nome_original": "Polígono 282",
+  "numero": 16,
+  "zona": 6
+ },
+ "38.69434,-9.34206": {
+  "lat": 38.694341,
+  "lon": -9.342065,
+  "nome_original": "Polígono 95",
+  "numero": 26,
+  "zona": 4
+ },
+ "38.69434,-9.34623": {
+  "lat": 38.694336,
+  "lon": -9.346232,
+  "nome_original": "Polígono 112",
+  "numero": 13,
+  "zona": 4
+ },
+ "38.69435,-9.35135": {
+  "lat": 38.694354,
+  "lon": -9.351351,
+  "nome_original": "Polígono 229",
+  "numero": 14,
+  "zona": 6
+ },
+ "38.69436,-9.34310": {
+  "lat": 38.69436,
+  "lon": -9.343102,
+  "nome_original": "Polígono 99",
+  "numero": 24,
+  "zona": 4
+ },
+ "38.69436,-9.35949": {
+  "lat": 38.694357,
+  "lon": -9.359489,
+  "nome_original": "Território nº8.08",
+  "numero": 8,
+  "zona": 8
+ },
+ "38.69441,-9.35642": {
+  "lat": 38.694408,
+  "lon": -9.356421,
+  "nome_original": "Território nº8.20",
+  "numero": 20,
+  "zona": 8
+ },
+ "38.69448,-9.34691": {
+  "lat": 38.694476,
+  "lon": -9.346914,
+  "nome_original": "Polígono 115",
+  "numero": 12,
+  "zona": 4
+ },
+ "38.69450,-9.35406": {
+  "lat": 38.694499,
+  "lon": -9.354061,
+  "nome_original": "Território nº8.17",
+  "numero": 17,
+  "zona": 8
+ },
+ "38.69452,-9.34840": {
+  "lat": 38.694515,
+  "lon": -9.348402,
+  "nome_original": "Polígono 209",
+  "numero": 39,
+  "zona": 6
+ },
+ "38.69460,-9.34451": {
+  "lat": 38.6946,
+  "lon": -9.344505,
+  "nome_original": "Polígono 773",
+  "numero": 20,
+  "zona": 4
+ },
+ "38.69462,-9.36035": {
+  "lat": 38.694625,
+  "lon": -9.360355,
+  "nome_original": "Território nº8.06",
+  "numero": 6,
+  "zona": 8
+ },
+ "38.69464,-9.35992": {
+  "lat": 38.694639,
+  "lon": -9.359917,
+  "nome_original": "Território nº8.07",
+  "numero": 7,
+  "zona": 8
+ },
+ "38.69469,-9.34908": {
+  "lat": 38.694693,
+  "lon": -9.349076,
+  "nome_original": "Polígono 201",
+  "numero": 37,
+  "zona": 6
+ },
+ "38.69470,-9.35286": {
+  "lat": 38.694695,
+  "lon": -9.352859,
+  "nome_original": "Polígono 1224",
+  "numero": 18,
+  "zona": 6
+ },
+ "38.69471,-9.34750": {
+  "lat": 38.694713,
+  "lon": -9.3475,
+  "nome_original": "Polígono 116",
+  "numero": 11,
+  "zona": 4
+ },
+ "38.69478,-9.34305": {
+  "lat": 38.69478,
+  "lon": -9.343048,
+  "nome_original": "Polígono 97",
+  "numero": 23,
+  "zona": 4
+ },
+ "38.69478,-9.35243": {
+  "lat": 38.694781,
+  "lon": -9.352432,
+  "nome_original": "Polígono 272",
+  "numero": 17,
+  "zona": 6
+ },
+ "38.69483,-9.34869": {
+  "lat": 38.694833,
+  "lon": -9.348687,
+  "nome_original": "Polígono 200",
+  "numero": 38,
+  "zona": 6
+ },
+ "38.69488,-9.35465": {
+  "lat": 38.694882,
+  "lon": -9.354646,
+  "nome_original": "Território nº8.23",
+  "numero": 23,
+  "zona": 8
+ },
+ "38.69490,-9.34565": {
+  "lat": 38.694903,
+  "lon": -9.345648,
+  "nome_original": "Polígono 111",
+  "numero": 15,
+  "zona": 4
+ },
+ "38.69493,-9.34612": {
+  "lat": 38.694934,
+  "lon": -9.34612,
+  "nome_original": "Polígono 113",
+  "numero": 16,
+  "zona": 4
+ },
+ "38.69496,-9.34819": {
+  "lat": 38.694962,
+  "lon": -9.348188,
+  "nome_original": "Polígono 199",
+  "numero": 40,
+  "zona": 6
+ },
+ "38.69496,-9.36133": {
+  "lat": 38.694959,
+  "lon": -9.361328,
+  "nome_original": "Território nº8.05",
+  "numero": 5,
+  "zona": 8
+ },
+ "38.69502,-9.34700": {
+  "lat": 38.695025,
+  "lon": -9.347005,
+  "nome_original": "Polígono 118",
+  "numero": 10,
+  "zona": 4
+ },
+ "38.69503,-9.35497": {
+  "lat": 38.69503,
+  "lon": -9.354975,
+  "nome_original": "Território nº8.22",
+  "numero": 22,
+  "zona": 8
+ },
+ "38.69504,-9.34408": {
+  "lat": 38.695045,
+  "lon": -9.344081,
+  "nome_original": "Polígono 102",
+  "numero": 21,
+  "zona": 4
+ },
+ "38.69512,-9.34912": {
+  "lat": 38.695116,
+  "lon": -9.349116,
+  "nome_original": "Polígono 194",
+  "numero": 36,
+  "zona": 6
+ },
+ "38.69522,-9.34273": {
+  "lat": 38.695221,
+  "lon": -9.342731,
+  "nome_original": "Polígono 100",
+  "numero": 22,
+  "zona": 4
+ },
+ "38.69526,-9.34851": {
+  "lat": 38.69526,
+  "lon": -9.348507,
+  "nome_original": "Polígono 196",
+  "numero": 41,
+  "zona": 6
+ },
+ "38.69527,-9.34633": {
+  "lat": 38.695272,
+  "lon": -9.346334,
+  "nome_original": "Polígono 119",
+  "numero": 17,
+  "zona": 4
+ },
+ "38.69528,-9.34785": {
+  "lat": 38.695279,
+  "lon": -9.34785,
+  "nome_original": "Polígono 117",
+  "numero": 7,
+  "zona": 4
+ },
+ "38.69533,-9.34565": {
+  "lat": 38.69533,
+  "lon": -9.345646,
+  "nome_original": "Polígono 110",
+  "numero": 19,
+  "zona": 4
+ },
+ "38.69537,-9.35106": {
+  "lat": 38.695371,
+  "lon": -9.35106,
+  "nome_original": "COMERCIAL",
+  "numero": 29,
+  "zona": 6
+ },
+ "38.69540,-9.35805": {
+  "lat": 38.695399,
+  "lon": -9.35805,
+  "nome_original": "Território nº8.09",
+  "numero": 9,
+  "zona": 8
+ },
+ "38.69541,-9.35325": {
+  "lat": 38.695408,
+  "lon": -9.353252,
+  "nome_original": "Polígono 1194",
+  "numero": 19,
+  "zona": 6
+ },
+ "38.69551,-9.34947": {
+  "lat": 38.695508,
+  "lon": -9.349473,
+  "nome_original": "Polígono 187",
+  "numero": 35,
+  "zona": 6
+ },
+ "38.69552,-9.34696": {
+  "lat": 38.695517,
+  "lon": -9.346956,
+  "nome_original": "Polígono 120",
+  "numero": 9,
+  "zona": 4
+ },
+ "38.69565,-9.34909": {
+  "lat": 38.69565,
+  "lon": -9.349095,
+  "nome_original": "Polígono 188",
+  "numero": 34,
+  "zona": 6
+ },
+ "38.69568,-9.34856": {
+  "lat": 38.695678,
+  "lon": -9.348564,
+  "nome_original": "Polígono 189",
+  "numero": 42,
+  "zona": 6
+ },
+ "38.69573,-9.34803": {
+  "lat": 38.695726,
+  "lon": -9.348032,
+  "nome_original": "Polígono 120",
+  "numero": 6,
+  "zona": 4
+ },
+ "38.69580,-9.34715": {
+  "lat": 38.695802,
+  "lon": -9.347155,
+  "nome_original": "Polígono 128",
+  "numero": 8,
+  "zona": 4
+ },
+ "38.69584,-9.34609": {
+  "lat": 38.695843,
+  "lon": -9.346085,
+  "nome_original": "Polígono 109",
+  "numero": 18,
+  "zona": 4
+ },
+ "38.69585,-9.35354": {
+  "lat": 38.695849,
+  "lon": -9.353541,
+  "nome_original": "Polígono 1195",
+  "numero": 20,
+  "zona": 6
+ },
+ "38.69588,-9.34026": {
+  "lat": 38.695879,
+  "lon": -9.340265,
+  "nome_original": "Polígono 89",
+  "numero": 1,
+  "zona": 2
+ },
+ "38.69590,-9.34966": {
+  "lat": 38.695903,
+  "lon": -9.349657,
+  "nome_original": "Polígono 184",
+  "numero": 32,
+  "zona": 6
+ },
+ "38.69593,-9.34929": {
+  "lat": 38.695931,
+  "lon": -9.349287,
+  "nome_original": "Polígono 185",
+  "numero": 33,
+  "zona": 6
+ },
+ "38.69600,-9.35313": {
+  "lat": 38.695996,
+  "lon": -9.353126,
+  "nome_original": "Polígono 1191",
+  "numero": 21,
+  "zona": 6
+ },
+ "38.69600,-9.35659": {
+  "lat": 38.695999,
+  "lon": -9.35659,
+  "nome_original": "Território nº8.21",
+  "numero": 21,
+  "zona": 8
+ },
+ "38.69607,-9.34886": {
+  "lat": 38.69607,
+  "lon": -9.348859,
+  "nome_original": "Polígono 186",
+  "numero": 43,
+  "zona": 6
+ },
+ "38.69610,-9.34660": {
+  "lat": 38.696103,
+  "lon": -9.346597,
+  "nome_original": "Polígono 123",
+  "numero": 4,
+  "zona": 4
+ },
+ "38.69615,-9.34738": {
+  "lat": 38.696154,
+  "lon": -9.347382,
+  "nome_original": "Polígono 127",
+  "numero": 5,
+  "zona": 4
+ },
+ "38.69620,-9.35033": {
+  "lat": 38.696203,
+  "lon": -9.350327,
+  "nome_original": "Polígono 182",
+  "numero": 30,
+  "zona": 6
+ },
+ "38.69624,-9.34990": {
+  "lat": 38.69624,
+  "lon": -9.349902,
+  "nome_original": "Polígono 183",
+  "numero": 31,
+  "zona": 6
+ },
+ "38.69633,-9.35343": {
+  "lat": 38.696327,
+  "lon": -9.353432,
+  "nome_original": "Polígono 1198",
+  "numero": 22,
+  "zona": 6
+ },
+ "38.69646,-9.34912": {
+  "lat": 38.696464,
+  "lon": -9.349122,
+  "nome_original": "Polígono 182",
+  "numero": 44,
+  "zona": 6
+ },
+ "38.69648,-9.34210": {
+  "lat": 38.696482,
+  "lon": -9.342096,
+  "nome_original": "Polígono 92",
+  "numero": 2,
+  "zona": 2
+ },
+ "38.69648,-9.34824": {
+  "lat": 38.696479,
+  "lon": -9.34824,
+  "nome_original": "Polígono 119",
+  "numero": 1,
+  "zona": 4
+ },
+ "38.69654,-9.34694": {
+  "lat": 38.696538,
+  "lon": -9.346941,
+  "nome_original": "Polígono 122",
+  "numero": 3,
+  "zona": 4
+ },
+ "38.69664,-9.35060": {
+  "lat": 38.696636,
+  "lon": -9.350602,
+  "nome_original": "Polígono 181",
+  "numero": 48,
+  "zona": 6
+ },
+ "38.69670,-9.34974": {
+  "lat": 38.696699,
+  "lon": -9.349736,
+  "nome_original": "Polígono 175",
+  "numero": 46,
+  "zona": 6
+ },
+ "38.69673,-9.34776": {
+  "lat": 38.696728,
+  "lon": -9.347763,
+  "nome_original": "Polígono 121",
+  "numero": 2,
+  "zona": 4
+ },
+ "38.69674,-9.35000": {
+  "lat": 38.696739,
+  "lon": -9.350003,
+  "nome_original": "Polígono 176",
+  "numero": 47,
+  "zona": 6
+ },
+ "38.69689,-9.34904": {
+  "lat": 38.696885,
+  "lon": -9.34904,
+  "nome_original": "Polígono 174",
+  "numero": 45,
+  "zona": 6
+ },
+ "38.69690,-9.35320": {
+  "lat": 38.696897,
+  "lon": -9.353201,
+  "nome_original": "Polígono 1202",
+  "numero": 23,
+  "zona": 6
+ },
+ "38.69708,-9.35068": {
+  "lat": 38.697081,
+  "lon": -9.350676,
+  "nome_original": "Polígono 158",
+  "numero": 49,
+  "zona": 6
+ },
+ "38.69714,-9.34187": {
+  "lat": 38.697139,
+  "lon": -9.341868,
+  "nome_original": "Polígono 97",
+  "numero": 3,
+  "zona": 2
+ },
+ "38.69714,-9.34319": {
+  "lat": 38.697138,
+  "lon": -9.343193,
+  "nome_original": "Polígono 843",
+  "numero": 4,
+  "zona": 2
+ },
+ "38.69720,-9.34746": {
+  "lat": 38.697204,
+  "lon": -9.347463,
+  "nome_original": "Polígono 124",
+  "numero": 30,
+  "zona": 3
+ },
+ "38.69738,-9.35077": {
+  "lat": 38.697379,
+  "lon": -9.35077,
+  "nome_original": "Polígono 159",
+  "numero": 50,
+  "zona": 6
+ },
+ "38.69739,-9.35285": {
+  "lat": 38.697387,
+  "lon": -9.352854,
+  "nome_original": "Polígono 1217",
+  "numero": 24,
+  "zona": 6
+ },
+ "38.69744,-9.35179": {
+  "lat": 38.697437,
+  "lon": -9.351788,
+  "nome_original": "Polígono 1209",
+  "numero": 28,
+  "zona": 6
+ },
+ "38.69747,-9.35836": {
+  "lat": 38.69747,
+  "lon": -9.358358,
+  "nome_original": "Território nº8.01",
+  "numero": 1,
+  "zona": 8
+ },
+ "38.69753,-9.34878": {
+  "lat": 38.69753,
+  "lon": -9.348785,
+  "nome_original": "Polígono 129",
+  "numero": 57,
+  "zona": 6
+ },
+ "38.69765,-9.35291": {
+  "lat": 38.697653,
+  "lon": -9.352909,
+  "nome_original": "Polígono 1216",
+  "numero": 25,
+  "zona": 6
+ },
+ "38.69768,-9.35096": {
+  "lat": 38.697677,
+  "lon": -9.350958,
+  "nome_original": "Polígono 157",
+  "numero": 51,
+  "zona": 6
+ },
+ "38.69770,-9.36076": {
+  "lat": 38.697698,
+  "lon": -9.360762,
+  "nome_original": "Território nº8.03",
+  "numero": 3,
+  "zona": 8
+ },
+ "38.69779,-9.34973": {
+  "lat": 38.697786,
+  "lon": -9.349733,
+  "nome_original": "Polígono 173",
+  "numero": 56,
+  "zona": 6
+ },
+ "38.69788,-9.35186": {
+  "lat": 38.69788,
+  "lon": -9.351857,
+  "nome_original": "Polígono 1205",
+  "numero": 27,
+  "zona": 6
+ },
+ "38.69791,-9.34623": {
+  "lat": 38.697909,
+  "lon": -9.346233,
+  "nome_original": "Polígono 85",
+  "numero": 29,
+  "zona": 3
+ },
+ "38.69792,-9.35232": {
+  "lat": 38.697921,
+  "lon": -9.352322,
+  "nome_original": "Polígono 1207",
+  "numero": 26,
+  "zona": 6
+ },
+ "38.69806,-9.35157": {
+  "lat": 38.698062,
+  "lon": -9.351574,
+  "nome_original": "Polígono 142",
+  "numero": 52,
+  "zona": 6
+ },
+ "38.69810,-9.35106": {
+  "lat": 38.698102,
+  "lon": -9.351058,
+  "nome_original": "Polígono 144",
+  "numero": 53,
+  "zona": 6
+ },
+ "38.69839,-9.35108": {
+  "lat": 38.698387,
+  "lon": -9.351084,
+  "nome_original": "Polígono 143",
+  "numero": 54,
+  "zona": 6
+ },
+ "38.69841,-9.35956": {
+  "lat": 38.698406,
+  "lon": -9.359561,
+  "nome_original": "Território nº8.02",
+  "numero": 2,
+  "zona": 8
+ },
+ "38.69843,-9.35037": {
+  "lat": 38.698433,
+  "lon": -9.350374,
+  "nome_original": "Polígono 139",
+  "numero": 55,
+  "zona": 6
+ },
+ "38.69845,-9.34920": {
+  "lat": 38.698455,
+  "lon": -9.349204,
+  "nome_original": "Polígono 125",
+  "numero": 58,
+  "zona": 6
+ },
+ "38.69858,-9.34506": {
+  "lat": 38.69858,
+  "lon": -9.345055,
+  "nome_original": "Polígono 79",
+  "numero": 28,
+  "zona": 3
+ },
+ "38.69875,-9.34682": {
+  "lat": 38.698751,
+  "lon": -9.346823,
+  "nome_original": "Polígono 78",
+  "numero": 18,
+  "zona": 3
+ },
+ "38.69912,-9.34718": {
+  "lat": 38.699117,
+  "lon": -9.347185,
+  "nome_original": "Território nº51",
+  "numero": 17,
+  "zona": 3
+ },
+ "38.69913,-9.34798": {
+  "lat": 38.69913,
+  "lon": -9.347981,
+  "nome_original": "Território nº 50",
+  "numero": 16,
+  "zona": 3
+ },
+ "38.69924,-9.34420": {
+  "lat": 38.699236,
+  "lon": -9.344202,
+  "nome_original": "Polígono 75",
+  "numero": 25,
+  "zona": 3
+ },
+ "38.69931,-9.34466": {
+  "lat": 38.699309,
+  "lon": -9.344658,
+  "nome_original": "Polígono 74",
+  "numero": 26,
+  "zona": 3
+ },
+ "38.69943,-9.34841": {
+  "lat": 38.699429,
+  "lon": -9.348413,
+  "nome_original": "Território nº48",
+  "numero": 15,
+  "zona": 3
+ },
+ "38.69947,-9.34503": {
+  "lat": 38.69947,
+  "lon": -9.345029,
+  "nome_original": "Polígono 80",
+  "numero": 27,
+  "zona": 3
+ },
+ "38.69961,-9.34587": {
+  "lat": 38.699606,
+  "lon": -9.34587,
+  "nome_original": "Polígono 79",
+  "numero": 19,
+  "zona": 3
+ },
+ "38.69964,-9.34381": {
+  "lat": 38.699644,
+  "lon": -9.343815,
+  "nome_original": "Polígono 78",
+  "numero": 24,
+  "zona": 3
+ },
+ "38.69971,-9.34460": {
+  "lat": 38.699711,
+  "lon": -9.344595,
+  "nome_original": "Polígono 73",
+  "numero": 23,
+  "zona": 3
+ },
+ "38.69982,-9.34249": {
+  "lat": 38.699816,
+  "lon": -9.34249,
+  "nome_original": "Território Nº 77",
+  "numero": 5,
+  "zona": 2
+ },
+ "38.70008,-9.34900": {
+  "lat": 38.700079,
+  "lon": -9.348995,
+  "nome_original": "Território nº47",
+  "numero": 14,
+  "zona": 3
+ },
+ "38.70028,-9.34473": {
+  "lat": 38.700284,
+  "lon": -9.344726,
+  "nome_original": "Polígono 72",
+  "numero": 22,
+  "zona": 3
+ },
+ "38.70067,-9.34541": {
+  "lat": 38.700669,
+  "lon": -9.345413,
+  "nome_original": "Polígono 68",
+  "numero": 20,
+  "zona": 3
+ },
+ "38.70074,-9.34682": {
+  "lat": 38.700745,
+  "lon": -9.34682,
+  "nome_original": "Território nº49",
+  "numero": 10,
+  "zona": 3
+ },
+ "38.70077,-9.34951": {
+  "lat": 38.700772,
+  "lon": -9.349512,
+  "nome_original": "Território nº45",
+  "numero": 13,
+  "zona": 3
+ },
+ "38.70081,-9.34589": {
+  "lat": 38.700815,
+  "lon": -9.345892,
+  "nome_original": "Polígono 67",
+  "numero": 9,
+  "zona": 3
+ },
+ "38.70082,-9.34472": {
+  "lat": 38.700818,
+  "lon": -9.344716,
+  "nome_original": "Polígono 70",
+  "numero": 21,
+  "zona": 3
+ },
+ "38.70101,-9.34946": {
+  "lat": 38.701008,
+  "lon": -9.349464,
+  "nome_original": "Território nº42",
+  "numero": 12,
+  "zona": 3
+ },
+ "38.70108,-9.34240": {
+  "lat": 38.701082,
+  "lon": -9.342402,
+  "nome_original": "Território nº82",
+  "numero": 6,
+  "zona": 2
+ },
+ "38.70120,-9.34902": {
+  "lat": 38.701202,
+  "lon": -9.34902,
+  "nome_original": "Território nº43",
+  "numero": 11,
+  "zona": 3
+ },
+ "38.70149,-9.34207": {
+  "lat": 38.701486,
+  "lon": -9.342067,
+  "nome_original": "Polígono 81",
+  "numero": 7,
+  "zona": 2
+ },
+ "38.70163,-9.34179": {
+  "lat": 38.701629,
+  "lon": -9.341793,
+  "nome_original": "Polígono 95",
+  "numero": 8,
+  "zona": 2
+ },
+ "38.70168,-9.34632": {
+  "lat": 38.701679,
+  "lon": -9.346322,
+  "nome_original": "Território nº30",
+  "numero": 26,
+  "zona": 1
+ },
+ "38.70171,-9.34532": {
+  "lat": 38.701711,
+  "lon": -9.345322,
+  "nome_original": "Polígono 629",
+  "numero": 8,
+  "zona": 3
+ },
+ "38.70185,-9.35040": {
+  "lat": 38.701852,
+  "lon": -9.350398,
+  "nome_original": "T11",
+  "numero": 16,
+  "zona": 1
+ },
+ "38.70189,-9.34673": {
+  "lat": 38.701892,
+  "lon": -9.346733,
+  "nome_original": "Território nº29",
+  "numero": 25,
+  "zona": 1
+ },
+ "38.70192,-9.34738": {
+  "lat": 38.70192,
+  "lon": -9.34738,
+  "nome_original": "Território nº28",
+  "numero": 24,
+  "zona": 1
+ },
+ "38.70217,-9.34675": {
+  "lat": 38.702173,
+  "lon": -9.346749,
+  "nome_original": "Território nº32",
+  "numero": 23,
+  "zona": 1
+ },
+ "38.70222,-9.34626": {
+  "lat": 38.702221,
+  "lon": -9.346256,
+  "nome_original": "Território nº31",
+  "numero": 22,
+  "zona": 1
+ },
+ "38.70223,-9.34985": {
+  "lat": 38.702226,
+  "lon": -9.349848,
+  "nome_original": "T12",
+  "numero": 17,
+  "zona": 1
+ },
+ "38.70248,-9.34523": {
+  "lat": 38.702483,
+  "lon": -9.345231,
+  "nome_original": "40",
+  "numero": 7,
+  "zona": 3
+ },
+ "38.70255,-9.34654": {
+  "lat": 38.702547,
+  "lon": -9.346537,
+  "nome_original": "Território nº33",
+  "numero": 21,
+  "zona": 1
+ },
+ "38.70262,-9.35112": {
+  "lat": 38.702618,
+  "lon": -9.351117,
+  "nome_original": "T10",
+  "numero": 15,
+  "zona": 1
+ },
+ "38.70268,-9.34309": {
+  "lat": 38.702679,
+  "lon": -9.343093,
+  "nome_original": "Território nº84",
+  "numero": 9,
+  "zona": 2
+ },
+ "38.70292,-9.34370": {
+  "lat": 38.702922,
+  "lon": -9.343703,
+  "nome_original": "41",
+  "numero": 10,
+  "zona": 2
+ },
+ "38.70315,-9.34622": {
+  "lat": 38.703154,
+  "lon": -9.346224,
+  "nome_original": "Território nº34",
+  "numero": 20,
+  "zona": 1
+ },
+ "38.70352,-9.35140": {
+  "lat": 38.703519,
+  "lon": -9.351396,
+  "nome_original": "T9",
+  "numero": 14,
+  "zona": 1
+ },
+ "38.70362,-9.34743": {
+  "lat": 38.703618,
+  "lon": -9.34743,
+  "nome_original": "T13",
+  "numero": 19,
+  "zona": 1
+ },
+ "38.70365,-9.34432": {
+  "lat": 38.703654,
+  "lon": -9.34432,
+  "nome_original": "Território nº38",
+  "numero": 4,
+  "zona": 3
+ },
+ "38.70377,-9.34551": {
+  "lat": 38.703767,
+  "lon": -9.345507,
+  "nome_original": "Território nº35",
+  "numero": 6,
+  "zona": 3
+ },
+ "38.70384,-9.35203": {
+  "lat": 38.703839,
+  "lon": -9.352027,
+  "nome_original": "T8",
+  "numero": 13,
+  "zona": 1
+ },
+ "38.70393,-9.34464": {
+  "lat": 38.703927,
+  "lon": -9.344645,
+  "nome_original": "Território nº39",
+  "numero": 5,
+  "zona": 3
+ },
+ "38.70405,-9.34770": {
+  "lat": 38.704054,
+  "lon": -9.347698,
+  "nome_original": "Território nº22",
+  "numero": 18,
+  "zona": 1
+ },
+ "38.70415,-9.34404": {
+  "lat": 38.70415,
+  "lon": -9.344042,
+  "nome_original": "Território nº37",
+  "numero": 3,
+  "zona": 3
+ },
+ "38.70421,-9.34669": {
+  "lat": 38.704212,
+  "lon": -9.346692,
+  "nome_original": "Território nº21",
+  "numero": 5,
+  "zona": 1
+ },
+ "38.70453,-9.34486": {
+  "lat": 38.704532,
+  "lon": -9.344864,
+  "nome_original": "Território nº36",
+  "numero": 2,
+  "zona": 3
+ },
+ "38.70463,-9.34737": {
+  "lat": 38.704627,
+  "lon": -9.347368,
+  "nome_original": "Território nº15",
+  "numero": 6,
+  "zona": 1
+ },
+ "38.70465,-9.34937": {
+  "lat": 38.70465,
+  "lon": -9.349372,
+  "nome_original": "T5",
+  "numero": 10,
+  "zona": 1
+ },
+ "38.70467,-9.35086": {
+  "lat": 38.704665,
+  "lon": -9.350864,
+  "nome_original": "T7",
+  "numero": 11,
+  "zona": 1
+ },
+ "38.70468,-9.34516": {
+  "lat": 38.704682,
+  "lon": -9.345162,
+  "nome_original": "Território nº20",
+  "numero": 1,
+  "zona": 3
+ },
+ "38.70487,-9.35150": {
+  "lat": 38.704871,
+  "lon": -9.351496,
+  "nome_original": "T6",
+  "numero": 12,
+  "zona": 1
+ },
+ "38.70491,-9.34793": {
+  "lat": 38.704905,
+  "lon": -9.347927,
+  "nome_original": "Território nº14",
+  "numero": 7,
+  "zona": 1
+ },
+ "38.70514,-9.34588": {
+  "lat": 38.705142,
+  "lon": -9.345877,
+  "nome_original": "T15",
+  "numero": 4,
+  "zona": 1
+ },
+ "38.70522,-9.34780": {
+  "lat": 38.70522,
+  "lon": -9.347797,
+  "nome_original": "T4",
+  "numero": 8,
+  "zona": 1
+ },
+ "38.70561,-9.34601": {
+  "lat": 38.705612,
+  "lon": -9.346011,
+  "nome_original": "T14",
+  "numero": 3,
+  "zona": 1
+ },
+ "38.70580,-9.34588": {
+  "lat": 38.705803,
+  "lon": -9.34588,
+  "nome_original": "T2",
+  "numero": 2,
+  "zona": 1
+ },
+ "38.70591,-9.34775": {
+  "lat": 38.705907,
+  "lon": -9.347751,
+  "nome_original": "T3",
+  "numero": 9,
+  "zona": 1
+ },
+ "38.70672,-9.34580": {
+  "lat": 38.706715,
+  "lon": -9.345798,
+  "nome_original": "T1",
+  "numero": 1,
+  "zona": 1
+ }
+}
