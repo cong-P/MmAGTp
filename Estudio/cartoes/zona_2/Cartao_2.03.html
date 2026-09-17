@@ -204,7 +204,7 @@
   }
 
   .etiqueta.porta .txt {
-    font-size: 8.5pt;
+    font-size: 10.5pt;
     background-color: #fff;
     border: 0.35mm solid #000;
     border-radius: 0.6mm;
@@ -368,6 +368,36 @@
     margin-top: 4mm;
   }
 
+  /* Em telemóvel não há espaço (nem sentido) para mexer no mapa a dedo —
+     fica só a parte de texto (localizações, referência, fogos). O mapa e o
+     verso continuam gravados tal como estavam: isto é só visual, ninguém
+     perde o que lá está ao editar a partir do telemóvel. `screen`: uma
+     impressão feita a partir de um telemóvel continua a sair inteira,
+     com o mapa — o "ecrã estreito" não existe no papel. */
+  @media screen and (max-width: 800px) {
+    html, body { height: 100%; overflow: hidden; }
+    body {
+      margin: 0; background-color: #fff;
+      display: flex; justify-content: center; align-items: flex-start;
+    }
+    /* `overflow-x: hidden` no cartão é a rede de segurança: mesmo que uma
+       palavra sem espaços (uma referência colada sem quebras, um nome de
+       rua comprido) não coubesse à largura, isto corta-a em vez de abrir
+       scroll para o lado — nunca deve haver barra horizontal aqui. */
+    .card { width: 100%; height: auto; overflow-x: hidden; transform-origin: top center; }
+    .card.verso { display: none; }
+    .map-container { display: none; }
+    .sidebar { width: 100%; border-right: none; }
+    .locations { overflow: visible; }
+    /* Sem isto, uma palavra comprida numa rua/referência não encolhia (o
+       `flex: 1 1 auto` da coluna tem `min-width: auto` por defeito) e
+       empurrava o cartão para além da largura do ecrã. */
+    .ruas li { min-width: 0; }
+    .ruas .nome, .reference .caixa, .header {
+      min-width: 0; overflow-wrap: break-word; word-break: break-word;
+    }
+  }
+
   @media print {
     /* Sem isto o Chrome imprime os fundos (cinza, amarelo, azul) em branco */
     * {
@@ -410,6 +440,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Estrada da Rebelva</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua()">+ Rua</button>
       </div>
@@ -423,13 +455,31 @@
       <img class="map-image" src="mapa_2.03.jpg" alt="Mapa do território Território 2.03" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 49.565%; top: 90.274%; --ang: 0.0deg" data-ax="49.565" data-ay="90.274"><span class="txt" contenteditable="true" spellcheck="false">nº667</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 49.565%; top: 90.274%; --ang: 0.0deg" data-ax="49.565" data-ay="90.274"><span class="txt" style="font-size: 13.3pt" contenteditable="true" spellcheck="false">nº667</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 57.998%; top: 11.76%; --ang: 0.0deg" data-ax="57.998" data-ay="11.76"><span class="txt" contenteditable="true" spellcheck="false">nº893</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 57.998%; top: 11.76%; --ang: 0.0deg" data-ax="57.998" data-ay="11.76"><span class="txt" style="font-size: 13.3pt" contenteditable="true" spellcheck="false">nº893</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 50.435%; top: 64.157%; --ang: 0.0deg" data-ax="50.435" data-ay="64.157"><span class="txt" contenteditable="true" spellcheck="false">Prédio grande em construção</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 50.435%; top: 65.553%; --ang: 0.0deg" data-ax="50.435" data-ay="64.157"><span class="txt" style="font-size: 13.3pt" contenteditable="true" spellcheck="false">Prédio grande em construção</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 44.784%; top: 75.873%; --ang: 0.0deg" data-ax="44.784" data-ay="75.873"><span class="txt" contenteditable="true" spellcheck="false">nº69</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 44.784%; top: 75.873%; --ang: 0.0deg" data-ax="44.784" data-ay="75.873"><span class="txt" style="font-size: 13.3pt" contenteditable="true" spellcheck="false">nº69</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 55.79%; top: 50.257%; --ang: -79.1deg" data-ax="55.79" data-ay="51.654"><span class="txt" contenteditable="true" spellcheck="false">Estr. da Rebelva</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 61.803%; top: 9.628%; --ang: -18.4deg" data-ax="61.803" data-ay="6.234"><span class="txt" contenteditable="true" spellcheck="false">Ciclovia Avenida Conde de<br>Riba D'ave - Carcavelos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 16.642%; top: 64.275%; --ang: -73.3deg" data-ax="27.108" data-ay="64.275"><span class="txt" contenteditable="true" spellcheck="false">R. Gago Coutinho</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 25.585%; top: 35.925%; --ang: 28.6deg" data-ax="23.051" data-ay="35.925"><span class="txt" contenteditable="true" spellcheck="false">R. Sarmento Beires</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 79.669%; top: 42.96%; --ang: -81.2deg" data-ax="79.669" data-ay="42.96"><span class="txt" contenteditable="true" spellcheck="false">Tv. de Viseu</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 81.831%; top: 88.643%; --ang: -20.5deg" data-ax="82.342" data-ay="88.643"><span class="txt" contenteditable="true" spellcheck="false">R. de Braga</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 6.133%; top: 54.066%; --ang: -75.3deg" data-ax="12.011" data-ay="54.066"><span class="txt" contenteditable="true" spellcheck="false">R. Sacadura Cabral</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 82.619%; top: 74.324%; --ang: -24.5deg" data-ax="84.429" data-ay="73.552"><span class="txt" contenteditable="true" spellcheck="false">R. de Setúbal</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 96.877%; top: 86.749%; --ang: -85.9deg" data-ax="94.556" data-ay="86.749"><span class="txt" contenteditable="true" spellcheck="false">R. de Lisboa</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
@@ -500,6 +550,20 @@
     }
   }
 
+  // Em ecrã pequeno o cartão passa a caber inteiro à vista, sem ter de
+  // arrastar para ler tudo — encolhe-se o que for preciso; para ver de perto
+  // o telemóvel já sabe fazer zoom. Corre depois de `ajustarLista()`, que é
+  // quem decide a altura final do texto.
+  function ajustarEcranPequeno() {
+    const card = document.querySelector('.card:not(.verso)');
+    if (!card) return;
+    if (window.innerWidth > 800) { card.style.transform = 'none'; return; }
+    card.style.transform = 'none';
+    const caixa = card.getBoundingClientRect();
+    const escala = Math.min(1, window.innerHeight / caixa.height, window.innerWidth / caixa.width);
+    card.style.transform = escala < 0.99 ? `scale(${escala})` : 'none';
+  }
+
   // --- Lista de ruas -------------------------------------------------------
   function novaRua() {
     const lista = document.querySelector('.ruas');
@@ -512,6 +576,7 @@
       '<button class="apagar-linha" title="Remover rua">&times;</button>';
     lista.appendChild(li);
     ajustarLista();
+    ajustarEcranPequeno();
     const nome = li.querySelector('.nome');
     nome.focus();
     document.getSelection().selectAllChildren(nome);
@@ -530,6 +595,7 @@
       linha.closest('li').remove();
       renumerar();
       ajustarLista();
+      ajustarEcranPequeno();
       return;
     }
     const etiqueta = ev.target.closest('.etiqueta .apagar');
@@ -632,12 +698,22 @@
     svg.innerHTML = linhas;
   }
 
-  window.addEventListener('load', function() { ajustarLista(); desenharChamadas(); });
-  window.addEventListener('beforeprint', ajustarLista);
+  window.addEventListener('load', function() { ajustarLista(); ajustarEcranPequeno(); desenharChamadas(); });
+  window.addEventListener('resize', ajustarEcranPequeno);
+  // A impressão é sempre a cheio (o "ecrã estreito" não existe no papel):
+  // tira-se a escala antes e repõe-se depois, para o telemóvel não ficar com
+  // o cartão encolhido se cancelar a impressão.
+  window.addEventListener('beforeprint', function() {
+    ajustarLista();
+    const card = document.querySelector('.card:not(.verso)');
+    if (card) card.style.transform = 'none';
+  });
+  window.addEventListener('afterprint', ajustarEcranPequeno);
   document.addEventListener('input', function(ev) {
     const nome = ev.target.closest('.ruas .nome');
     if (nome) nome.removeAttribute('data-completo');  // passou a ser o texto escrito
     ajustarLista();
+    ajustarEcranPequeno();
   });
 </script>
 </body>
