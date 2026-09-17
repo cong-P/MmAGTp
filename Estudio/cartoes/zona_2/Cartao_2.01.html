@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-PT"><head>
+<html lang="pt-PT">
+<head>
 <meta charset="UTF-8">
 <title>Território 2.01</title>
 <style>
@@ -367,36 +368,6 @@
     margin-top: 4mm;
   }
 
-  /* Em telemóvel não há espaço (nem sentido) para mexer no mapa a dedo —
-     fica só a parte de texto (localizações, referência, fogos). O mapa e o
-     verso continuam gravados tal como estavam: isto é só visual, ninguém
-     perde o que lá está ao editar a partir do telemóvel. `screen`: uma
-     impressão feita a partir de um telemóvel continua a sair inteira,
-     com o mapa — o "ecrã estreito" não existe no papel. */
-  @media screen and (max-width: 800px) {
-    html, body { height: 100%; overflow: hidden; }
-    body {
-      margin: 0; background-color: #fff;
-      display: flex; justify-content: center; align-items: flex-start;
-    }
-    /* `overflow-x: hidden` no cartão é a rede de segurança: mesmo que uma
-       palavra sem espaços (uma referência colada sem quebras, um nome de
-       rua comprido) não coubesse à largura, isto corta-a em vez de abrir
-       scroll para o lado — nunca deve haver barra horizontal aqui. */
-    .card { width: 100%; height: auto; overflow-x: hidden; transform-origin: top center; }
-    .card.verso { display: none; }
-    .map-container { display: none; }
-    .sidebar { width: 100%; border-right: none; }
-    .locations { overflow: visible; }
-    /* Sem isto, uma palavra comprida numa rua/referência não encolhia (o
-       `flex: 1 1 auto` da coluna tem `min-width: auto` por defeito) e
-       empurrava o cartão para além da largura do ecrã. */
-    .ruas li { min-width: 0; }
-    .ruas .nome, .reference .caixa, .header {
-      min-width: 0; overflow-wrap: break-word; word-break: break-word;
-    }
-  }
-
   @media print {
     /* Sem isto o Chrome imprime os fundos (cinza, amarelo, azul) em branco */
     * {
@@ -432,28 +403,28 @@
 </head>
 <body>
   <!-- Frente -->
-  <div class="card" style="break-after: page; margin-bottom: 10mm; transform: none;">
+  <div class="card" style="page-break-after: always; margin-bottom: 10mm;">
     <div class="sidebar">
       <div class="section header editable" contenteditable="true" spellcheck="false">Território 2.01</div>
       <div class="section locations">
         <span class="rotulo">Localizações:</span>
-        <ol class="ruas" style="font-size: 13.5pt;">
+        <ol class="ruas">
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Estrada da Rebelva</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Estrada da Rebelva</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Praceta da Alvorada</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta da Alvorada</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Brito Pais</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Brito Pais</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Feliciano Moreira</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Feliciano Moreira</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Gago Coutinho</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Gago Coutinho</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Sacadura Cabral</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Sacadura Cabral</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Sarmento Beires</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Sarmento Beires</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua do Tejo</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua do Tejo</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
         <button class="btn-linha" onclick="novaRua()">+ Rua</button>
@@ -465,58 +436,58 @@
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 28</div>
     </div>
     <div class="map-container" id="mapa">
-      <img class="map-image" src="mapa_2.01.jpg" alt="Mapa do território Território 2.01">
-      <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"><line x1="61.917" y1="64.127" x2="60.396" y2="59.938" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="61.917" y1="64.127" x2="60.396" y2="59.938" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="47.855" y1="38.103" x2="50.199" y2="36.235" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="47.855" y1="38.103" x2="50.199" y2="36.235" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="58.819" y1="69.853" x2="59.908" y2="64.087" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="58.819" y1="69.853" x2="59.908" y2="64.087" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="48.491" y1="84.872" x2="54.226" y2="85.322" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="48.491" y1="84.872" x2="54.226" y2="85.322" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="53.496" y1="88.218" x2="57.017" y2="89.168" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="53.496" y1="88.218" x2="57.017" y2="89.168" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="39.672" y1="60.187" x2="38.846" y2="64.207" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="39.672" y1="60.187" x2="38.846" y2="64.207" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="34.05" y1="80.351" x2="22.062" y2="80.351" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="34.05" y1="80.351" x2="22.062" y2="80.351" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="40.758" y1="86.409" x2="43.488" y2="91.379" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="40.758" y1="86.409" x2="43.488" y2="91.379" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="68.074" y1="71.079" x2="73.361" y2="71.079" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="68.074" y1="71.079" x2="73.361" y2="71.079" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="44.836" y1="18.113" x2="44.836" y2="14.205" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="44.836" y1="18.113" x2="44.836" y2="14.205" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="39.823" y1="45.45" x2="29.489" y2="36.866" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="39.823" y1="45.45" x2="29.489" y2="36.866" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="38.414" y1="40.867" x2="46.403" y2="42.735" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="38.414" y1="40.867" x2="46.403" y2="42.735" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="58.544" y1="66.209" x2="55.669" y2="74.666" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="58.544" y1="66.209" x2="55.669" y2="74.666" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="81.661" y1="69.128" x2="87.266" y2="69.128" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="81.661" y1="69.128" x2="87.266" y2="69.128" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="84.955" y1="84.11" x2="88.309" y2="84.11" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="84.955" y1="84.11" x2="88.309" y2="84.11" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line><line x1="7.349" y1="69.373" x2="8.804" y2="59.44" stroke="#000" stroke-width="3" vector-effect="non-scaling-stroke"></line><line x1="7.349" y1="69.373" x2="8.804" y2="59.44" stroke="#fcca03" stroke-width="1.4" vector-effect="non-scaling-stroke"></line></svg>
+      <img class="map-image" src="mapa_2.01.jpg" alt="Mapa do território Território 2.01" />
+      <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 60.396%; top: 59.938%; --ang: 0.0deg" data-ax="61.917" data-ay="64.127"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº667</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 60.396%; top: 59.938%; --ang: 0.0deg" data-ax="61.917" data-ay="64.127"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº667</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 50.199%; top: 36.235%; --ang: 0.0deg" data-ax="47.855" data-ay="38.103"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº 142</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 50.199%; top: 36.235%; --ang: 0.0deg" data-ax="47.855" data-ay="38.103"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº 142</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 49.841%; top: 30.891%; --ang: 0.0deg" data-ax="49.841" data-ay="30.891"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº160</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 49.841%; top: 30.891%; --ang: 0.0deg" data-ax="49.841" data-ay="30.891"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº160</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 52.701%; top: 26.534%; --ang: 0.0deg" data-ax="52.701" data-ay="24.125"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº178</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 52.701%; top: 26.534%; --ang: 0.0deg" data-ax="52.701" data-ay="24.125"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº178</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 57.547%; top: 49.676%; --ang: 0.0deg" data-ax="57.547" data-ay="50.967"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº69</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 57.547%; top: 49.676%; --ang: 0.0deg" data-ax="57.547" data-ay="50.967"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº69</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 54.552%; top: 53.522%; --ang: 0.0deg" data-ax="54.052" data-ay="52.231"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº67</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 54.552%; top: 53.522%; --ang: 0.0deg" data-ax="54.052" data-ay="52.231"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº67</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 48.846%; top: 64.207%; --ang: 0.0deg" data-ax="50.0" data-ay="64.425"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº35</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 48.846%; top: 64.207%; --ang: 0.0deg" data-ax="50.0" data-ay="64.425"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº35</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 59.908%; top: 64.087%; --ang: 0.0deg" data-ax="58.819" data-ay="69.853"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº647</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 59.908%; top: 64.087%; --ang: 0.0deg" data-ax="58.819" data-ay="69.853"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº647</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 54.226%; top: 85.322%; --ang: 0.0deg" data-ax="48.491" data-ay="84.872"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº4</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 54.226%; top: 85.322%; --ang: 0.0deg" data-ax="48.491" data-ay="84.872"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº4</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 57.017%; top: 89.168%; --ang: 0.0deg" data-ax="53.496" data-ay="88.218"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº109A</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 57.017%; top: 89.168%; --ang: 0.0deg" data-ax="53.496" data-ay="88.218"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº109A</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 38.846%; top: 64.207%; --ang: 0.0deg" data-ax="39.672" data-ay="60.187"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº54</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 38.846%; top: 64.207%; --ang: 0.0deg" data-ax="39.672" data-ay="60.187"><span class="txt" style="font-size: 12.2pt" contenteditable="true" spellcheck="false">nº54</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 22.062%; top: 80.351%; --ang: 31.4deg" data-ax="34.05" data-ay="80.351"><span class="txt" contenteditable="true" spellcheck="false">R. Feliciano Moreira</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 22.062%; top: 80.351%; --ang: 31.4deg" data-ax="34.05" data-ay="80.351"><span class="txt" contenteditable="true" spellcheck="false">R. Feliciano Moreira</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 43.488%; top: 91.379%; --ang: -61.3deg" data-ax="40.758" data-ay="86.409"><span class="txt" contenteditable="true" spellcheck="false">R. do Tejo</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 43.488%; top: 91.379%; --ang: -61.3deg" data-ax="40.758" data-ay="86.409"><span class="txt" contenteditable="true" spellcheck="false">R. do Tejo</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 73.361%; top: 71.079%; --ang: 77.9deg" data-ax="68.074" data-ay="71.079"><span class="txt" contenteditable="true" spellcheck="false">Estr. da Rebelva</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 73.361%; top: 71.079%; --ang: 77.9deg" data-ax="68.074" data-ay="71.079"><span class="txt" contenteditable="true" spellcheck="false">Estr. da Rebelva</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 33.725%; top: 56.452%; --ang: 15.3deg" data-ax="34.225" data-ay="55.042"><span class="txt" contenteditable="true" spellcheck="false">R. Sacadura Cabral</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 33.725%; top: 56.452%; --ang: 15.3deg" data-ax="34.225" data-ay="55.042"><span class="txt" contenteditable="true" spellcheck="false">R. Sacadura Cabral</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 44.836%; top: 14.205%; --ang: 28.6deg" data-ax="44.836" data-ay="18.113"><span class="txt" contenteditable="true" spellcheck="false">R. Sarmento Beires</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 44.836%; top: 14.205%; --ang: 28.6deg" data-ax="44.836" data-ay="18.113"><span class="txt" contenteditable="true" spellcheck="false">R. Sarmento Beires</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 29.489%; top: 36.866%; --ang: -75.0deg" data-ax="39.823" data-ay="45.45"><span class="txt" contenteditable="true" spellcheck="false">R. Gago Coutinho</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 29.489%; top: 36.866%; --ang: -75.0deg" data-ax="39.823" data-ay="45.45"><span class="txt" contenteditable="true" spellcheck="false">R. Gago Coutinho</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 46.403%; top: 42.735%; --ang: 15.5deg" data-ax="38.414" data-ay="40.867"><span class="txt" contenteditable="true" spellcheck="false">R. Brito Pais</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 46.403%; top: 42.735%; --ang: 15.5deg" data-ax="38.414" data-ay="40.867"><span class="txt" contenteditable="true" spellcheck="false">R. Brito Pais</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 55.669%; top: 74.666%; --ang: 32.2deg" data-ax="58.544" data-ay="66.209"><span class="txt" contenteditable="true" spellcheck="false">Pct. da Alvorada</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 55.669%; top: 74.666%; --ang: 32.2deg" data-ax="58.544" data-ay="66.209"><span class="txt" contenteditable="true" spellcheck="false">Pct. da Alvorada</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 71.61%; top: 94.984%; --ang: 0.0deg" data-ax="71.61" data-ay="94.984"><span class="txt" contenteditable="true" spellcheck="false">R. de Santarém</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta vizinha" style="left: 71.61%; top: 94.984%; --ang: 0.0deg" data-ax="71.61" data-ay="94.984"><span class="txt" contenteditable="true" spellcheck="false">R. de Santarém</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 87.266%; top: 69.128%; --ang: -43.2deg" data-ax="81.661" data-ay="69.128"><span class="txt" contenteditable="true" spellcheck="false">R. de Braga</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta vizinha" style="left: 87.266%; top: 69.128%; --ang: -43.2deg" data-ax="81.661" data-ay="69.128"><span class="txt" contenteditable="true" spellcheck="false">R. de Braga</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 88.309%; top: 84.11%; --ang: -14.0deg" data-ax="84.955" data-ay="84.11"><span class="txt" contenteditable="true" spellcheck="false">R. do Porto</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta vizinha" style="left: 88.309%; top: 84.11%; --ang: -14.0deg" data-ax="84.955" data-ay="84.11"><span class="txt" contenteditable="true" spellcheck="false">R. do Porto</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 8.804%; top: 59.44%; --ang: -58.0deg" data-ax="7.349" data-ay="69.373"><span class="txt" contenteditable="true" spellcheck="false">R. João Villaret</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta vizinha" style="left: 8.804%; top: 59.44%; --ang: -58.0deg" data-ax="7.349" data-ay="69.373"><span class="txt" contenteditable="true" spellcheck="false">R. João Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 88.286%; top: 49.677%; --ang: 15.5deg" data-ax="89.752" data-ay="49.677"><span class="txt" contenteditable="true" spellcheck="false">R. de Setúbal</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta vizinha" style="left: 88.286%; top: 49.677%; --ang: 15.5deg" data-ax="89.752" data-ay="49.677"><span class="txt" contenteditable="true" spellcheck="false">R. de Setúbal</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 89.349%; top: 20.888%; --ang: -81.2deg" data-ax="89.349" data-ay="20.888"><span class="txt" contenteditable="true" spellcheck="false">Tv. de Viseu</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta vizinha" style="left: 89.349%; top: 20.888%; --ang: -81.2deg" data-ax="89.349" data-ay="20.888"><span class="txt" contenteditable="true" spellcheck="false">Tv. de Viseu</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
@@ -529,7 +500,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 2.01</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADlElEQVR4nO2cTW7bSgyAP3YGyHIE+AA5inyDHinokXoD6Sg9QADN0sAI7IKULAPFAxq92orDWRiW5A8ZwjT/howof73Gb3/PQEABBfRJoSq+zlUEAL/u/vBO8r23F9D9oaSqqgpFlVEy9KpK/ytjT3TC7tm7zyBTQPsg/+0D8qYNYBb90c3C2K1Pq4icH7K9gB4FVREdzHUkNxn9NAv9dIjtBfQISM4Ao2TkbQKRLilj9w/+UkDHhMxZXFNQtW+/TDB2E/TDnJV6AooC9b7bC+gh0GxZBJBU3qZkQaW9UF9UzgDjknV8CpkC+iiU/bcPQJ0FSkPhIoyvF9GxSyg0tpWsg8sU0E6oZqBm3ADYSosGlLaWIkT8w8eXKaAPQ15xGOxdw/KKfgIdTC2Smt0YAB2Kqg4HlymgPZDpgX/7pfnNfkrqOWdRUwvVKamVqUIjnhyqXpzSAVwZKBe5KogO4D7FMpHjyxTQhyHzGvSrw4CkOtxYC3cnVsxMYSOeG8pQTw1IyviqMH5/FwWvUcj42hC7rN2ScBxcpoD2QGwOuex8a/IAkn4TYHjwGXHE80N4xDil5WCTpDqsrsNizMVhhEY8P7Rkn6UtBgA8enC10E0KSsQRTw8tHRDalnrEcnn1FToU9x9Rj3h+aO2JSUscsSjD9oW0Kk1oxJNDm+zTa1WmAjdPLYSY1hjz4DIFtAdyPdBNkbKhOt08sBDiGmocXKaA9kB4hnGNFPhD9gkRR3wVKENpGUgqvc5WnBKK9cm4Mozf37PA2l93cJkC2gOtGcbqK1Y30V9DCEtLox7xFaAM9aRC7RBKywJ4N9XYTVh/HfXUpNdZvOR9cJkC2gOZUbD44Dav8Ihi0x8RNuIrQNm6pCA3gdR0PINSZ9F+OjUo7wL15WY89OAyBfQ/QF6PWLsiSkPO5WLKoENpyJte5FHbC+ju2edaqfQCNtsGmuUIDIhzjaeH1nMNH+rclCc2x+STd9VFPeJLQNfZcGub8SNOHxVf58XPQNQjnh/KQDI/IZSLLHM7uSkV1NLN6tGmf/jgMgW0H1qmv1/WijUwdm4y5Mws22mOTyFTQB+3EesqF1FqatIrCGVCQLB7lPdM//N01+0F9HhofG3oj24WMxS2ykWW0/D22O0F9K+h29nwpNL/ym2Z/BNvyO6HpFA7nxc/ukwB7YHYFBuus33rwdcyr7G0YkY94ukhif9eGFBAAf3H+g2Fx68GAnw2/gAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADlElEQVR4nO2cTW7bSgyAP3YGyHIE+AA5inyDHinokXoD6Sg9QADN0sAI7IKULAPFAxq92orDWRiW5A8ZwjT/howof73Gb3/PQEABBfRJoSq+zlUEAL/u/vBO8r23F9D9oaSqqgpFlVEy9KpK/ytjT3TC7tm7zyBTQPsg/+0D8qYNYBb90c3C2K1Pq4icH7K9gB4FVREdzHUkNxn9NAv9dIjtBfQISM4Ao2TkbQKRLilj9w/+UkDHhMxZXFNQtW+/TDB2E/TDnJV6AooC9b7bC+gh0GxZBJBU3qZkQaW9UF9UzgDjknV8CpkC+iiU/bcPQJ0FSkPhIoyvF9GxSyg0tpWsg8sU0E6oZqBm3ADYSosGlLaWIkT8w8eXKaAPQ15xGOxdw/KKfgIdTC2Smt0YAB2Kqg4HlymgPZDpgX/7pfnNfkrqOWdRUwvVKamVqUIjnhyqXpzSAVwZKBe5KogO4D7FMpHjyxTQhyHzGvSrw4CkOtxYC3cnVsxMYSOeG8pQTw1IyviqMH5/FwWvUcj42hC7rN2ScBxcpoD2QGwOuex8a/IAkn4TYHjwGXHE80N4xDil5WCTpDqsrsNizMVhhEY8P7Rkn6UtBgA8enC10E0KSsQRTw8tHRDalnrEcnn1FToU9x9Rj3h+aO2JSUscsSjD9oW0Kk1oxJNDm+zTa1WmAjdPLYSY1hjz4DIFtAdyPdBNkbKhOt08sBDiGmocXKaA9kB4hnGNFPhD9gkRR3wVKENpGUgqvc5WnBKK9cm4Mozf37PA2l93cJkC2gOtGcbqK1Y30V9DCEtLox7xFaAM9aRC7RBKywJ4N9XYTVh/HfXUpNdZvOR9cJkC2gOZUbD44Dav8Ihi0x8RNuIrQNm6pCA3gdR0PINSZ9F+OjUo7wL15WY89OAyBfQ/QF6PWLsiSkPO5WLKoENpyJte5FHbC+ju2edaqfQCNtsGmuUIDIhzjaeH1nMNH+rclCc2x+STd9VFPeJLQNfZcGub8SNOHxVf58XPQNQjnh/KQDI/IZSLLHM7uSkV1NLN6tGmf/jgMgW0H1qmv1/WijUwdm4y5Mws22mOTyFTQB+3EesqF1FqatIrCGVCQLB7lPdM//N01+0F9HhofG3oj24WMxS2ykWW0/D22O0F9K+h29nwpNL/ym2Z/BNvyO6HpFA7nxc/ukwB7YHYFBuus33rwdcyr7G0YkY94ukhif9eGFBAAf3H+g2Fx68GAnw2/gAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
@@ -547,7 +518,7 @@
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'Cartao_2.02.html';
+      a.download = 'Cartao_2.01.html';
       a.click();
       URL.revokeObjectURL(url);
     }
@@ -587,20 +558,6 @@
     }
   }
 
-  // Em ecrã pequeno o cartão passa a caber inteiro à vista, sem ter de
-  // arrastar para ler tudo — encolhe-se o que for preciso; para ver de perto
-  // o telemóvel já sabe fazer zoom. Corre depois de `ajustarLista()`, que é
-  // quem decide a altura final do texto.
-  function ajustarEcranPequeno() {
-    const card = document.querySelector('.card:not(.verso)');
-    if (!card) return;
-    if (window.innerWidth > 800) { card.style.transform = 'none'; return; }
-    card.style.transform = 'none';
-    const caixa = card.getBoundingClientRect();
-    const escala = Math.min(1, window.innerHeight / caixa.height, window.innerWidth / caixa.width);
-    card.style.transform = escala < 0.99 ? `scale(${escala})` : 'none';
-  }
-
   // --- Lista de ruas -------------------------------------------------------
   function novaRua() {
     const lista = document.querySelector('.ruas');
@@ -613,7 +570,6 @@
       '<button class="apagar-linha" title="Remover rua">&times;</button>';
     lista.appendChild(li);
     ajustarLista();
-    ajustarEcranPequeno();
     const nome = li.querySelector('.nome');
     nome.focus();
     document.getSelection().selectAllChildren(nome);
@@ -632,7 +588,6 @@
       linha.closest('li').remove();
       renumerar();
       ajustarLista();
-      ajustarEcranPequeno();
       return;
     }
     const etiqueta = ev.target.closest('.etiqueta .apagar');
@@ -735,23 +690,13 @@
     svg.innerHTML = linhas;
   }
 
-  window.addEventListener('load', function() { ajustarLista(); ajustarEcranPequeno(); desenharChamadas(); });
-  window.addEventListener('resize', ajustarEcranPequeno);
-  // A impressão é sempre a cheio (o "ecrã estreito" não existe no papel):
-  // tira-se a escala antes e repõe-se depois, para o telemóvel não ficar com
-  // o cartão encolhido se cancelar a impressão.
-  window.addEventListener('beforeprint', function() {
-    ajustarLista();
-    const card = document.querySelector('.card:not(.verso)');
-    if (card) card.style.transform = 'none';
-  });
-  window.addEventListener('afterprint', ajustarEcranPequeno);
+  window.addEventListener('load', function() { ajustarLista(); desenharChamadas(); });
+  window.addEventListener('beforeprint', ajustarLista);
   document.addEventListener('input', function(ev) {
     const nome = ev.target.closest('.ruas .nome');
     if (nome) nome.removeAttribute('data-completo');  // passou a ser o texto escrito
     ajustarLista();
-    ajustarEcranPequeno();
   });
 </script>
-
-</body></html>
+</body>
+</html>
