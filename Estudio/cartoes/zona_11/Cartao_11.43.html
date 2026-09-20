@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
-<head>
+<html lang="pt-PT"><head>
 <meta charset="UTF-8">
 <title>Território 11.43</title>
 <style>
@@ -404,36 +403,36 @@
 <body>
   <!-- Frente -->
   <div class="card" style="page-break-after: always; margin-bottom: 10mm;">
-    <div class="sidebar">
+    <div class="sidebar" style="">
       <div class="section header editable" contenteditable="true" spellcheck="false">Território 11.43</div>
       <div class="section locations">
         <span class="rotulo">Localizações:</span>
-        <ol class="ruas">
+        <ol class="ruas" style="font-size: 13.5pt;">
           
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Infante Dom Henrique</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Infante Dom Henrique</span><button class="apagar-linha" title="Remover rua">×</button></li>
           
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Pedro Álvares Cabral</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Pedro Álvares Cabral</span><button class="apagar-linha" title="Remover rua">×</button></li>
           
         </ol>
         <button class="btn-linha" onclick="novaRua()">+ Rua</button>
       </div>
       <div class="section reference">
         <span class="rotulo">Referência:</span>
-        <div class="caixa editable" contenteditable="true" spellcheck="false"></div>
+        <div class="caixa editable" contenteditable="true" spellcheck="false">Riviera</div>
       </div>
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: ____</div>
     </div>
     <div class="map-container" id="mapa">
-      <img class="map-image" src="mapa_11.43.jpg" alt="Mapa do território Território 11.43" />
+      <img class="map-image" src="mapa_11.43.jpg" alt="Mapa do território Território 11.43">
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 21.732%; top: 43.011%; --ang: 0.0deg" data-ax="21.036" data-ay="43.011"><span class="txt" contenteditable="true" spellcheck="false">nº94</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 21.732%; top: 43.011%; --ang: 0.0deg" data-ax="21.036" data-ay="43.011"><span class="txt" contenteditable="true" spellcheck="false">nº94</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta rua" style="left: 68.143%; top: 27.576%; --ang: 0.7deg" data-ax="68.143" data-ay="27.576"><span class="txt" contenteditable="true" spellcheck="false">R. Pedro Álvares<br>Cabral</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 68.143%; top: 27.576%; --ang: 0.7deg" data-ax="68.143" data-ay="27.576"><span class="txt" contenteditable="true" spellcheck="false">R. Pedro Álvares<br>Cabral</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta rua" style="left: 10.865%; top: 44.991%; --ang: 75.0deg" data-ax="11.561" data-ay="44.991"><span class="txt" contenteditable="true" spellcheck="false">R. Infante Dom<br>Henrique</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 10.865%; top: 44.991%; --ang: 75.0deg" data-ax="11.561" data-ay="44.991"><span class="txt" contenteditable="true" spellcheck="false">R. Infante Dom<br>Henrique</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta vizinha" style="left: 85.32%; top: 89.066%; --ang: -38.7deg" data-ax="85.32" data-ay="89.066"><span class="txt" contenteditable="true" spellcheck="false">R. Bartolomeu Dias</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 85.32%; top: 89.066%; --ang: -38.7deg" data-ax="85.32" data-ay="89.066"><span class="txt" contenteditable="true" spellcheck="false">R. Bartolomeu Dias</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
@@ -446,7 +445,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 11.43</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADcUlEQVR4nO2cUY6jOBCGv1qQ+tGRcoA5inODPtKeqW8AR5kDtIQfIxn9+2AbyIx2pZmsCEOXHyIIfIotKuWqv2xM/HIb//p1BhxyyKE/FEpW260dAbNB6imn4wXaTf3e3XNof6iTJAmCpAEwszeZXaBciBMQJUnT/t1z6AVQ/e8D9rcyRN1NQ7gbo/XtajKz20u659CroGSmIb0J6EScOhF1t+IjXt89h/aHOtkN0JB67MZsZhdgvPzvv+TQUaEyWawpqCDD+H43jZdJwAzx4woEAWnf7jm0O0QNFoE6TfzbR22dNBx8TA49A5VsorapfTeEDISMBjrVNGNpbhFnhpCmTtLiBaIkoh4s4oeb3SLODCEplwlDQ8jltH5MnTTQLgyAhuA+4uRQ8xHNLJp70PaoiFhTmz/cIs4MPTiF5hmqABEylFCyTB1dkzUPPiaHnoFY//vVBEKmuofSFg+ixUAOPiaHnoG24YImIE4tXNBm1qhZquca54eqHhE34aXULEJLZFlLYB5HnB9qPiKohQvt6RdRIi5xJ3hk+RWgplmGGkc0O4AHPaLTNtA8+Jgcegbaag9a48nQsg6o3mI7fxx8TA49A7WIcdUspxpZtvxj0SNKguoWcXJoq1lW22jfFUehZhul3OU+4uzQUvtcRAmqQlVF7Y2OmT3X+AJQq31OWyFqnTVKzgl4HPFVoB7SBQgZi0MnI11bsTNds0GXGd8/e4O5ra87+Jgcegbqga6kGBoNGC+YYO4h3E3jDSxOMxpvXba9u+fQ7lB98ABG+Ozbg+9hvHwCYQLSVRY1G6RrPvyYHHoG4udqRtu5sYScqx7hkeX5IZoJZDYZxsAqbz+UxN0iTg9tFId6NG2rX5uCx7KAxi3i1BCrLrVdWjdBSzw7bZZre13j9NCPa7GrMTxEFE3RdD3ii0Dr3nDAbuvi67Lpry/ewm6A6xHnhzZ6hBFyS0aTlX1eFqdruVGk2erNBx+TQ89AZZdfkSZJF0TzEUbIvcZvGYsfs72mew7tDvXbkyAsflxz06XeZGCI1GUjfLabDz4mh56BHiyCuToFwtxvX1AV7kYckMVh3+459CJos5KSZLWgNX67m4Yg2Y1OGlJ9/9AfMiaHft9HLEFCumaLWtxD6rH4vc/ldHzPPaTeI8tzQ+ZvL3TIIYf+o/0D99YWbKhTi1MAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADcUlEQVR4nO2cUY6jOBCGv1qQ+tGRcoA5inODPtKeqW8AR5kDtIQfIxn9+2AbyIx2pZmsCEOXHyIIfIotKuWqv2xM/HIb//p1BhxyyKE/FEpW260dAbNB6imn4wXaTf3e3XNof6iTJAmCpAEwszeZXaBciBMQJUnT/t1z6AVQ/e8D9rcyRN1NQ7gbo/XtajKz20u659CroGSmIb0J6EScOhF1t+IjXt89h/aHOtkN0JB67MZsZhdgvPzvv+TQUaEyWawpqCDD+H43jZdJwAzx4woEAWnf7jm0O0QNFoE6TfzbR22dNBx8TA49A5VsorapfTeEDISMBjrVNGNpbhFnhpCmTtLiBaIkoh4s4oeb3SLODCEplwlDQ8jltH5MnTTQLgyAhuA+4uRQ8xHNLJp70PaoiFhTmz/cIs4MPTiF5hmqABEylFCyTB1dkzUPPiaHnoFY//vVBEKmuofSFg+ixUAOPiaHnoG24YImIE4tXNBm1qhZquca54eqHhE34aXULEJLZFlLYB5HnB9qPiKohQvt6RdRIi5xJ3hk+RWgplmGGkc0O4AHPaLTNtA8+Jgcegbaag9a48nQsg6o3mI7fxx8TA49A7WIcdUspxpZtvxj0SNKguoWcXJoq1lW22jfFUehZhul3OU+4uzQUvtcRAmqQlVF7Y2OmT3X+AJQq31OWyFqnTVKzgl4HPFVoB7SBQgZi0MnI11bsTNds0GXGd8/e4O5ra87+Jgcegbqga6kGBoNGC+YYO4h3E3jDSxOMxpvXba9u+fQ7lB98ABG+Ozbg+9hvHwCYQLSVRY1G6RrPvyYHHoG4udqRtu5sYScqx7hkeX5IZoJZDYZxsAqbz+UxN0iTg9tFId6NG2rX5uCx7KAxi3i1BCrLrVdWjdBSzw7bZZre13j9NCPa7GrMTxEFE3RdD3ii0Dr3nDAbuvi67Lpry/ewm6A6xHnhzZ6hBFyS0aTlX1eFqdruVGk2erNBx+TQ89AZZdfkSZJF0TzEUbIvcZvGYsfs72mew7tDvXbkyAsflxz06XeZGCI1GUjfLabDz4mh56BHiyCuToFwtxvX1AV7kYckMVh3+459CJos5KSZLWgNX67m4Yg2Y1OGlJ9/9AfMiaHft9HLEFCumaLWtxD6rH4vc/ldHzPPaTeI8tzQ+ZvL3TIIYf+o/0D99YWbKhTi1MAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps">
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
@@ -644,5 +643,5 @@
     ajustarLista();
   });
 </script>
-</body>
-</html>
+
+</body></html>
