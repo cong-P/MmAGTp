@@ -192,26 +192,27 @@
   }
 
   /* Contorno branco à volta das letras, como nos mapas: acompanha a estrada
-     e deixa ver o que está por baixo */
+     e deixa ver o que está por baixo. Os tamanhos são para quem vê mal, em
+     papel; o gerador escreve-os em cada etiqueta (e usa-os para as afastar
+     umas das outras), estes são só para as que se acrescentam à mão. */
   .etiqueta.rua .txt {
-    font-size: 10.5pt;
-    -webkit-text-stroke: 3.2px #fff;
+    font-size: 12pt;
+    -webkit-text-stroke: 3.6px #fff;
     paint-order: stroke fill;
   }
 
   /* Ruas da vizinhança: servem para dar referências a quem procura o
-     território, por isso são visivelmente secundárias — mais pequenas e a
-     cinzento, para não se confundirem com as ruas a trabalhar */
+     território, por isso são secundárias — um pouco mais pequenas e em
+     cinzento escuro — mas continuam a negrito: fininhas não se liam */
   .etiqueta.vizinha .txt {
-    font-size: 9pt;
-    font-weight: normal;
-    color: #3c3c3c;
-    -webkit-text-stroke: 3px #fff;
+    font-size: 10.5pt;
+    color: #3a3a3a;
+    -webkit-text-stroke: 3.2px #fff;
     paint-order: stroke fill;
   }
 
   .etiqueta.porta .txt {
-    font-size: 14.0pt;
+    font-size: 12pt;
     background-color: #fff;
     border: 0.35mm solid #000;
     border-radius: 0.6mm;
@@ -484,20 +485,21 @@
       <img class="map-image" src="mapa_11.36.jpg" alt="Mapa do território Território 11.36" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 27.397%; top: 58.846%; --ang: 0.0deg" data-ax="27.397" data-ay="58.846"><span class="txt" contenteditable="true" spellcheck="false">nº65</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 47.302%; top: 41.191%; --ang: -15.1deg" data-ax="47.302" data-ay="41.191" data-nome="Rua Fernão de Magalhães"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Fernão de Magalhães</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta porta" style="left: 27.397%; top: 58.846%; --ang: 0.0deg" data-ax="27.397" data-ay="58.846"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº65</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta porta" style="left: 44.76%; top: 54.712%; --ang: 0.0deg" data-ax="44.76" data-ay="54.712"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº45</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 56.473%; top: 51.058%; --ang: 0.0deg" data-ax="56.473" data-ay="51.058"><span class="txt" contenteditable="true" spellcheck="false">nº31</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 56.473%; top: 51.058%; --ang: 0.0deg" data-ax="56.473" data-ay="51.058"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº31</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 72.911%; top: 47.885%; --ang: 0.0deg" data-ax="72.911" data-ay="47.885"><span class="txt" contenteditable="true" spellcheck="false">nº11</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 72.911%; top: 47.885%; --ang: 0.0deg" data-ax="72.911" data-ay="47.885"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº11</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 44.663%; top: 41.81%; --ang: -15.1deg" data-ax="44.663" data-ay="41.856" data-nome="Rua Fernão de Magalhães"><span class="txt" contenteditable="true" spellcheck="false">R. Fernão de Magalhães</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 78.231%; top: 14.975%; --ang: 77.4deg" data-ax="78.231" data-ay="14.975" data-nome="Praceta Infante Dom Henrique"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. Infante<br>Dom Henrique</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 92.568%; top: 39.737%; --ang: 73.4deg" data-ax="90.074" data-ay="39.737" data-nome="Rua Infante Dom Henrique"><span class="txt" contenteditable="true" spellcheck="false">R. Infante Dom<br>Henrique</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta rua" style="left: 78.335%; top: 29.627%; --ang: 77.6deg" data-ax="81.708" data-ay="29.627" data-nome="Praceta Infante Dom Henrique"><span class="txt" contenteditable="true" spellcheck="false">Pct. Infante Dom<br>Henrique</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
+      <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
+           propor: o mapa só nomeia algumas, para não se encher de nomes -->
+      <ul class="ruas-perto" hidden><li>Praceta Infante Dom Henrique</li><li>Rua Infante Dom Henrique</li><li>Rua Pedro Álvares Cabral</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -622,12 +624,17 @@
     });
     const vistas = {};
     const faltam = [];
-    document.querySelectorAll('.etiqueta.rua, .etiqueta.vizinha').forEach(function(e) {
-      const nome = nomeDaEtiqueta(e);
+    function juntar(nome) {
       const chave = chaveRua(nome);
       if (!chave || jaLa[chave] || vistas[chave]) return;
       vistas[chave] = true;
       faltam.push(nome);
+    }
+    document.querySelectorAll('.etiqueta.rua, .etiqueta.vizinha').forEach(function(e) {
+      juntar(nomeDaEtiqueta(e));
+    });
+    document.querySelectorAll('.ruas-perto li').forEach(function(li) {
+      juntar(li.textContent.trim());
     });
     return faltam.sort(function(a, b) { return a.localeCompare(b, 'pt'); });
   }
