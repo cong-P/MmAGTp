@@ -192,26 +192,27 @@
   }
 
   /* Contorno branco à volta das letras, como nos mapas: acompanha a estrada
-     e deixa ver o que está por baixo */
+     e deixa ver o que está por baixo. Os tamanhos são para quem vê mal, em
+     papel; o gerador escreve-os em cada etiqueta (e usa-os para as afastar
+     umas das outras), estes são só para as que se acrescentam à mão. */
   .etiqueta.rua .txt {
-    font-size: 10.5pt;
-    -webkit-text-stroke: 3.2px #fff;
+    font-size: 12pt;
+    -webkit-text-stroke: 3.6px #fff;
     paint-order: stroke fill;
   }
 
   /* Ruas da vizinhança: servem para dar referências a quem procura o
-     território, por isso são visivelmente secundárias — mais pequenas e a
-     cinzento, para não se confundirem com as ruas a trabalhar */
+     território, por isso são secundárias — um pouco mais pequenas e em
+     cinzento escuro — mas continuam a negrito: fininhas não se liam */
   .etiqueta.vizinha .txt {
-    font-size: 9pt;
-    font-weight: normal;
-    color: #3c3c3c;
-    -webkit-text-stroke: 3px #fff;
+    font-size: 10.5pt;
+    color: #3a3a3a;
+    -webkit-text-stroke: 3.2px #fff;
     paint-order: stroke fill;
   }
 
   .etiqueta.porta .txt {
-    font-size: 14.0pt;
+    font-size: 12pt;
     background-color: #fff;
     border: 0.35mm solid #000;
     border-radius: 0.6mm;
@@ -467,7 +468,11 @@
       <div class="section header editable" contenteditable="true" spellcheck="false">Território 11.34</div>
       <div class="section locations">
         <span class="rotulo">Localizações:</span>
-        <ol class="ruas"><li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua de Luanda</span><button class="apagar-linha" title="Remover rua">&times;</button></li></ol>
+        <ol class="ruas">
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua de Luanda</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+        </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
       <div class="section reference">
@@ -480,16 +485,19 @@
       <img class="map-image" src="mapa_11.34.jpg" alt="Mapa do território Território 11.34" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 64.178%; top: 61.154%; --ang: 0.0deg" data-ax="64.178" data-ay="61.154"><span class="txt" contenteditable="true" spellcheck="false">nº480</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 37.388%; top: 48.857%; --ang: 53.5deg" data-ax="37.388" data-ay="48.857" data-nome="Rua de Luanda"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. de Luanda</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 57.705%; top: 43.942%; --ang: 0.0deg" data-ax="57.705" data-ay="43.942"><span class="txt" contenteditable="true" spellcheck="false">nº500</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 64.178%; top: 61.154%; --ang: 0.0deg" data-ax="64.178" data-ay="61.154"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº480</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 53.904%; top: 29.519%; --ang: 0.0deg" data-ax="53.904" data-ay="29.519"><span class="txt" contenteditable="true" spellcheck="false">nº520</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 57.705%; top: 43.942%; --ang: 0.0deg" data-ax="57.705" data-ay="43.942"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº500</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 42.803%; top: 55.728%; --ang: 53.5deg" data-ax="42.803" data-ay="55.703" data-nome="Rua de Luanda"><span class="txt" contenteditable="true" spellcheck="false">R. de Luanda</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 53.904%; top: 29.519%; --ang: 0.0deg" data-ax="53.904" data-ay="29.519"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº520</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 16.022%; top: 14.365%; --ang: -43.4deg" data-ax="9.914" data-ay="8.83" data-nome="Rua Fernão de Magalhães"><span class="txt" contenteditable="true" spellcheck="false">R. Fernão de Magalhães</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 88.305%; top: 77.104%; --ang: -14.8deg" data-ax="88.305" data-ay="77.104" data-nome="Praceta Pero da Covilhã"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. Pero<br>da Covilhã</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
+           propor: o mapa só nomeia algumas, para não se encher de nomes -->
+      <ul class="ruas-perto" hidden><li>Praceta Pero da Covilhã</li><li>Rua Fernão de Magalhães</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -614,12 +622,17 @@
     });
     const vistas = {};
     const faltam = [];
-    document.querySelectorAll('.etiqueta.rua, .etiqueta.vizinha').forEach(function(e) {
-      const nome = nomeDaEtiqueta(e);
+    function juntar(nome) {
       const chave = chaveRua(nome);
       if (!chave || jaLa[chave] || vistas[chave]) return;
       vistas[chave] = true;
       faltam.push(nome);
+    }
+    document.querySelectorAll('.etiqueta.rua, .etiqueta.vizinha').forEach(function(e) {
+      juntar(nomeDaEtiqueta(e));
+    });
+    document.querySelectorAll('.ruas-perto li').forEach(function(li) {
+      juntar(li.textContent.trim());
     });
     return faltam.sort(function(a, b) { return a.localeCompare(b, 'pt'); });
   }
