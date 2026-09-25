@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 9.10</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -483,21 +487,21 @@
       <img class="map-image" src="mapa_9.10.jpg" alt="Mapa do território Território 9.10" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 51.233%; top: 63.75%; --ang: 0.0deg" data-ax="51.233" data-ay="63.75"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº41</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 51.233%; top: 64.896%; --ang: 0.0deg" data-ax="51.233" data-ay="64.896"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº41</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 53.801%; top: 49.615%; --ang: 0.0deg" data-ax="53.801" data-ay="49.615"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº59</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 53.801%; top: 49.583%; --ang: 0.0deg" data-ax="53.801" data-ay="49.583"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº59</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 56.37%; top: 36.635%; --ang: 0.0deg" data-ax="56.37" data-ay="36.635"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº75</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 56.37%; top: 35.521%; --ang: 0.0deg" data-ax="56.37" data-ay="35.521"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº75</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 65.272%; top: 11.768%; --ang: 32.0deg" data-ax="65.272" data-ay="11.768" data-nome="Rua da Cidade de Évora"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Cidade de Évora</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 82.113%; top: 18.951%; --ang: 30.5deg" data-ax="82.113" data-ay="18.951" data-nome="Rua da Cidade de Évora"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Cidade de Évora</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 64.138%; top: 85.265%; --ang: -80.9deg" data-ax="64.138" data-ay="85.265" data-nome="Rua de Timor"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Timor</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 64.137%; top: 88.213%; --ang: -80.9deg" data-ax="64.137" data-ay="88.213" data-nome="Rua de Timor"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Timor</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 8.453%; top: 44.615%; --ang: -81.5deg" data-ax="8.453" data-ay="44.615" data-nome="Rua José Carlos da Maia"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. José Carlos da Maia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 8.126%; top: 46.379%; --ang: -81.5deg" data-ax="8.126" data-ay="46.379" data-nome="Rua José Carlos da Maia"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. José Carlos da Maia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua Doutor Elísio de Moura</li><li>Rua José Carlos da Maia</li><li>Rua da Cidade de Évora</li><li>Rua de Cidade de Lagos</li><li>Rua de Timor</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua José Carlos da Maia</li><li>Rua da Cidade de Évora</li><li>Rua de Cidade de Lagos</li><li>Rua de Timor</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -509,7 +513,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 9.10</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADhklEQVR4nO2cUarbOhCGv7kWnEcbuoAsxdlBl1TukroDaylZQMF6DDj8fRjJcS7cQhtwctzRg0lkfyARZTTzz8gmfrvlf36fgYACCuiTQsVqO5eE2XAzM0u0PjMo7atZ2nt4Ae0PdZIk3z40lQ9JM/iNia7uK6PUbnyCOQX0HFT/+9zMvs03g37xr9Bfzey04Lbk/JLhBfQqqJfIJ4lsZowzkC0hXdI7DC+gPaCHn7oMQEmLjQLLJ+Gfxu+vGl5Au0O+Iqqr0C9JcDN5X0mL8jAjWIBeQNl3eAHtDtG8SGCcO/3/pbZOmt58TgE9A6X63/d2NfLQIbha7ervfS8YXkC7Q0hzJ02PfVOvNfDsJGnx5wgbcXgI/7mnvl4Y5+5RjwC/eF+vWBHHhhLQycZLwsZLQnnAgG7Bfcx+BvoZGycBJS1vP6eAnoH8v+82orYFxhnqrtFLDxtL7BoHhzaepY0TGHQiD91iAMrntNS7Aihfdh1eQLtDbhm23kOvZhm00PTsZkuk8COOD5UEeYCavuBmmgCzgbZ/9At2Zs1/vP+cAvpjqMYQo6RNSDHONe2paTUZk1uL8CMODtHEBh7XwdLS383RZFx3l1gRR4aa8uSxRnMc3GT0WgXsVkIxhh9xdKg5i72aIAkba+GP1LurwPnmcwroGahZBu7RxELdOujknuVd1owVcXhoayPGlr7YJDL+I2pH9Hl4qP3wbVk08wBNili9jLlJmLEijgzVGqo8/EhAWqD/Yap5DWSe1ygJ8terKfIah4eqH+Ebhu5yZY0rmhShVpAdfsTRoY0UgXsKqx9RfQtpG5GGQnV0qOU+74pDcytcl6IJVjX0CM/y6NCqYq/FMi5TaZMI9wfvZiRWxNGhTlAS+ncAO5cPMV4eTmnUcon66VPMKaA/hTbnNWzUrVbZ5qGDfO4wwETxwglqRPrmcwroGSi52OBHNsqAKF+wzaENb91Si2V2Hl5Au0OP5zVqLUQ1Bf0aZmzUy/AjDg4lmhqF+aV3yyDy1/aQn9coELvG3wK1s+H1bQH+wohzSVDzoTfzkqocNVR/KeQCBGgqqRXL6GoRaxwfejgb3i8JT2RwS3jxNTdj/O4uZ/Mz33xOAT0P3Ysk7NuMF+J6fsuL9U9r5e3wiuEFtLONuLVTv2UANw+XD5GHzruVzwnl0+Kx6dvPKaBnIIu3FwYUUEC/aD8BjSO4/jfY1PIAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADuElEQVR4nO1cUWrjQAyVxoZ+jqEHyFGcG/RIZY/UG8RH6QEK8WfAQcuTNHbSsmVdL6wdSx+Dx/YjEVGkJ41mWGi2dGk+hihALgFyCdBmQD27HPuamJsrrnFl95iJ9IFJvQmd5kuAbkCVqOhcTv2TiJx1UomcqPK40upL543oNFsCdAdi++/Tlfn1fGWiPNiUKF+Y+YApfMnxBjRTArRBUBah7oCBmamFP+i4JpH3eg1f728lQEtA9e2kbzDUA7dCxN1ByK7at03plAK02CLEJnmoBbFCpwLbkK454ymiRsbt/seflAK0CRAVFklE7bmSPw8uYJsr1ykFaJmPyFOR6sLUNRWcwoX9Vp7ubUWnFKCFPqJCknl375RlTDw1Nx3svfARjw8i+7lP2QeNEHf1CBjIFF3UVFauUwrQQmZZCbfvNekgXUMIGBW4JDhmhiHkM3F7UmZZD6vXKQVoMbMU9REu6ijUMyBMwCncBpaIGvthltyeCP6hElDJQamldEc4BX2qr/XP69cpBWghjxDLLyem4J4B3sLr2cWXqISPeHBQXxN1DRY3dPkC7AERghkVTIsfeSBd0oi1z8cHkXmGVv/709SIA4bRZWgmEjxiL9mnfLYD0Ms7oqlTf2XlOqUALa5QEejCDXEwlwH34AXs0kJhD1auUwrQYmYpFhxKSWryFvaKPx0LnCvXKQVocdS4yyZQvRzbp5RZTmXNsIhd+Yi2LF/cLGR8KmpH9vnwIPIfXtwsinuAlOTCWYbxjbCIffRQdc0HrlCfzB/omNF1DRK2dQ0tWbxcWLtoVq9TCtByHtFqmJCpXOl5RSlFOLOM7PPxQTSVIsiYwsgjnFuoWYwZaVSo9rL2SWPFodAKq0tZRqrdE5p6BLPcTRV7KM0yVqYa48fYYjm5kbCIRwdVotxRfmG569g/CWnvzLRLw9sl/GoTOs2WAH3dr8GtXL3LFgN1x0rbqZBhWONEyUhXrlMK0DKLyAMarbVlrsEujWf8+uOmDRMko9os8/NPSgHa4H4N8vZbcwVGJpxglOpl8Ig9dN4OeqltdEzZPINQ91Jesv0aup0rosa+9oaTnRZgB0bgOImyHoozJRrfGLwRnWZKgL4HZS1AqIHUpVlGLr5f/P9/ve8lQP8o1yDsBNa9GWi2rMmar3GIRPtmlFO2oVMK0GKQjE0S/KqnRiBC6PqWNesfxs7bZjM6zZQAudR+lMx0foS6h/cn3bRht7FpgwRmobnp6nVKAVoA4ji90CRALgFyCRCZ/AaNI7j+jCv5tAAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
