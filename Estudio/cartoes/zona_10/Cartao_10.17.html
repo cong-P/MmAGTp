@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 10.17</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -483,19 +487,19 @@
       <img class="map-image" src="mapa_10.17.jpg" alt="Mapa do território Território 10.17" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 48.459%; top: 36.154%; --ang: 0.0deg" data-ax="48.459" data-ay="36.154"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº127</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 48.459%; top: 35.0%; --ang: 0.0deg" data-ax="48.459" data-ay="35.0"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº127</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 56.884%; top: 65.865%; --ang: 0.0deg" data-ax="56.884" data-ay="65.865"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº89</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 56.884%; top: 67.188%; --ang: 0.0deg" data-ax="56.884" data-ay="67.188"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº89</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 50.572%; top: 15.336%; --ang: 86.6deg" data-ax="50.572" data-ay="15.336" data-nome="Avenida Amadeu Duarte"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. Amadeu<br>Duarte</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 50.583%; top: 12.594%; --ang: 86.6deg" data-ax="50.583" data-ay="12.594" data-nome="Avenida Amadeu Duarte"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. Amadeu<br>Duarte</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 68.74%; top: 65.138%; --ang: 77.6deg" data-ax="68.74" data-ay="65.138" data-nome="Rua Sampaio Bruno"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Sampaio Bruno</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 68.267%; top: 64.209%; --ang: 77.6deg" data-ax="68.267" data-ay="64.209" data-nome="Rua Sampaio Bruno"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Sampaio Bruno</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 19.7%; top: 27.895%; --ang: -1.9deg" data-ax="19.7" data-ay="27.895" data-nome="Rua Gomes Freire Andrade"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Gomes<br>Freire Andrade</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 19.724%; top: 26.052%; --ang: -1.9deg" data-ax="19.724" data-ay="26.052" data-nome="Rua Gomes Freire Andrade"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Gomes<br>Freire Andrade</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 32.56%; top: 13.392%; --ang: 75.8deg" data-ax="32.56" data-ay="13.392" data-nome="Rua Doutor Jacinto Nunes"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Doutor<br>Jacinto Nunes</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 85.58%; top: 23.7%; --ang: -3.0deg" data-ax="85.58" data-ay="23.7" data-nome="Rua Gomes Freire de Andrade"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Gomes Freire<br>de Andrade</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 85.537%; top: 25.724%; --ang: -3.0deg" data-ax="85.537" data-ay="25.724" data-nome="Rua Gomes Freire de Andrade"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Gomes Freire<br>de Andrade</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 13.258%; top: 62.151%; --ang: 89.2deg" data-ax="13.258" data-ay="62.151" data-nome="Rua João Luis Ricardo"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. João Luis Ricardo</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
@@ -511,7 +515,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 10.17</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADX0lEQVR4nO2cUW6kMAyGPy9IfQxSDzBHgRvskVZ7MzhKD7ASeRwpyPsQJ9BVu1KLROngPIwg8EmJJtj+7YAoH27Tj48z4JBDDn1TKIq1IbYwSWuXJhGBKAKxpdzUHj08h46FWqBJAAgsAuGPKPE5CWFmvUo/AsTnQ4fn0BdB9uzTqJ3eEsAiTLe7yBAS2ZYMXzI8h74KCnfREaB/EaF/aaF/adExtu9Dxw3PocOh2ALxSZluqky3hAxBVYZzDM+hI6D88JsEDQq9gk4/QfPa6GYgJLtKPHZ4Dh0OoTqXw35u9P0fa43qePI5ObQHau3Zz+0uTLcEU4dYV7iLTl3DNpN18jk5tAdCdW40x5NZawS1Ngatpynfh9uIK0A5SEioaoJ+BhmiiPyaQcdY81I5W5GOHp5Dx0Koqiq95tjRjMKI2Y1y1Ci9qppBOfmcHNoDtRCfE5M0ClGA2Cbp504UmiT9/AyEGZ1yZNEcOjyHDoeKr9DqOmYATGG4jbgcZPmIbCNYSneYUUgIYc4FDyV2qMcRl4Aapdd7rn3KAOgIiHSgOls8KQO1/vEN5uTQZyGLLKHJItP6VoexRpshgavPh4ew5MNMyVmWiMICh6JI6VVLbHHyOTm0B9qoT0tE5dPaqrVYL/iKeGQoi4uSkCQbClsH2WEk7IjqTk4+J4f2QGYZxhIp2OlGc9a+kHxFXAAqvmItcQZLT9iKeFX1sILHyefk0B5o4zCyodDZ1KfVMMqR3Rd8RTw4ZDlLQg0va4lz407AvcZVIEtbv6k01VIRG2vh6vMSUKNMHciw6V9Ef0trCwSwRfO7O354Dh0KvY4jitI081CTlKEGmh5ZPjq08RqWrgRKWGHN9IfvoboEtNUQr3VoCSqbbcjpccTDQyYf8t+t6/apkqGCKkZx9XkFqFS6Sg0j942UDXXVbmwXzcnn5NBOaH03fO0Oify2ZxUhMkB53+/8c3Lo01AxAGupOxSLsal0UapfnsW+CFT231N359tuKux98UVEOsrXJb7FnBzamY/YvtH3z9aIVZt6FvtiUA4cFpGBpXw1giV/aEbH+KRvQccNz6HjICt3sUgWFzlZHVtLXU03+2RAdh3fY04O7cpZAqWMtZY4azw5stbK3Ws8OCT+9UKHHHLoP+0v2pAacq+Z5w4AAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADjElEQVR4nO1cW26kQAwsA9J+gpQD5CjMDfZIq9wMjpIDrDR8RmrklR/dkGhXCssowwTXBwKaErTw2GW3GWJsxlht5wBBcgTJEaSHIU3kuEwNMFLjQyMR6SgwNcgXNQ8xp+0IkkNecJ10l4CZgPY3MaanRGivWEbRD7Kdno4/pypIu0lkv33UpiqIntUMZsL4/EZ0aeVQfMll7502Ikj3JbVvxOoJ+lci9K+N7DXgQcLJTe/0WQTpvqRJXvz0gzE+s2wS6NIyu2e45Z0+iyDdRUcAnoK2DPQM8PhTzqltdCImNGrIKKavfbwqSF9NArPqR0F/rfnfG0fNPBx8TlWQ9vmIdilSvYmUTMDYSeZRtMXY1dmN/P+dqiA9jI+o2fSk5RotO4aWy2Gy68JHnILUqkiQd85JQgdAF8k0f10haUapS1m1Ij3EnLYjSBnqAtCLMaA4hUFdgYz6nogJvVIdysHnVAVpn46YnhJGkpAwiXiYmkT9tSOWciX1VylStlfwaMqiPv6cqiDt9BFJcs4SOiz18AwjfMRZ6xGj+gjM+bQ4BSBBFzd0wYMxdeDQEacg1eIAZPlCljilPqkSgqjTTMT1pA7E2udplCUkOGj8sHNLwFjUprqHyD7PYRGs6sHqk1lRuHDIGakeurY4+JyqIN0m+2QrRNlhQfEWy0BYxHcmQd0De0HSHYXbgQWMBN9bwsnB51QFaXf2yUNWCn64yjnLOctNwyK+OQmrRYteHYVJCDeLXJRQeOgIi/jWJCwBg9VRaBAxE7Dkwvf8OvUlB59TFaT9NUuIUujfL3GuwonZS0SNM5DgiSf/JdPUQkWWl4bIPk9BqqV5TtbAV+dn4hepT6qBKNRoXrqvf7zNCNLtdETyTNPdQylS6kBZ7gofcZKoAStXKrJZeI1b84/ooToFCascgt/loVlUlqLEMnDwOVVB2m0RbK9bQ0IuTpkx6CUfujDDIs6w0qVYFEVpqCt+Y200B59TFaRbfRuOAm2IEPVQkhBvnNDPvo4/p+0IUoY7AC5L3R+78/MyR7kufMQJSOT99yjd+d5Nlb8Xn0lbqvzfJR5iThsRpIylbI3yRd+H1oglN40q9slIrQqHWRSFbKxCJX2WExEP8mHwXR/vswjSfhJ7i+VMllxYsVpUpLoH+fMA77yNKvbZvg3n1RJn0ZO+9lkiycHnVAVpB4ni3wsNQXIEyREkGP4A2pAacotteDoAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
