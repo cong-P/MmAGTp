@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 10.22</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -483,17 +487,15 @@
       <img class="map-image" src="mapa_10.22.jpg" alt="Mapa do território Território 10.22" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 34.692%; top: 24.423%; --ang: 0.0deg" data-ax="34.692" data-ay="24.423"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº237</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 35.101%; top: 23.032%; --ang: 0.0deg" data-ax="35.101" data-ay="23.032"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº237</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 65.0%; top: 72.596%; --ang: 0.0deg" data-ax="65.0" data-ay="72.596"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº171</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 64.599%; top: 73.826%; --ang: 0.0deg" data-ax="64.599" data-ay="73.826"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº171</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 47.329%; top: 56.538%; --ang: 0.0deg" data-ax="47.329" data-ay="56.538"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº201</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 47.4%; top: 56.894%; --ang: 0.0deg" data-ax="47.4" data-ay="56.894"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº201</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 41.473%; top: 41.346%; --ang: 0.0deg" data-ax="41.473" data-ay="41.346"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº213</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 41.7%; top: 40.875%; --ang: 0.0deg" data-ax="41.7" data-ay="40.875"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº213</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 80.838%; top: 55.147%; --ang: 17.2deg" data-ax="80.838" data-ay="55.147" data-nome="Rua de Luanda"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Luanda</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 34.044%; top: 92.237%; --ang: -16.0deg" data-ax="34.044" data-ay="92.237" data-nome="Rua António José de Almeida"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. António<br>José de Almeida</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 80.534%; top: 55.59%; --ang: 17.2deg" data-ax="80.534" data-ay="55.59" data-nome="Rua de Luanda"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Luanda</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
@@ -509,7 +511,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 10.22</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADY0lEQVR4nO2cTYrkOBBGX7QMvVRCHaCO4rxZXc0+Sh2gwV4m2Hy90I/lGRjoNpPlcoYXScn2AwUZFfoiFEoTf3yNP/6cAYcccuibQrPl6w6YWUe6d2e1PEwPrAzPb5NDh6AgSRKwmgZWM7uFtJpI02pmN6CXJE3Pn55DXwCVyNDlL34oj+0epfQgx42vmJ5DXwmNN7APPYzxFgSzGb2Ws0zPof8b6najsFj/aeT8YzYY35dOzG87lzi5TQ4dgZJHbCmoxvelY7yDmN8W6wdkEIAoYH7u9Bz6EmhNWQQA9vH5U/YxBdkdyNpiAkazrDG/g00O/S3U5f99AGbQeMM0vj+M8f1hEPN60VayTm6TQ0cgpClnmjnNiAsaCJKmkIc5N62vnNwmh45ASCWR0BAlIChHhhIe6JXdQkN0j7g4VANALUlpQQMgTTWCxAX6KSgFD/eIK0P5i8/LRL0bc5mqWTqaleTkNjl0BKqrRkiBIpcr45I0Q3qn/8crJ7fJoSNQGyOSjojK1wBAXMor24OT2+TQEajoiCglAZm0I0EpRuy3OVxHXB8qUjLmD/okJXMeml1lE5XuEVeHso7I8WDZhYytHjEFZVdxj7g6xJZhbHlFGua/glIY0bamnNwmh45ATYWKXJxScYEpp5vpWU043CMuDeVaZKpGqYrKqeSh/bR1U3k94hWgXT2iLhi1XFkSzyI5fV/j8lBRD1txKiWeVUxQHcR1xEtAHcSHifjLIP7qBKtptNoxo7UzCAvjHWDultPb5NARKPVQGTHJBeUhYP3wMNJyMr+R3OLZ03Po6dBOT9Z1oVGRZZMLNsl5cpscOgJ1MN+gn25prbD+04C4YOmDDuu1mmAtLVUnt8mhI1BVlpAqleziwa4x36vYrwA1PTFtNlH6I9pSdq1auUdcGWo3LfoJaLuplO81Dzz7vDpUapZSrViH3R542RxvmiTcI64MNTtdbYPtTkf43uerQfVs+NyRz+iknHNNhz/tDmmYS97fwCaH/haiXSum2oOrXX/EkF71GPEK0N4jQiMmtv4ImmTUc42rQ/uz4aulPKMfwPrPn/lXRpjfECxovIWnTs+hp0Nl07t22f6rT6ZNQb0e8RpQPRs+mzG+L6T90Kw26z2C/Gz49SHzXy90yCGH/uP6DW+KGdpYR+PJAAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADdElEQVR4nO1cW27bQAwcrgTkUwZ8gBxFvlmuJh0lBwggfQaQwYKPXcntT1W7rR7kh5GVNHAIj8khl2tirLY+rccAAXILkFuAdgMaye0GgIhq2LUb7uRLu0F5uX2f1luAFqCK1QDciTvlwaWybMI86BJAqw8NGbTaArQnEHlkqP2D7/JtujVClXGOG//j31tpAXopqL8A9MHfhF4DxUiElqe/8E6/YwH656D6YVVN1H4SvP4YCejfp5oxXqcd+ZQC9DQjuKxZKID+JtfG60RtByagAtDIU+Mfv1MK0G5Ad6sidE0fn29MH0PFrhlUW4ie7PWhy058Wm0Bcqv9u682Soy4gLh/Fx0hL2g8X/B+fEoBegIE5sErTS8zmgncaUU6VL702rQ8snGfUoCeYwTnKNBppQkhiEaGHB601rCehTwSjDg0CDkAVLklJZ++9CO0G+URRLjRasiQ4BGMODII9sF3libKVQ0FOaf8kkk27lMK0CuyRmWBwtuVGhQW6uHxkY37lAL0ohjRqY6Q8GCaQe+rstRH5hsb9ykF6AU6omE2AWnaUeKBxojHbY7QEccHwaVk4y8qIF1HWMEhtJhFZTDiJDqitXhQeg8zDyxrSMiwvkUw4uAgzBUGl7rClv6XTk8oVUpO2bhPKUCv6VDBm1MaJjwyPHQ0M0GCEUcGweuHIf9lotKEg/AgM2ImSDDiPP2IJieM0q7MhWeWnLGvcXgQ/GuP0pyywrOIiZkgoSNOsxv+TYzmS3a+v2rW8dueysQM32uZmJl0ikbGJabN+5QC9BwjABAakwumGXR4htpO5iM0nYxXuVZN+/ApBeh5ZdnlXOHN6llF5k0uTyehLI8OqoHxIrLxYrlCJ29VY5K9oIakDtJ04uJz4z6lAL1CWYrNEzM5HjwM5kcX+wwgzDMxvKgm8nzEspVdulbBiCODsNi0aK2fPU9T6eaG0qLciOrzLD1LtbyXtdwDz5vjiyGJYMRJdrqwGLB90BGx93nas+FjDT+jYzXn3Q5/6lkeXXrLewc+rbYAZVvmiqHM4JqEmPsRahEjzseIaiEm5vmIZTEatca5zobfpREliqLTXtWb/8qIdLEZmOQMYLV9n1KAnu9QieVfkflpTmZZgkY/4mRnw0eS8786b/tNWW2Wa6g4zoYfH0Tx64VmAXILkFuAYPYDb4oZ2vwpLVYAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
