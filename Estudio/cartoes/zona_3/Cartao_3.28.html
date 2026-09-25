@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 3.28</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -483,11 +487,9 @@
       <img class="map-image" src="mapa_3.28.jpg" alt="Mapa do território Território 3.28" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta vizinha" style="left: 38.635%; top: 30.68%; --ang: -8.0deg" data-ax="38.635" data-ay="30.68" data-nome="Rua dos Girassóis"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. dos Girassóis</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 38.587%; top: 29.072%; --ang: -8.1deg" data-ax="38.587" data-ay="29.072" data-nome="Rua dos Girassóis"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. dos Girassóis</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 55.453%; top: 21.52%; --ang: -77.9deg" data-ax="55.453" data-ay="21.52" data-nome="Rua João Villaret"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. João<br>Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 79.139%; top: 11.553%; --ang: 39.6deg" data-ax="79.139" data-ay="11.553" data-nome="Praceta dos Girassóis"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. dos<br>Girassóis</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 55.463%; top: 19.104%; --ang: -77.9deg" data-ax="55.463" data-ay="19.104" data-nome="Rua João Villaret"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. João<br>Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
@@ -503,7 +505,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 3.28</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADfElEQVR4nO2cQY6rMAyGPz+QugxSD9Cj0JvN1eAoc4AnkWWlIL+FY2A2T5qpRBlqFiNK+KREzcT2b7uifPsa/3yfgYACCuiXQlnqdc8tjB0As0BuqSMdfift3tMLaH+oUVVVhVSQexZhlIuK3Ao2op8t9KqqOu0/vYBeANX/fWZRnRr1u1kYpUXkVrCz5P6S6QX0KihfVO7MIh9To4xdo5AeZj8OML2A9oC+ftWzAE1h7BD6CYTUqLxuegHtDqE6uR/RT43qsHErVOm12CvuRzSqw8HXFNCz0GxRBADyMYFFHf1ni1sSYPSo41esKaCfQi2kRaTKoFAAZmG8PUTHrrFnWyXr4GsK6Ekot1TtofPTYryp74BUFilC3Mc8/poC+jFUFYcBqC7E1Cj9BPQWhzYmVNRXkoYfcW6ohdxBr3PrIcUsSm6KWOiRJiBflH66FumnfacX0CugVIDcokN6uO+YHlIHwI4HGzCN+/hrCujH0BJ9FqgWourZq+mw0d5fCatxamjxIxrVwTeDDqmmNOoGAVSn5eWDrymgZyA/Iyb/bP7kIk4Nfm7oADXdFTvizBCqpkrWQKJ+53ZklLpBFoMRO+L8kBsHYHsUTHVHVEviISjhR5weohqMpBs/wg6FqkdQ3YrF1YgdcWrIrcYaSCwnw0ahogYc4Vm+CyR3mo3BgCwC6SH2zF7JF41M1/khr5vTggWeq6OpSyLcXAgzJ3FGnByq0eciQPje+Bp9QvgR7wJ54LnKDotMVTUKj0OBOCPeA0qq8qEP0SHXshlLZNw94ykfXlz1iukFtC9Uc59Qyyml/2yLVVeO3V8893kt0usskK/l8GsK6BnIK2/ztSi5Q62QKrdFyS0CbanVVNKomI958DUF9CSUluadVJC7PbeqbNUhPezuZdMLaF9oo2Kv4tSa/t4kRU3HDM/y7FANKapsjQsQ68DXzCgRfZ4dWlQIb+rsXZLaKhNT460asSPeAFp7w/2hDjRqTRt4RGqjUWd5eqgFGtOfhFRaa/CDtnjUcS21kSN7D+DR1xTQ81DtDc8Xq4mxofFW7I/cmb0k9yXTC2j3vAZLgdSa0NrUR6zprj76Pt8Pyhdl7OZNItyK9ReX8xeuKaDvQl4xA/Y7ItbMlx6iqlo7gcki0a9xfogvZdieBe29SML7NTTqLN8Fkvj1woACCug/1z9jsc1KSqF6lAAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADrUlEQVR4nO1cXW6zQAy0YaU8gtQD5CjJzXq1cpQe4JPCYyWQP43tXUifikAtEM9DBIERWcnxz9gLCy1GVy3nEAXJESRHkA5D6tlx7xNR1+r3IxP1ifxKS/mI0yHWtBxBmpFqURA1A/G9Z6aOL8J8HciuyGciuunRI5MWI0hHIrH992lkkUct+WiEbcBRXAcyX3L/k5+3EEHajNRfhO80Mr/DLLoWttF8WfzY9kk/RZB+nZSezkZGEBmQTDDdHkRMTS28yZOqIB2CRBomFHTD0ccsrcB3gmQCLsPzCNyy8zVVQVpJGq2K0HN+h2fQquOGfNIjCVSIXHUcYk2LESRHgisgR08kRIPHj+76xdK1tX0nx1lTFaSVekSCMaCkaLO36K6IGgpUpAV+8/7XtBxByrCk4QNHlkJozgDZAWmFqhVqFn5Lg5t3vqYqSOuiRt9CfhpTLilGFurrga30aGAc/QVW8jawmsre11QFaR2pUfkpwQF85dxRVQi9YM4DIhYumMa9/zUtR5C+V58D5QjhevYUOuwq6lCTvCNqvEQeUYsmCZ4z4GMSJey+R7l552uqgrSBj3jkc8snizgFU9FTDR0mU4VFnJlEGhJEHYD6iNvMZWjoULkyx5SwiNOTyIODYnIFKlZb/JBZCRp5xPlJ5AGjgTFMSaWmkqZHqPPw+BF6xOtEDSkOoHiGmUJl3a88QBMWcX4S39UYcGh2gEEqiBL2nd2Cnld0uk5PIvvbi/oIqzlzoulHJYWwcBI+4jWqz48sQGTbeK4+S9cj8ojTk8gLTyqyQ5GpXKPIdagifMQrkBoRfhfkDJo9lEbGPXc8dexy8hZHWNNyBOm590nk45R8+0yDTVd27T/KvU+0PUX3cLwNu19TFaR1FqHo3waBbYgNUvUJp4mYKA0+TcUwGo0fO19TFaTVUYNs845+zKeykUKgLz4FjFVPWo4g/aWKLUWcmtrfs6ao6ZiRWZ6dRFZS3Ey29mJ0fuG5M2rlyM7XVAVpC4UKmKYrs1blyoSZRegRL7c3nBwaK2zThunZJnSrvfz6z1uOIK2tNWrTn1BIJNvghwojVx0oN+0o7wHc+5qqIG21N7zHyHUZl+iwIxwftjvYmlxrn7QQQfqjvgaVAampoTWbj5jaXTZKs/M1VUHalNRf8KKAcdYIt2H9knIecE0/QJCeSOITM+oP/IVDNh8BeMqpL5+J+Yizk+hpDJu8C+rvCJj2a+RwEnOWpydxvL3QECRHkBxBIsN/Y7HNSic4HGcAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
