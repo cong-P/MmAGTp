@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 3.29</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -485,21 +489,21 @@
       <img class="map-image" src="mapa_3.29.jpg" alt="Mapa do território Território 3.29" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 54.254%; top: 41.464%; --ang: 89.2deg" data-ax="54.254" data-ay="41.464" data-nome="Rua Vitor Hugo Moreira"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Vitor Hugo Moreira</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 53.957%; top: 42.998%; --ang: 89.6deg" data-ax="53.957" data-ay="42.998" data-nome="Rua Vitor Hugo Moreira"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Vitor Hugo Moreira</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 32.664%; top: 62.148%; --ang: 0.0deg" data-ax="32.664" data-ay="62.148"><span class="txt" style="font-size: 12.4pt" contenteditable="true" spellcheck="false">nº 883</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 33.701%; top: 62.373%; --ang: 0.0deg" data-ax="33.701" data-ay="62.373"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">nº 883</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 15.429%; top: 58.071%; --ang: 0.0deg" data-ax="23.329" data-ay="58.071"><span class="txt" style="font-size: 12.4pt" contenteditable="true" spellcheck="false">nº 260</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 17.014%; top: 58.22%; --ang: 0.0deg" data-ax="24.925" data-ay="58.22"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">nº 260</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 47.155%; top: 66.141%; --ang: 0.0deg" data-ax="47.155" data-ay="66.141"><span class="txt" style="font-size: 12.4pt" contenteditable="true" spellcheck="false">nº 9</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 47.325%; top: 66.44%; --ang: 0.0deg" data-ax="47.325" data-ay="66.44"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">nº 9</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 75.248%; top: 77.54%; --ang: 0.0deg" data-ax="75.248" data-ay="77.54"><span class="txt" style="font-size: 12.4pt" contenteditable="true" spellcheck="false">nº270</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 73.737%; top: 78.05%; --ang: 0.0deg" data-ax="73.737" data-ay="78.05"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">nº270</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 16.583%; top: 20.773%; --ang: -56.7deg" data-ax="16.583" data-ay="20.773" data-nome="Rua Humberto Delgado"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Humberto Delgado</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 10.678%; top: 34.438%; --ang: -63.9deg" data-ax="10.678" data-ay="34.438" data-nome="Rua Humberto Delgado"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Humberto Delgado</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua Feliciano Moreira</li><li>Rua Humberto Delgado</li><li>Rua Palmira Bastos</li><li>Rua dos Girassóis</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Ana de Castro Osório</li><li>Rua Feliciano Moreira</li><li>Rua Humberto Delgado</li><li>Rua Palmira Bastos</li><li>Rua Ricardo Brito</li><li>Rua dos Girassóis</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -511,7 +515,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 3.29</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADTUlEQVR4nO2cTW6kMBCFX42RsjRSHyBHoW8wZ5qbwVFygEh4GcnozcJVxt3zI0VEpBuKBaIbPsUWFfv5VbmF+PQx/fg8AzjkkENPCiXR45pEgNRBP/f480q6vZvn0P5QIEkSiCSmHsBAEsNbh3KHs35Xrp6hTw5tg/R/H4BcAQBJhL/6Re6+06un6JNDXwAlEY5YpIwWOmQsgsni5Xub59AeUHf3WYa5ByYJWYYZEMRA+ZK/5NAzQSQzAARi6gM5xgxM/SLkvIiqh0hy/JbmObQjBH3dADDMgf8+6RHI8cH75NAWqANifdsJAGIGgQ/B9PohnPoAAhmtk/XgfXJoI5Q6qAvRL2JLijooxFytCHUrnqFPDm2BimZYxQSgq470QrmmDmXcGAFges17N8+hfaESB+QciIEZJUBUPQDrOtQeoeuIY0NFWXJEMGuyxoaeSI5lEgkaGx4RR4aKT63DQzls9QmgBEj5ONgC1SPi0JBFRHnxLG+/nNZcR3lu1oc9Ig4NmR8Rc5PL4hhZNAOauQKA64jjQ7rCaIIBgXqKt5ITrizPANlsYNZkUZH1qowWOlC4jjgDZBUQrEmLWIWmzRWqLVClxoP3yaEtUK2JqemLqMHQnkpRTXZleQKojhHqSuoKY707mxWh8eIRcXDoxrOcUWwHW2n+xcz0MeLokGUzLHNhwkHFhNmVcB1xFshqqNILZbDpQhCXjkgXDYbp53snwCKa63jwPjm0Bbr1I+rC02YINC6E+xGngKqUbB2H+7VGk/2a3Y84OATbjJGLemjTHIDpCPMjfIw4PlSq6gTpQgG6kvIk0iIc5ksG4rsAa0nVzs1zaHeoSXGuGU/TFrlJc7TlEg/eJ4e2QI33oK/bSiM02Wnzhx2uIw4OtXkNzkEXHLitjxjshvsRp4DWveFYtCZ/RKBtFZd286f7EYeHOgChzBOCmDsZ3l6KxiQSQKRLhl4tog8/eJ8c2g7p3vCkDqZW4veBmF4z5Iql/IjENzXPoZ2VZc1u1traVUI0j0R3qM4INZuAx/Xb+CFt9cST9cmhzxxlnjD/KVCGty7bzj8pN2QYA4HUA1M/79o8h3aHbveGoymIWDf0aD2N11meAhL/9UKHHHLoP8dvNpYF4zAl4pkAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADdklEQVR4nO1cWW6kQAy1ASmfhZQD5CjkBnOmuVlzlBwgEnxGouWRtyqySUFE09Blf9AU8JS2cLw8uxoJNsvYbMcABMgkQCYBOg1oRpPnGRFg7sDWPXw+w+4UOm2XAK1ALYkAJCIYewAYeDm8dKB3aLJrenYGnTZLgN6BUP/3+exZPmZE+ttf8cM1OzuFThslQF+BZkS6ANtBKi7jijC6vXwF+qkE6Byg7sMah6kHGLFdcJgAEFJLeLuv1wToNiAiWvizZafQEl3SAuIeiCY58M1ERJebfL2NEqA9ILDXzTJMLX1/MGF7ObhOTYD2RY2U3/bMh7QAAbwhjE9vSGPf8lKunUWnJkA7+YgOjIWQ4kJLiuwU0pKpCGMrzqDTdgmQSSPvHJiF8GQiVx3zA+GzmAD7DUkhxqflFDptlwC5iB0QSbogFsEGYtkD3/c61B/h9PLgOjUB2p1Z0kWIS6Ems23YQSoMCSJ8kILj4Do1AdrpI8jdg4pXnyJsILq0R6LWqMQiJnnx7AAkZ+BD6XUUXyISFlEDH5E8QmgQYTuQdtcqVvBjkUfcPQi0whiKMUhc8NCxTjnZNsIi7h4EFg0moyY1i8xn6i3MUUQeUQMIbAKCctNCA4bUoXbNcgs3kLCIuwaB2AJlH2GuIHfDLbOUoRrLNsMi6vARi7KScr6+q02uYi9hETVxlpNUE7L8jswMH3HvILBuRnIfYYmDJRNOV+YiJHxELTNU8wPh4OECIV07gvnRjGH889oh8Lid9joOrlMToF/jI9rMXtq1NQsRfEQVIPBUsl0xDh9rjVX3S+zl4Do1AdrPYg+SM0jTu7Q5PHvwLCN8RD1Tdcg5AwJ02vIkmK9Iw/S4AKRXHsUuc5b/9+s1AbpV1Eje9sz0RKk13D1E9VkDCAr3APq6fTTCmp0eP1wij6ior0H89pWkfD8fIWYhd4OPqGtvOFxtJp/DhG8Vx/Xmz+AjqmCoWo0TCGnpcHh50ByTePsG01SLbOSQbNMePrhOTYB+a2/4bAymTeL3vOnvaWH3cNUfkdj/lzZKgG6SWbaZmvSZmJJCrB7xsf3II6oCUdkEvKow0hu3NDKteTKdfiQBMtE4QbZqCYcXpql05x/qDRwubAwz/4xAPx1fpyZA+1ls8EKiDESUDT02TxNzllWAMH69UCVAJgEyCRCo/AM2lgXjuDNknQAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
