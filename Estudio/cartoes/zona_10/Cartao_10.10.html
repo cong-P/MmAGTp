@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 10.10</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -483,7 +487,9 @@
       <img class="map-image" src="mapa_10.10.jpg" alt="Mapa do território Território 10.10" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 52.979%; top: 24.231%; --ang: 0.0deg" data-ax="52.979" data-ay="24.231"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº35</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 52.834%; top: 23.446%; --ang: 0.0deg" data-ax="52.834" data-ay="23.446"><span class="txt" style="font-size: 12.6pt" contenteditable="true" spellcheck="false">nº35</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 88.862%; top: 11.442%; --ang: 0.6deg" data-ax="88.862" data-ay="11.442" data-nome="Rua Ramalho Ortigão"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Ramalho<br>Ortigão</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
@@ -499,7 +505,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 10.10</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADh0lEQVR4nO2cwY3jOBBFX60I+CgBDqBDoTOYkDYmZyCF0hmIRwMU/hxISvIcFpjuhWCrSwfDNPUAEqKLVb+KMvHX1/TP3zPgkEMOvSmUrF43AFKgNktHwG5AuykcPTyHjoWQ5k6SJKIyGvuMxl6CPiPNAHQiSio3jy8+J4e+D9X/fgoQP9s3UsBuvZqnkVYz8hZzcuj/gezWZ4jzYtBLkMyIyi8yPIcOhjpBuojpoy2G6SOjMYWXGJ5DB0DlUbeNYTFNA0b8DJl4HxAgplsH9ALSscNz6HAoAIu1Vpctztdsu+b9mi3OV5jKr92hw3PocCjU/z4ACQSZEmZMHw+rTTYzcuzwHDocKtFn+RolQS+V6DNKKsGopN0tHn2eGtopDhoBjVtHizAk1WWhsfcVcXJo97iJcyfiDEWr0kwzDyUi7aQRV6hODrVdo+0VpRmLjpmrojkCZTG4Znl6qJqCKltLzTLk6lasJoOiVriNODu0WoH6UbMZys2jaMmNakHcszw7tDqQqwFoiYzmYOwFbPcjfgSUAtA/TCOL2b8lpZExG4BpWL0HWpT6BnNy6MtQS1ikgMV5QNDJSJea4YAliD5jcb5iRw/PocOhtjnMmzJBKZIoMWctjVh9C9cjzg7VdVDkSlrMOVKliCdFsy4QXxGnhzoBi5XgYho6tTqZpZXIABrTRdWMvMGcHPoqVBWqYgC2bAY8iVNNs/S8xvmhAP2jOIwiGcASiAIDTNBl4mdA8DBNw3zo8Bw6HGqKw2oFVmWCOLNqVU9SttuIM0MB6GRxXND0kdFaQCPIrbcEnl0Tq158Tg59B9prlnGuPsOWCq3F+ju74Tbi5NCuYmaf3XzSszc9wj3L80P7EzywT2jV3Ocur+H1ET8ImobFJEk1r5ECGlkM0mUtrXtY1THfY04OfSOvYRCweB+guJL3xWqGoziaAas+5rHDc+hwqInVkp7OeG71EVJzMPC8xg+Advmtrbpy63gqwPQaqp8CrZ5lO8ynsc/YDWAaaL+xWA1V32BODn0VWv2IJj9Nv3Kw+HkRpC4DSygn/6DL9b4Xn5ND34FWPWLdF9YTPFt9xNbrCtXpofBHu2pSKWTiSE2Tk67l+J+mwc99/giopbse7b1CxTwsZjc62Y2lvIQIjz5PDz2dDU9XWbxfoVRXlorLAaaPHEQqfsShw3PocMj87YUOOeTQf1y/AUTb3n4O6lu8AAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADnUlEQVR4nO1cUY6bQAy1GaR8BikHyFHIDXqknik3gKPsDeAzEsiVn8dAqlZamqgKYH+wMwxPuxZej/3sgYVWS1usxxAFKEuAsgRoM6Ces9xwpy8pT22hJCz4Q+UmdFovAXIR6ZJAqJaBpDnjIkKkI+nwVNJVFX24+XCdigC9DGL73+9LovrLR/AWN9gGpJ/cyCZ0WikB+guIb+eBqO5GJoIx9MxwHhvW6VsSoD+CkprASai9ujG0V91E4DI2qtM3JUBZ7FVLno0sbUWsW8dA9b3CglB7S6QuQ7eODehUBOhFixjZZ2ngursMvJjeL7hH1Nrd9Pk6FQF6zSLOE0nVw1tozKBpRnt9cJ4u3Mg//6YiQBvKPgmi+SXiScs+kW4iGUVuOj0S2eeuQTQzDtLotJkXPMPAyDgLNZWwiF2DaH7dVKu3qNVAwFWpqWT3YBkpjCYYqoPsGmd3AJji7ZupdLPz0HvBWe4dROYKGqOtYRG+YSCsmFxGZivCR+wdRO4Fkl1yNQMVDqx7cSN7kIgs9w4iDyCTOwAvZHiAsSSwI444BKhXlur8YGloZP5pJY2BmCvtjqmm6MGM5r//eeslQK+z2IQ6Z92Btk7CKG7YhcZSYCBKXPImdCoC9Ibss5uZCcQMmbj01ogptgg+Yu8gMjuojZX0nBPppsmC0cwGEhaxe1DC5qBxRA4cvE9m9BYZ+I3+ZLnpJnRaLQFyyZSUYJuYqhmLtNQ3EWM0I/s8Qu3zYQGjUI/BWFIthChSa59pQKedED20e6L7fJ2KAL2Bjzi7F5iYCdCVHlY8UdnhI/aefSbhuhm1IWJQV5AbaLQ1wlct8UzDNnQqAvQmzrI2snpZCs3N+gu/ET7iOB0zsqhuPvHZMx8RkeWxTvCozAWtXPtc1DWiP+JAoLYaGXaQ6xp9qS4Do9PUWqc5CXjMbei0TgL0VNdgHbC24+dQ8j4i8RTOgWaJyFJjzA3oVAToxchyksUZz7k/AoQVAgzfU2LX2DOI5voWTd2V88JTA2b0UB0FlMxD5E4Jp62tpNFiI7FMBKFGxBFHiSNSzinaH0PJ9Rf6I3BvLO3kH4542XMfrlMRoHfwEcn3hekEz9wfMa8GQ7V7UPnbXOxHryeBG8w06+gvdvxP2irOfR4CJLnc9fDvCpl7QH+EtktghC9JRPZ5qLPh/UWpiAvl7krruKxIPyJRioYVGkd8vk5FgF4AcXy90CRAWQKUJUBk8gtE295++S3i0wAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
