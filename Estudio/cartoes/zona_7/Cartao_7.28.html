@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 7.28</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -485,17 +489,17 @@
       <img class="map-image" src="mapa_7.28.jpg" alt="Mapa do território Território 7.28" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 81.185%; top: 56.005%; --ang: -83.3deg" data-ax="81.185" data-ay="56.005" data-nome="Rua Doutor Francisco Sá Carneiro"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Doutor Francisco Sá Carneiro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 81.187%; top: 56.458%; --ang: -83.3deg" data-ax="81.187" data-ay="56.458" data-nome="Rua Doutor Francisco Sá Carneiro"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Doutor Francisco Sá Carneiro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 67.055%; top: 52.692%; --ang: 0.0deg" data-ax="67.055" data-ay="52.692"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº109</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 67.055%; top: 52.917%; --ang: 0.0deg" data-ax="67.055" data-ay="52.917"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº109</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 38.699%; top: 50.0%; --ang: 0.0deg" data-ax="38.699" data-ay="50.0"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº115 LOTE 4</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 49.207%; top: 15.333%; --ang: 10.9deg" data-ax="49.207" data-ay="15.333" data-nome="Rua Machado dos Santos"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Machado dos Santos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 50.252%; top: 12.649%; --ang: 10.9deg" data-ax="50.252" data-ay="12.649" data-nome="Rua Machado dos Santos"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Machado dos Santos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta Doutor Francisco Sá Carneiro</li><li>Rua Machado dos Santos</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Machado dos Santos</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -507,7 +511,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 7.28</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADgUlEQVR4nO2cUYrjSAyGf20V9GMZcoA+SuUGe6Y50twgPkoOsGA/Bsr88yDJqezCwnQGx+3ID01i54MSrah+qaQI8dvX+NfvM0BAAQX0TaFZ7DrPIsCcYe8H/PeV5K2XF9D2UCJJEigkxgFAnRJRrxn6hNcMVJLktP3yAnoBZN99AHIuDQAW4Y9hEbsHQGPJ+SXLC+hV0CxCXkU0WljIWETjxuuXF9AWUP7Xe6k/U5NRUpM6LRkoifK65QW0OaQe4SloajIOEKBMwDhMBLBkYj4BKAQwb7u8gF4CLZpF6I1VVKJeM+Q8f1DOADB61vEtbAroq1C27z4ACwDlJgRugvHzJhyHBAINfSVr5zYF9CQ0Z1gVwpMLAMk9oLS1FGHViu9gU0BfhkCygRctSjSgTgA5Qe9BfaM08AKAl0LysnObAnoGMo/g1AcFExMTALhb6EcqwyOOD80ZcgY0CqBePwiUm5hv0MKDikqtTOzfpoC+DHmdmm29k8hL8bd1WrcT/UiKGHFsSD3CdoNCdQb9cz/r0M9N7j7hEUeGeglRXVmqH6xBASik7SnhEUeH0ClGPdiEpRkWKPSp+0Z4xOGhPtPUfzcSVT2YW7BLQRE64vAQTFQWixF9UPC9wrSFO0h4xKEhzzV867g7g4vKtR7BFsryDaA112i+f3hyoU8vhfSC1aoxd25TQM9A8Np1X7P0TPNRWWrBKjzi4BAsw7grBayRwQ889HOhI94D6nqopHIRAKnB+2TMGca//8kCLGLVip3bFNAz0GM9Yk08fYeAVSHaQ4K6c5sCegZaY8SSVSmMnzchkCjjMEH76zCfaBFkPrXd2xTQM5DGiK5JYk0uTFF0/RERI94B0sgg9eeJUgkAc27EvAjrdGoAVFs8jIfu3KaAnoFs1xg/G6h6EgBQWpZ60f2jYTzn5rpz2+UFtDnU1R78SNxaI+yw0/cPv+Jc4+DQ2jFjuYYdjj/2R1R/EPWIt4Dus+FYrCf/gkQfFZd++DPqEYeHMqwkBQhKy6jXDwqQGzED1HRTX631q53bFNDzkM2Gzw9ToOOQiPGzQc5YfJzrJcsLaPua5b00eT8X71ssvWNGhebObQroj0LjAPDHsEifYZSb+Gl4e+3yAtoG8u78RPtFEZ38EyFJmwTGLBLzGseHcO+39QG/1DXQdPMa0Wf5HpDErxcGFFBA/3P9Aj9vx3P6THiGAAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADmklEQVR4nO1cy23jQAwlJQE5SkAKSCnjDramLSkdeEpxAQtIRwMjcMGfJCN7iFZBIll8B0e/B5swQz5yOEaC1cjVeg5AkAxBMgTpMKQBDZcBEWBowM47+HiEzSFsWo8gLUg1CQBaIsgdAKS+Jki3BvQO3RqAJEe9k1YjSEciof7v89GlLfx3RPrdjWjX5A/HkstxbFqJIP2LNCAS3Th1tHPIGFHjxkFt+iyCZLDQMAHTe10wY10w9WMD0NakkeI4NlVB2uwRZGfsDB1wjOgBctfz9bEhGF6BQwaHkf9+pypIhyGNWkXohUlUygtehhdS9ZC96jiETasRJAPnBfITCQDtHQngjpDf7ki5qzmClCmMHMCmKkgb+xENWBfCiwupSO2gLVMrwroVR7BpPYLkIKICdNWmROGswdf4ha+Zb7TyCF9riei6c5uqIG33CGL1oOB+hIoJ6Ua5W+gj0qYKj3hy0sACUgIAX0i3Fw4KdzTf0AjCTSwWldqZ2L9N6xEkh/WpSTqVgproqo1LKz0snegjfHfnNlVB2uwRoNlARIJoBn6Z1zr0OREYkTWenQQLCZFcWaofTEFBTi2nhEecxCPSvLCpisJSh9913wiPeHoSLCrNJF+3HLF6MLegRQkaOuIs1SdIXlClMAcFzxWmLdxBwiNOUWv0FiNmZ3BROfUjpG8RWeM0tUbx/OHFhd6VU2tYTRpz5zZVQdqeNdJDz9IrzUdlqQ2r8IgnJ4FVGO2kFObI4Ase+lzoiNPNUGEiWfusyzQnY86Qf/1pkOcorFuxc5uqIH1ZP6L2wtMzhHchPFpE1jhPjBh5dqaAzsmwH2DuOCDwfB1HC4sgw2vZvU1VkDbHCJqHJKbiwhTFYj4iYsQZSI1OSaV3iQJ8ZWgKwTAipZ7jAauHxUjVN3+8Kkg/lDXym0xSsp4UtKXBdNX8USBfmuK683s/XhWkH1rXIJ2AsNVwvaGLnZ4/HLGucZaJGYYoCm1NPsxH6NiMFiGhI860Nxx4Rx/XGqwifau4beTQTRvRjziFjqg1TyCrB5mzRACRl7zZS8pNPZr6Vzu3qQrSV+0NHx52geauJpGcEjxsO9fWd1qJIP1UzxKm1uS8Lr4csfSJGRWaO7epCtJXknIHID8dsawweFjfVsPLAW36DIL0QCKbzmc9Kd+57vzjn5Mgsp3AojFjv8ZpVsMZtsFvzh8P+zVizvIcJIxfL1QEyRAkQ5BA8Rc/b8dzhbUyzQAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
