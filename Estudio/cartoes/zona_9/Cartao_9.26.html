@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 9.26</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -487,31 +491,31 @@
       <img class="map-image" src="mapa_9.26.jpg" alt="Mapa do território Território 9.26" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 67.379%; top: 68.578%; --ang: -66.7deg" data-ax="67.379" data-ay="68.578" data-nome="Rua Heliodoro Salgado"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Heliodoro Salgado</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 66.436%; top: 66.518%; --ang: -66.7deg" data-ax="66.436" data-ay="66.518" data-nome="Rua Heliodoro Salgado"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Heliodoro Salgado</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 58.709%; top: 33.554%; --ang: 65.3deg" data-ax="58.709" data-ay="33.554" data-nome="Rua Barros Queirós"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Barros Queirós</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 58.141%; top: 34.485%; --ang: 65.3deg" data-ax="58.141" data-ay="34.485" data-nome="Rua Barros Queirós"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Barros Queirós</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 41.705%; top: 81.342%; --ang: 0.0deg" data-ax="41.705" data-ay="81.342"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº8</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 42.501%; top: 80.694%; --ang: 0.0deg" data-ax="42.501" data-ay="80.694"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº8</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 61.982%; top: 62.364%; --ang: 0.0deg" data-ax="61.982" data-ay="62.364"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº9</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 55.661%; top: 62.109%; --ang: 0.0deg" data-ax="60.832" data-ay="62.109"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº9</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 44.47%; top: 14.632%; --ang: 0.0deg" data-ax="44.47" data-ay="14.632"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº9</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 45.001%; top: 15.363%; --ang: 0.0deg" data-ax="45.001" data-ay="15.363"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº9</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 35.048%; top: 21.821%; --ang: 0.0deg" data-ax="35.048" data-ay="21.821"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº59</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 36.483%; top: 22.403%; --ang: 0.0deg" data-ax="36.483" data-ay="22.403"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº59</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 66.987%; top: 9.698%; --ang: 8.5deg" data-ax="66.987" data-ay="9.698" data-nome="Rua da Cidade de Évora"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Cidade de Évora</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 61.22%; top: 9.773%; --ang: 12.7deg" data-ax="61.22" data-ay="9.773" data-nome="Rua da Cidade de Évora"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Cidade<br>de Évora</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 83.303%; top: 75.688%; --ang: -3.7deg" data-ax="83.303" data-ay="75.688" data-nome="Rua Luís de Camões"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Luís<br>de Camões</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 79.911%; top: 75.389%; --ang: -4.7deg" data-ax="79.911" data-ay="75.389" data-nome="Rua Luís de Camões"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Luís<br>de Camões</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 18.63%; top: 51.134%; --ang: -45.5deg" data-ax="18.63" data-ay="51.134" data-nome="Rua Doutor Lopes de Oliveira"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Doutor Lopes<br>de Oliveira</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 20.873%; top: 51.201%; --ang: -41.6deg" data-ax="20.873" data-ay="51.201" data-nome="Rua Doutor Lopes de Oliveira"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Doutor Lopes<br>de Oliveira</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 92.749%; top: 21.196%; --ang: 75.8deg" data-ax="92.749" data-ay="21.196" data-nome="Rua José Elias Garcia"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. José Elias Garcia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 91.773%; top: 32.321%; --ang: 70.4deg" data-ax="91.773" data-ay="32.321" data-nome="Rua José Elias Garcia"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. José Elias Garcia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 8.679%; top: 87.154%; --ang: -85.8deg" data-ax="8.679" data-ay="87.154" data-nome="Travessa Carlos Zel"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Tv. Carlos Zel</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 12.675%; top: 86.627%; --ang: -85.5deg" data-ax="12.675" data-ay="86.627" data-nome="Travessa Carlos Zel"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Tv. Carlos Zel</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida dos Bombeiros Voluntários</li><li>Praceta Doutor Carlos Lopes de Oliveira</li><li>Rua Aresta Branco</li><li>Rua Doutor Lopes de Oliveira</li><li>Rua Jorge Alves</li><li>Rua José Elias Garcia</li><li>Rua Latino Coelho</li><li>Rua Luís de Camões</li><li>Rua da Cidade de Évora</li><li>Rua do Bocage</li><li>Travessa Carlos Zel</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida dos Bombeiros Voluntários</li><li>Praceta Doutor Carlos Lopes de Oliveira</li><li>Rua 31 de Janeiro</li><li>Rua Aresta Branco</li><li>Rua Doutor Lopes de Oliveira</li><li>Rua Jorge Alves</li><li>Rua José Elias Garcia</li><li>Rua Latino Coelho</li><li>Rua Luís de Camões</li><li>Rua da Cidade de Évora</li><li>Rua do Bocage</li><li>Travessa Carlos Zel</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -523,7 +527,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 9.26</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADi0lEQVR4nO2cQYrjOhRFz/sW1FCGLKCWIu+s+UvqHdhLqQU0WMOAze2BJNv5gw9VgSTlehoYx8oBCSt6V1dPMfHpMv3zeQYccsihbwplq2XIARuyGQBmZlZqhxxoXwqPbp5Dj4c6SVIJHxqjxNQDRAmipDEukCRJ8+Ob59AToPrbZzWzfjXSR/3IZGZmPdTZ4inNc+hZUJSATkz9apADpBk05vAKzXPoEdDNq849kA2SwIh/gqVxCZbmy5Oa59DDoTIi6hI0LkEAVp7lNzH1s4y4AFFAfmzzHHoKtFpbV7zJhhyAHLABsF8f9eNRUXyDPjn0VSjU334pV2PqMYhXq4/i1TT1HUcn68X75NA9ENLcSePtszFKGunq6lNz/R7QSeOL98mheyAk3ZoNdCK1O41AuZTaKB8R54c6VePyfUGaV2PqO0m6Wq2lkw1Rkj7cszw5VH/7SUuLH3FpLkSU6uQhbYHFo8bJIerrbj41qciKTTO0SwssPiJODpURsb/uw25G2euIbcOjyEu5jjg/lANMPRQdMbaa4j2keTWNccEGtv2P1++TQ1+G2hwx1yVFWWZsoaOuQ7cNUNcRp4fK6rOpyKU93be/tbRRsquMF++TQ/dA1XlKu7ycd7W5SckthSK5jjg7FCAuxaK29PEmyGDp96VMF0a82s3u12V5+T45dA9UPcvtrpmUVUIcK+JmWbx4nxy6F6prThvKo04kXbeMmU51KzS/qQiM79Anh74K/VdHNEsK6ttvd7tb4XPEqaEtanTHzNuajdtixVgqPGr8BGjb+1w4mJSprStaLnZVFL76PD8UIF9k5QKIbABr0NTPkEYw4hpIIzD13UOb59DDoaYjbkzK5kYBxaRsAsP9iPNDWyZMMylHYM/Tb5FkaasOd7HPDm3ZchxmgTJlaN6cyvl2LnnxPjl0D9Sy83OPJa0G+bKoyAV2pxIMOtyPOD8UOB7GuAjyasBqmoY9A7tbIG/HeF68Tw7dAzUdAU0plAFSL1VobgHD/YgfAR3PhpdyTK1bTf/2LXvCo8bpoaIjrMQF2vlf8mUxCIsR67AAOpiGzvc+fxbUzu1s3nUOLVlGV6sexTfrk0OfKTdnw+MSSPMFwVruIP4x0u8eFd354OY59CRoT5Iwe19KIm79oxk6Mb1vmbf9M5rn0NPWGpQ9r6OpvZ3XYE+ye/E+OXQPZP7vhQ455ND/lL+zPcdE+3MAtQAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADq0lEQVR4nO1cW26kQAy0G6R8gjQHyFGYm632SHsDOEoOEAk+RwJ55bKBjrQrBTFKINgfpHmUMi08drnaPSy02bq0HUMUILcAuQXoNKCB3e5DSXwfmHEHl+wubriVp5jTdgtQBioEhnNpKxHqah3rSA/SViNRg4f6GbTZAnQmENt3nyZmriem5s1PqUNggIMgWnzLx9toAXoaqEKgKDRGTJowSqKm17iho6f+p89agL4cVOYng8aCgTVDEDFV7yU37Vhy09/2/6cUoBN5hNhJNZYYgVoKDS8aLXphUh5Bld4bvvbjpQB9B2iyKoLUBVBXIGGAM/AvMAq9ljGKE8xpswXIrfTvvtmDtcxgouphJShG0tXFHEbOMKcUoB0gEukLkfbjNS1BpVWOiepTa048Z6Vqe/A5pQDt8wj5KDaoH2iF4W8fDmKeo5fgKgefUwrQboWKTLh8HfXFqwpRQ7VC6vDIwHdEC9CKE8xpswVoNvvuNwJnKGZ9EiqEyhMWPNQ8sUTWuEDWkEynpsZoxcIZ5sOcWMIjLuERtLzubDXD1jpMx/RY4u5z8DmlAO0DDSo21Lq4oTxiqTpMe2j6iRFBTJ6Itc/LxIjeSworM5bU4XXosgAaPOIi1ac4i8Q7V1uXv1GbGvlcWMbB55QCtFuhIrz9tcxwtrlQyaWFwp47+JxSgHaq2KNJ1Ny8vagyoaM/NwsXDBU7X/3SGwefUwrQfs0yyx8mUjqFyG+o50T1eQlQYUWmN0iZ9vBYOmagaKIBUyMI6OUJ5rTZAvQfHiEuSalZceGjVa2IGHGNrFHknbfejTvnCsskkTWutfY5UiZSWqU5n66MIqrPnw8qiYabsB2smsDfqZSu7omaFgXHVGKki6LHn1MK0BN4RJ+LlLMahQd8PTRb7ooY8ZNBNHfCjC5SOqlcyQRSB6Sr6KG6AojmbjnKooCFDLDIddUjiyUHn1MK0D4eQWAPNXEj2LdzG9FqC5u5BUZ6LfSIa6jY5JsxbqpGqVvQxNLd1w7sYtS7X//xUoC+i0eoGVMwB/GDE80lYYQecbm94WZ5a93E8rueuycia1yER7DlBd0MjtUMJRNMVI5MlbuFeg5Rd9fnDj6nFKAngsT37SzaNZa7TMJ8sGsUJ5vTpyxA/9obXo0l6T5wUc0SI6Lqnan5U6M1Qs4xpxSg3SBZmiTQfmu/MWM/NIOfk3hdOm9jJ/C1ag2yNa9c1F72a/gO0Kg1fjiI49cLzQLkFiC3AJHZX7M9x0QxF2mXAAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
