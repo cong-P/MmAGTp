@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 1.14</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -35,6 +39,9 @@
     flex-direction: column;
     border-right: 1.2mm solid #000;
     box-sizing: border-box;
+    /* Âncora da caixa de sugestões do "+ Rua": a secção das localizações tem
+       overflow escondido e recortava-a. */
+    position: relative;
   }
 
   .section {
@@ -176,6 +183,10 @@
     line-height: 1.15;
     cursor: move;
     white-space: nowrap;
+    /* Num ecrã de toque, sem isto o dedo pousado numa etiqueta rolava a
+       página e o arrasto era cancelado a meio — não havia forma de mudar
+       uma etiqueta de sítio senão com rato. */
+    touch-action: none;
   }
 
   .etiqueta .txt {
@@ -185,26 +196,27 @@
   }
 
   /* Contorno branco à volta das letras, como nos mapas: acompanha a estrada
-     e deixa ver o que está por baixo */
+     e deixa ver o que está por baixo. Os tamanhos são para quem vê mal, em
+     papel; o gerador escreve-os em cada etiqueta (e usa-os para as afastar
+     umas das outras), estes são só para as que se acrescentam à mão. */
   .etiqueta.rua .txt {
-    font-size: 10.5pt;
-    -webkit-text-stroke: 3.2px #fff;
+    font-size: 12pt;
+    -webkit-text-stroke: 3.6px #fff;
     paint-order: stroke fill;
   }
 
   /* Ruas da vizinhança: servem para dar referências a quem procura o
-     território, por isso são visivelmente secundárias — mais pequenas e a
-     cinzento, para não se confundirem com as ruas a trabalhar */
+     território, por isso são secundárias — um pouco mais pequenas e em
+     cinzento escuro — mas continuam a negrito: fininhas não se liam */
   .etiqueta.vizinha .txt {
-    font-size: 9pt;
-    font-weight: normal;
-    color: #3c3c3c;
-    -webkit-text-stroke: 3px #fff;
+    font-size: 10.5pt;
+    color: #3a3a3a;
+    -webkit-text-stroke: 3.2px #fff;
     paint-order: stroke fill;
   }
 
   .etiqueta.porta .txt {
-    font-size: 9.5pt;
+    font-size: 12pt;
     background-color: #fff;
     border: 0.35mm solid #000;
     border-radius: 0.6mm;
@@ -267,6 +279,12 @@
   .etiqueta.a-rodar .rodar {
     display: block;
   }
+  /* Num ecrã de toque não há hover nenhum: é o toque que marca a etiqueta em
+     que se está a mexer, e só essa mostra o × e a pega de rodar. */
+  .etiqueta.tocada .apagar,
+  .etiqueta.tocada .rodar {
+    display: block;
+  }
   /* Traço a ligar a pega à etiqueta, para se perceber que pertencem uma à
      outra */
   .etiqueta .rodar::before {
@@ -313,6 +331,47 @@
   }
   .ruas li:hover .apagar-linha {
     visibility: visible;
+  }
+  /* Sem rato o hover nunca acontece, e o × de remover uma rua ficava
+     invisível para sempre. */
+  @media (hover: none) {
+    .ruas .apagar-linha { visibility: visible; }
+  }
+
+  /* As ruas à volta que o "+ Rua" propõe */
+  .sugestoes {
+    position: absolute;
+    z-index: 5;
+    max-height: 38mm;
+    overflow-y: auto;
+    padding: 0.8mm;
+    border: 0.3mm solid #333;
+    border-radius: 1mm;
+    background-color: #fff;
+    box-shadow: 0 1mm 3mm rgba(0, 0, 0, 0.25);
+  }
+  .sugestoes button {
+    display: block;
+    width: 100%;
+    padding: 1mm 1.5mm;
+    border: 0;
+    border-radius: 0.8mm;
+    background: none;
+    font-family: inherit;
+    font-size: 8.5pt;
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .sugestoes button:hover {
+    background-color: #eef1f8;
+  }
+  .sugestoes .a-mao {
+    border-top: 0.3mm solid #e2e8f0;
+    margin-top: 0.8mm;
+    padding-top: 1.2mm;
+    font-weight: bold;
+    color: #526CA2;
   }
 
   .btn-linha {
@@ -394,6 +453,7 @@
     }
     .ferramentas,
     .btn-linha,
+    .sugestoes,
     .apagar,
     .apagar-linha {
       display: none !important;
@@ -401,7 +461,11 @@
   }
 </style>
 </head>
-<body>
+<!-- `data-cartao`: a versão do que este cartão sabe fazer sozinho. As
+     páginas que o abrem para editar (ver public/territorios/estudio/
+     cartaoExtras.js) dão aos cartões antigos, que não a têm, o arrasto a
+     dedo e as sugestões do "+ Rua". -->
+<body data-cartao="2">
   <!-- Frente -->
   <div class="card" style="page-break-after: always; margin-bottom: 10mm;">
     <div class="sidebar">
@@ -416,10 +480,8 @@
           
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Diogo Barbosa Machado</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Mira Sol</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
-          
         </ol>
-        <button class="btn-linha" onclick="novaRua()">+ Rua</button>
+        <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
       <div class="section reference">
         <span class="rotulo">Referência:</span>
@@ -431,38 +493,31 @@
       <img class="map-image" src="mapa_1.14.jpg" alt="Mapa do território Território 1.14" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 23.297%; top: 49.834%; --ang: 0.0deg" data-ax="24.63" data-ay="49.834"><span class="txt" contenteditable="true" spellcheck="false">Nº 256</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 27.772%; top: 39.122%; --ang: -23.9deg" data-ax="27.772" data-ay="39.122" data-nome="Rua Diogo Barbosa Machado"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Diogo<br>Barbosa Machado</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta rua" style="left: 48.161%; top: 44.696%; --ang: -25.0deg" data-ax="48.161" data-ay="44.696" data-nome="Rua António Luis Verney"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. António<br>Luis Verney</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta rua" style="left: 76.299%; top: 32.641%; --ang: 60.6deg" data-ax="76.299" data-ay="32.641" data-nome="Avenida José Maria da Silva"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. José<br>Maria da Silva</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 28.977%; top: 72.582%; --ang: 0.0deg" data-ax="28.977" data-ay="72.582"><span class="txt" contenteditable="true" spellcheck="false">Nº 156</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 26.086%; top: 52.971%; --ang: 0.0deg" data-ax="26.086" data-ay="49.83"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">Nº 256</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta porta" style="left: 45.741%; top: 56.274%; --ang: 0.0deg" data-ax="37.625" data-ay="56.274"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">Nº 207</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta porta" style="left: 30.183%; top: 73.06%; --ang: 0.0deg" data-ax="30.183" data-ay="73.06"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">Nº 156</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 68.717%; top: 27.003%; --ang: 0.0deg" data-ax="68.717" data-ay="27.003"><span class="txt" contenteditable="true" spellcheck="false">Nº 325</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 71.155%; top: 51.95%; --ang: 0.0deg" data-ax="71.155" data-ay="51.95"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">Nº 112</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 82.201%; top: 50.138%; --ang: 0.0deg" data-ax="82.201" data-ay="49.17"><span class="txt" contenteditable="true" spellcheck="false">Nº 265</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 59.527%; top: 26.516%; --ang: 0.0deg" data-ax="67.643" data-ay="26.516"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">Nº 325</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 46.727%; top: 42.871%; --ang: -25.0deg" data-ax="48.354" data-ay="44.673"><span class="txt" contenteditable="true" spellcheck="false">R. António Luis Verney</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 88.469%; top: 49.152%; --ang: 0.0deg" data-ax="80.353" data-ay="49.152"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">Nº 265</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 14.702%; top: 39.538%; --ang: -23.9deg" data-ax="25.96" data-ay="39.538"><span class="txt" contenteditable="true" spellcheck="false">R. Diogo Barbosa<br>Machado</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 64.967%; top: 82.005%; --ang: -35.0deg" data-ax="64.967" data-ay="82.005" data-nome="Rua Carlos Daniel"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Carlos Daniel</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 91.097%; top: 34.776%; --ang: 67.7deg" data-ax="85.095" data-ay="35.848"><span class="txt" contenteditable="true" spellcheck="false">Av. José Maria da<br>Silva</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 20.527%; top: 11.236%; --ang: -26.4deg" data-ax="20.527" data-ay="11.236" data-nome="Rua António dos Santos"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. António dos Santos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 73.472%; top: 36.883%; --ang: -33.1deg" data-ax="83.132" data-ay="36.883"><span class="txt" contenteditable="true" spellcheck="false">R. Mira Sol</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 85.882%; top: 57.861%; --ang: 1.5deg" data-ax="93.533" data-ay="52.262"><span class="txt" contenteditable="true" spellcheck="false">Tv. da Bela Vista</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 8.138%; top: 65.536%; --ang: -77.5deg" data-ax="8.138" data-ay="65.536"><span class="txt" contenteditable="true" spellcheck="false">Pct. Moinhos de Rana</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 84.758%; top: 13.679%; --ang: 66.9deg" data-ax="84.758" data-ay="6.733"><span class="txt" contenteditable="true" spellcheck="false">R. Vila de Mértola</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 57.276%; top: 87.115%; --ang: -35.4deg" data-ax="57.276" data-ay="87.115"><span class="txt" contenteditable="true" spellcheck="false">R. Carlos Daniel</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 19.66%; top: 13.784%; --ang: -24.3deg" data-ax="19.66" data-ay="11.304"><span class="txt" contenteditable="true" spellcheck="false">R. António dos Santos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 16.233%; top: 2.564%; --ang: 0.0deg" data-ax="4.937" data-ay="5.045"><span class="txt" contenteditable="true" spellcheck="false">R. Antão Gonçalves</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
+      <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
+           propor: o mapa só nomeia algumas, para não se encher de nomes -->
+      <ul class="ruas-perto" hidden><li>Avenida Almeida Garrett</li><li>Praceta Mira Sol</li><li>Praceta Moinhos de Rana</li><li>Rua 2 de Setembro de 1945</li><li>Rua 29 de Novembro</li><li>Rua Afonso Gonçalves Baldaia</li><li>Rua Alexandre O'Neill</li><li>Rua Antão Gonçalves</li><li>Rua António dos Santos</li><li>Rua Bernardo Santareno</li><li>Rua Carlos Daniel</li><li>Rua Hermínia Silva</li><li>Rua Mira Sol</li><li>Rua Quirino Evangelista</li><li>Rua Vila de Mértola</li><li>Travessa da Bela Vista</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -474,7 +529,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 1.14</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADhUlEQVR4nO2cTarjOBCAvxoJZilDDvCOotxgzjRHmhvYR+kDPLCWAZmaRUmO0z0MvDY4fkl5YeLYH6hIWfUfUb58TH98nQGHHHLom0JF2nEtERERYZL+ibK9ISLx6OU5dDwUVFXVzIfqHLohSap2d0wVsqqqzscvz6EnQO3dZxGRYRGyVrtk+riJyABtt3jK8hx6FpRU7TSZwYiQf0R0LPEMy3PoCOjhpy4DUGKVrCCkzyh5rFHyfHnS8hw6HDKNaJ5DUiSP7Y5SIkzDrEKqdhfKsctz6CnQIj2uiNxPciUo+Uf/bhLpHsU3kMmh34Vie/ftqDANiMJN2lfpJjoNgW0m6+QyObQHsnBTR7ton3RMqjoSzNFUne9haVAdTy6TQ3sgVHWbbDAFsbTDXUGA9l1S14jXhiIQlEkAUo3AIkCowCJKmgFClTwqUGI9vUwO7YHau5+19u1BK+QZeh4z6C+G5eQyObQH6j98z1PTbEVQ8tyVQeeg3bC4Rrw41DRiU7RouYe2W7TiRttLrADiGvHikCWiFhH5qOjY/UnLPeR5ER1TRa6s9Y/zy+TQb0MtqsxzCyk2tsJ0I6nVPq0A6n7Ey0MWfeqYtKvF+uubJemOpnkZ2f2IV4cilAHJ8xKVApLnBckzyjTMQLko0xBqez7VQ5fn0OGQZbEFggpJYRo+gXIxFRDSzZISAqB24+QyObQXWqx5TsciVs3QvwfYFL5W9/Ipy3PoUKgHlKklJcyf1J6wao6DPdq679yPeGmo5yPm0EMKVhW4bwqpK4jXNV4eemi1hW2Q2YKQyl1BPGf5FlCqPQuhFbE+mfUTVhKv9C6aw5fn0LHQxl2w61U3Wo7ioerRbMrJZXJoD/TgQPZe7O5bAOu8Rqt+uWf56lCrYP08o7MO72wqo95D9RbQpquu7RH/WQh/DEZPLpNDe6BNpWvjY45rkwT0EhhuNd4CihZV2shG+VOhgFhDnZ2APF8qlHWM5+QyObQH6h21wGaj2J5a/mpbJj+5TA7tgSKtyxYEQhWarVCmv4IKLLHNaxTw2ue7QPfZ8O1Ml83/BqUNjQOT91C9HZRnkGvPXdtYuDXL6E2aYfluMjn0heNhNjxVa5tRWCJZAdKnkP8ZUMql1z9OLpND+6HWdw3IFWAa7k8EZfpYO2+HZyzPoafHGj+33649uB5rvDwk/u+FDjnk0P8c/wKMkr1ElbWUWQAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADqElEQVR4nO1cXY6jMAy2Q6R9TKU5wBwlc4M90x5pbwBH2QOMBI+VgrzyT4CO5mEQVQvFfkAJ9FNr1fXf5xQJVksX1mMAHGTiIBMHHQY0oMnHEEEW0GFdydPpASLGQ+i0Xhy0ADUkInuivqmBJMm9hqhNBSDLi/oKWi0OOhII9bcPIyJeRoRMRbfQvV/5Hu/EWzzl460UB90NlNgp8KXTgBEB8r8I1PLqru/0U3HQw0FxuRnYFwyxYCYAhPQZMbclYu7ftr9TcNCBLIJ0kwgwt/aExEd0l54QOI/gpwDDYz9ecNAzQKNWERompgt+QEMSNfQeRxLLKA6g02pxkEm0375KYacASABXtFvpitRdmupGjqBTcNAGEEi5SRYqbEVtIl5xHZqs5qxlKb9k5zoFB22zCFo2G9RAtO0wG4haDt8SU9m5TsFBGzPLhstN3qTC25HXDeeSIxIkMYSmYG4ls4xl9zoFB22MGsA+olT3IC5DvIX2McVl3AaWnesUHLQxahCnCxY6aqzgMkPjh11qYHGLOIdF5Jm0sN6DeQsjN8yXKAHiFvHioEEaUdyUeC+cRVqE0N5D7kcUpksoDec+Xx8EFhJ6KykWsUJtQ4qLxKYizsPziHNUn8RfvJnF9O1rJKmJpmYZYi9uEa8MisJvYe7HSExa8IovQExpcLn5xispRlnEUexcp+CgzV1s5GiA0s/uLp9iB2oCKF1sbkpIw4L0wc51Cg7azHQBj8NQOzDdxV/8Hx2RqSTXlF5ufafV4qAnVZ8keQSHBM0nJbewlPOmOeXV52n6Eb2NU87Vp+UMdWVMl/Marw6C5agtWK1R/YFVHbOBeM/yFKAk9aWZgM3JTCvhwdRb6BTNwz/eenHQXTpUjTmKyTasR3HDelhM2blOwUH3sQiy9NLyR+1LTec1jP3yzPLVQaAMVvvljM50eGfBjPoM1dmm6kh9xLdE+G0xunOdgoPuw3TBnGNaCWq5xdyP8Khxji524UFrGZn7RXIiA3WgTi+SbXLveng7iE7BQZvzCJXZUSwv1r9a0uQ71yk4aJuPACM2me4qwnnxjqD7zewXjNHOa8hxLuc+z3Y2HBZnuvT8rxiIHBrnv5fxGarTgXIPgB+1d63HwnVYhq5ogeVoOv1EHPTd2fBUdGyGk8oIfEAcIH0i5L8XGY2gY+gUHLQZRDp3zfFDmItO5iNU+HzP+zR56yeBz1lr5C/jt9MMrtcaLw9C//dCFQeZOMjEQaDyH4ySvUT9GV/0AAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
@@ -533,21 +588,120 @@
   }
 
   // --- Lista de ruas -------------------------------------------------------
-  function novaRua() {
+  function acrescentarRua(texto, aEditar) {
     const lista = document.querySelector('.ruas');
     const numerada = !!lista.querySelector('.num');
     const li = document.createElement('li');
     li.innerHTML = (numerada
         ? '<span class="num">' + (lista.children.length + 1) + '</span>'
         : '<span class="traco">&ndash;</span>') +
-      '<span class="nome" contenteditable="true" spellcheck="false">Nova rua</span>' +
+      '<span class="nome" contenteditable="true" spellcheck="false"></span>' +
       '<button class="apagar-linha" title="Remover rua">&times;</button>';
+    const nome = li.querySelector('.nome');
+    nome.textContent = texto;
     lista.appendChild(li);
     ajustarLista();
-    const nome = li.querySelector('.nome');
     nome.focus();
-    document.getSelection().selectAllChildren(nome);
+    if (aEditar) document.getSelection().selectAllChildren(nome);
   }
+
+  /* As ruas à volta já estão no cartão: são as etiquetas do mapa. Servem de
+     lista de onde escolher, para não se escrever à mão (e mal) um nome que o
+     mapa já sabe. Só aparecem as que ainda faltam na lista das localizações. */
+  function chaveRua(nome) {
+    return String(nome || '').toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, '');
+  }
+
+  // Os cartões antigos não trazem o nome por extenso na etiqueta, só o que
+  // está desenhado no mapa ("R. das Flores"). Desfaz-se a abreviatura, senão
+  // a mesma rua aparecia como sugestão por já estar na lista com outro nome.
+  const TIPOS_DE_VIA = {
+    'r.': 'Rua', 'av.': 'Avenida', 'tv.': 'Travessa', 'pct.': 'Praceta',
+    'lg.': 'Largo', 'bc.': 'Beco', 'estr.': 'Estrada', 'pç.': 'Praça',
+    'cç.': 'Calçada', 'cam.': 'Caminho', 'al.': 'Alameda', 'rot.': 'Rotunda',
+    'esc.': 'Escadinhas', 'qta.': 'Quinta', 'jd.': 'Jardim', 'imp.': 'Impasse'
+  };
+
+  function nomeDaEtiqueta(etiqueta) {
+    if (etiqueta.dataset.nome) return etiqueta.dataset.nome;
+    const txt = etiqueta.querySelector('.txt');
+    if (!txt) return '';
+    const palavras = txt.innerText.replace(/\s+/g, ' ').trim().split(' ');
+    const porExtenso = TIPOS_DE_VIA[(palavras[0] || '').toLowerCase()];
+    if (porExtenso) palavras[0] = porExtenso;
+    return palavras.join(' ');
+  }
+
+  function ruasSugeridas() {
+    const jaLa = {};
+    document.querySelectorAll('.ruas .nome').forEach(function(n) {
+      jaLa[chaveRua(n.dataset.completo || '')] = true;
+      jaLa[chaveRua(n.textContent)] = true;
+    });
+    const vistas = {};
+    const faltam = [];
+    function juntar(nome) {
+      const chave = chaveRua(nome);
+      if (!chave || jaLa[chave] || vistas[chave]) return;
+      vistas[chave] = true;
+      faltam.push(nome);
+    }
+    document.querySelectorAll('.etiqueta.rua, .etiqueta.vizinha').forEach(function(e) {
+      juntar(nomeDaEtiqueta(e));
+    });
+    document.querySelectorAll('.ruas-perto li').forEach(function(li) {
+      juntar(li.textContent.trim());
+    });
+    return faltam.sort(function(a, b) { return a.localeCompare(b, 'pt'); });
+  }
+
+  function fecharSugestoes() {
+    const caixa = document.querySelector('.sugestoes');
+    if (caixa) caixa.remove();
+  }
+
+  function novaRua(botao) {
+    if (document.querySelector('.sugestoes')) { fecharSugestoes(); return; }
+    const faltam = ruasSugeridas();
+    if (!faltam.length) { acrescentarRua('Nova rua', true); return; }
+
+    const caixa = document.createElement('div');
+    caixa.className = 'sugestoes';
+    faltam.forEach(function(nome) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = nome;
+      b.onclick = function() { fecharSugestoes(); acrescentarRua(nome, false); };
+      caixa.appendChild(b);
+    });
+    const mao = document.createElement('button');
+    mao.type = 'button';
+    mao.className = 'a-mao';
+    mao.textContent = '✎ Escrever à mão';
+    mao.onclick = function() { fecharSugestoes(); acrescentarRua('Nova rua', true); };
+    caixa.appendChild(mao);
+
+    /* Na coluna toda, e não dentro das localizações: essa tem o overflow
+       escondido (é o que faz a lista encolher em vez de crescer) e recortava
+       a caixa. As medidas são as do próprio cartão, por isso continuam certas
+       mesmo quando a página o encolhe para caber no ecrã. */
+    const barra = botao.closest('.sidebar');
+    barra.appendChild(caixa);
+    caixa.style.left = botao.offsetLeft + 'px';
+    caixa.style.top = (botao.offsetTop + botao.offsetHeight + 2) + 'px';
+    const limite = barra.clientHeight - 4;
+    if (caixa.offsetTop + caixa.offsetHeight > limite) {
+      caixa.style.top = Math.max(2, limite - caixa.offsetHeight) + 'px';
+    }
+  }
+
+  document.addEventListener('click', function(ev) {
+    if (!ev.target.closest('.sugestoes') && !ev.target.closest('.btn-linha')) {
+      fecharSugestoes();
+    }
+  }, true);
 
   // Se a lista for numerada, os números têm de acompanhar as remoções
   function renumerar() {
@@ -589,25 +743,50 @@
     document.getSelection().selectAllChildren(txt);
   }
 
-  // Arrastar para acertar a posição; roda do rato por cima roda a etiqueta
+  /* Arrastar para acertar a posição; a pega roda a etiqueta, e a roda do rato
+     também. Eventos de PONTEIRO, e não de rato: são os mesmos para rato,
+     caneta e dedo, e sem eles não havia maneira nenhuma de mexer uma etiqueta
+     de sítio no telemóvel ou no tablet. */
   let arrasto = null;
 
   let rotacao = null;
 
-  document.addEventListener('mousedown', function(ev) {
+  /* Sem rato não há hover, e o × e a pega de rodar (que só aparecem no hover)
+     nunca se veriam. Num toque é a própria etiqueta tocada que os mostra. */
+  function marcarTocada(etiqueta) {
+    document.querySelectorAll('.etiqueta.tocada').forEach(function(e) {
+      if (e !== etiqueta) e.classList.remove('tocada');
+    });
+    if (etiqueta) etiqueta.classList.add('tocada');
+  }
+
+  document.addEventListener('pointerdown', function(ev) {
+    if (ev.button > 0) return;                  // botão do meio ou da direita
     const pega = ev.target.closest('.rodar');
     if (pega) {
       rotacao = pega.closest('.etiqueta');
       rotacao.classList.add('a-rodar');
+      marcarTocada(rotacao);
+      pega.setPointerCapture(ev.pointerId);
       ev.preventDefault();
       return;
     }
     const etiqueta = ev.target.closest('.etiqueta');
-    if (!etiqueta || ev.target.closest('.apagar')) return;
-    arrasto = {etiqueta: etiqueta, x0: ev.clientX, y0: ev.clientY, moveu: false};
+    if (!etiqueta) { marcarTocada(null); return; }
+    marcarTocada(etiqueta);
+    if (ev.target.closest('.apagar')) return;
+    arrasto = {etiqueta: etiqueta, x0: ev.clientX, y0: ev.clientY,
+               moveu: false, ponteiro: ev.pointerId,
+               // Um dedo treme sempre um pouco ao pousar; o rato não.
+               folga: ev.pointerType === 'mouse' ? 4 : 9};
+    // Sem capturar o ponteiro, um dedo (ou um rato) que saia de cima da
+    // etiqueta deixa de dar notícias e ela fica a meio do caminho.
+    etiqueta.setPointerCapture(ev.pointerId);
+    // De propósito sem preventDefault: um toque que não chegue a ser arrasto
+    // tem de continuar a pôr o cursor dentro do texto, para se poder corrigir.
   });
 
-  document.addEventListener('mousemove', function(ev) {
+  document.addEventListener('pointermove', function(ev) {
     if (rotacao) {
       // A pega está por cima da etiqueta: o ângulo é o do ponteiro visto do
       // centro, com os 90 graus dessa posição descontados
@@ -618,9 +797,9 @@
       ev.preventDefault();
       return;
     }
-    if (!arrasto) return;
+    if (!arrasto || ev.pointerId !== arrasto.ponteiro) return;
     if (!arrasto.moveu &&
-        Math.abs(ev.clientX - arrasto.x0) + Math.abs(ev.clientY - arrasto.y0) < 4) return;
+        Math.abs(ev.clientX - arrasto.x0) + Math.abs(ev.clientY - arrasto.y0) < arrasto.folga) return;
     arrasto.moveu = true;
     const area = document.getElementById('mapa').getBoundingClientRect();
     arrasto.etiqueta.style.left =
@@ -631,13 +810,18 @@
     ev.preventDefault();
   });
 
-  document.addEventListener('mouseup', function() {
+  function largarPonteiro() {
     if (rotacao) {
       rotacao.classList.remove('a-rodar');
       rotacao = null;
     }
     arrasto = null;
-  });
+  }
+
+  document.addEventListener('pointerup', largarPonteiro);
+  // O browser pode tirar-nos o ponteiro a meio (um segundo dedo no ecrã, uma
+  // chamada a entrar): sem isto ficava um arrasto preso para sempre.
+  document.addEventListener('pointercancel', largarPonteiro);
 
   document.addEventListener('wheel', function(ev) {
     const etiqueta = ev.target.closest('.etiqueta');
