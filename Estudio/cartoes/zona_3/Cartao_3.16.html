@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 3.16</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -491,33 +495,33 @@
       <img class="map-image" src="mapa_3.16.jpg" alt="Mapa do território Território 3.16" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 41.253%; top: 74.69%; --ang: 35.5deg" data-ax="41.253" data-ay="74.69" data-nome="Rua Ricardo Brito"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Ricardo<br>Brito</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 42.867%; top: 74.525%; --ang: 33.2deg" data-ax="42.867" data-ay="74.525" data-nome="Rua Ricardo Brito"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Ricardo<br>Brito</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 16.226%; top: 75.501%; --ang: 0.0deg" data-ax="16.226" data-ay="75.501" data-nome="Rua do Comércio"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. do Comércio</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 23.138%; top: 87.023%; --ang: 0.0deg" data-ax="23.138" data-ay="87.023" data-nome="Rua do Comércio"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. do Comércio</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 52.491%; top: 40.459%; --ang: -59.7deg" data-ax="52.491" data-ay="40.459" data-nome="Rua Chaby Pinheiro"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Chaby Pinheiro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 50.565%; top: 42.857%; --ang: -57.0deg" data-ax="50.565" data-ay="42.857" data-nome="Rua Chaby Pinheiro"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Chaby Pinheiro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 66.541%; top: 48.284%; --ang: -61.1deg" data-ax="66.541" data-ay="48.284" data-nome="Rua Palmira Bastos"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Palmira Bastos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 65.2%; top: 47.789%; --ang: -60.7deg" data-ax="65.2" data-ay="47.789" data-nome="Rua Palmira Bastos"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Palmira Bastos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 73.788%; top: 25.405%; --ang: 0.0deg" data-ax="66.436" data-ay="25.405"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº178</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 64.858%; top: 25.914%; --ang: 0.0deg" data-ax="64.858" data-ay="25.914"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">nº178</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 79.715%; top: 19.496%; --ang: 0.0deg" data-ax="79.715" data-ay="19.496"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº243</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 76.862%; top: 20.126%; --ang: 0.0deg" data-ax="76.862" data-ay="20.126"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">nº243</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 47.342%; top: 67.323%; --ang: 0.0deg" data-ax="41.085" data-ay="70.249"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº50</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 48.208%; top: 66.69%; --ang: 0.0deg" data-ax="41.941" data-ay="69.831"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">nº50</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 31.3%; top: 63.731%; --ang: 0.0deg" data-ax="37.557" data-ay="63.731"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº52</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 32.484%; top: 63.448%; --ang: 0.0deg" data-ax="38.751" data-ay="63.448"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">nº52</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 24.371%; top: 82.416%; --ang: 0.0deg" data-ax="24.371" data-ay="82.416"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº18</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 30.134%; top: 79.1%; --ang: 0.0deg" data-ax="36.401" data-ay="75.959"><span class="txt" style="font-size: 12.3pt" contenteditable="true" spellcheck="false">nº41</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 19.474%; top: 23.917%; --ang: -55.5deg" data-ax="19.474" data-ay="23.917" data-nome="Rua do Zambujal"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. do Zambujal</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 21.256%; top: 26.153%; --ang: -55.5deg" data-ax="21.256" data-ay="26.153" data-nome="Rua do Zambujal"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. do Zambujal</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 72.78%; top: 66.159%; --ang: -56.6deg" data-ax="72.78" data-ay="66.159" data-nome="Rua Humberto Delgado"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Humberto Delgado</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 70.548%; top: 66.084%; --ang: -56.7deg" data-ax="70.548" data-ay="66.084" data-nome="Rua Humberto Delgado"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Humberto Delgado</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 87.733%; top: 80.844%; --ang: -69.9deg" data-ax="87.733" data-ay="80.844" data-nome="Rua Vitor Hugo Moreira"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Vitor<br>Hugo Moreira</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 84.724%; top: 79.262%; --ang: -66.8deg" data-ax="84.724" data-ay="79.262" data-nome="Rua Vitor Hugo Moreira"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Vitor<br>Hugo Moreira</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta Palmira Bastos</li><li>Praceta da Sociedade</li><li>Rua António Louro</li><li>Rua Ema Pereira</li><li>Rua Feliciano Moreira</li><li>Rua Humberto Delgado</li><li>Rua Pais Abrantes</li><li>Rua Vitor Hugo Moreira</li><li>Rua do Zambujal</li><li>Travessa Inácio Pereira</li></ul>
+      <ul class="ruas-perto" hidden><li>Praceta Palmira Bastos</li><li>Praceta da Sociedade</li><li>Rua António Louro</li><li>Rua Ema Pereira</li><li>Rua Feliciano Moreira</li><li>Rua Humberto Delgado</li><li>Rua Pais Abrantes</li><li>Rua Vitor Hugo Moreira</li><li>Rua do Zambujal</li><li>Travessa Inácio Pereira</li><li>Travessa José Freire</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -529,7 +533,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 3.16</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADaUlEQVR4nO2czW3kPAyGH34yMEcbSAEpxe5gS/qQktKBXUo6kI4BbLx7kOTR5LbIws56qJP/HoCGOeJLUhoTfzyW//6cAYcccugfhZKVMQE2JTNIZsBmZtaRb5TRHW2eQ8dDQZK0h48gm3rJptQh6dNYrINRkhSPN8+hE6Dy208dmiEfQb9iNgQxaiXPJdMp5jl0INR9OTf6T9Py+mlAkI3vBssQTzLPocOhrx4h0q3Ej8XCyvIqIHXrOeY5dDiUPaJqiM20/Fqx8aNDpMEEWwcEoBeQjjXPoVOgLWcRQJD9/9GRjyaCbEo3MUZgMTOz4XjzHDoU6spvH4AEWl4/TaTNyGKiL/GirWT98Hdy6DsQUgzla+eUol/ztTzmelofkTT/8Hdy6DsQklakWI6gL36QYwWQXaU6iHvExaH8pRklQS8BZT5op4fsIEGaCe4R14aab55jxdwX39AMNKFjJqg88sPfyaHvQOWbK4aSUuSpoC/xo4SOLC9DnkHcIy4N1aiRQwK7olCOEHm2UIQsIeTK8urQnleUWaDmFaWb8dACA9cRzwOlm6S41RpUv6K3AVgGGlF5mnkOHQZ1wGZAwMZ30PIr5js2ftwEbJ1IYGN8wY42z6HDoUZZlpDQpBl7JMnxY8XrEdeHSvbZlCu11pJUfFhKM+4O4h5xZahqx75OFCUPbdVm6yBej3gSaIyQReXyukLWFlVt6m0AmwCb+vUM8xw6QUeU1LKUqVQ7njM0XQ/XEdeH9moUOcnM12baWhVZPeD1iGeAmlZ34xtAmSiaFdh4p+sZIGrAgIdG+MP6iJm9junK8uoQdwlRR5ELTRDZ6xG+Yub6UJNV3lviUJtczbIZjxrPATUu0KrIflcUNZKUicKjxtUhmqURbe+ztL8fHg3yqHF9CDUjflkfATmSlOVTeD3iCSBqakmWjU3ne084ssYco6+hegaoA0IuUBppoO7SiIi02b05nk+PNs+hk6CyN5w6ZYwRbOolSGZ6GzYzG4L8/yOuD7XpZmlpSLU80a63vYcOjxqXhh73hofVSAMaBTa+vwjYTKQXBCtahnCoeQ6dBJX5oO7xLP8owmY2pZtsytfMSpb6T7yTQ38h14h7pfLLMuza68BzjctDD3vDWfMWcN23+tU7ut/98e/kkEMO/T3oN4ziIquosCMBAAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADk0lEQVR4nO1cy22sQBCsASQfQXIAGwqbgUN6ckjOwISyGcDREqif+gezli8Yy16g+7CCYUpmNOX+TTeJsFq6Yj0GCJBJgEwCtBvQkEyuANJ1SEnGAEw8WkEfmFS7WNN6CVAGKknEh0pK15ooXYcKRPSR0DEPWpnUO2i1BGhPoKT/+0yBdxkY+LYekVJTEloaeczUyE7WtFICZMI7n0tC/ZGou3yw1SgptW8J6BpRDXtZUxGgH2QEYXgy+9GlckR34buhYiWxlzUVAdrMCLK7KVH3MiK1t4q50SQCJp5SshERbnz7LxUB2g1o0ihCzcS/W+XupfywymjZaHQyqfn911stAdqoI+o5yhgAcSEIw5SgzkRt9oL2s6YiQBtAIOpL220NKepRx1Te/dan8NiDr6kI0DZGkOy5XbHKUB6orZip4gQJRhwcBE1OtZKhqiVNZfogVw9KkJLondNZwYgjg7DsOYmtYC1gisL5otwQMuiUB19TEaDNOoKEFmImVBWIP8ncUNOh7qUoj2DESaxGLyZBVMasGYQCrC1kTFwIffDgayoCtNlqkDqVbhdUH8z+ZDY5/IjTgIYnJsPkOSh2HF75quOf2an8s9dbJQHamsWeJF2J1L5xhurFgs7U3uSEY6qIU1ep7Z+RdrGmIkA/41mSmoQszJgtidoPDjgiH3GS6LNd0pV8pS6EJy51ok4JP+LoINie164oLA7Nvc2cIJGPOAmo7bmQSlzJi/CAfQv3NsXHtCpMyUzsY03rJECf/QhoaGlpKlUPMrbkKMKPOAMIno2CBpk6dp+rMu8h8hGnAGE56qaFGyKiKLIKbKVFMOLgILjBwP1B+F19hCWn3OUMRpyCEaWfWri7kBmROR8RFTPHByGLOZHVS9khV1Y2E1bjHCAsFBCxjffE5WJJvNYqGHGSnGWP+7NPO/6+myq5qrAaJ8lHiPSf6iNYsvIpL5IIRhwZBA8toW5jdvI9BxzqY5qjGVbj4KCKN3mUy4ShgXdp9NzTJS1eRhi9/e3XKwL0p73hcJUhxxz8yQDpCKfXRkppSorvRxwfhLyMrp97dLwqYqm3XUxHWI0T9YaXo5gOaomLpt6epYaKm/6euctvBHVN+fhrKgK0GUTWzjV/E0C+KMItwtwJbN8R4S8RaZS6izWtlAB9FWv0c6byUxm2n3VErHGy3nCM2gJOS6ufP6Hl6cOvqQiQSoBMAmTyLavxH4ziIquOV5fpAAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
