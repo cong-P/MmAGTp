@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 10.24</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -483,9 +487,7 @@
       <img class="map-image" src="mapa_10.24.jpg" alt="Mapa do território Território 10.24" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta vizinha" style="left: 46.764%; top: 82.195%; --ang: 11.5deg" data-ax="46.764" data-ay="82.195" data-nome="Avenida Marginal"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. Marginal</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 59.755%; top: 10.502%; --ang: -54.3deg" data-ax="59.755" data-ay="10.502" data-nome="Rua de Luanda"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Luanda</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 46.415%; top: 83.292%; --ang: 11.5deg" data-ax="46.415" data-ay="83.292" data-nome="Avenida Marginal"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. Marginal</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
@@ -501,7 +503,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 10.24</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADj0lEQVR4nO2czW3jOhCAv3kk4CMFuICUInXwSnpISduBVEoKWEA8CqAw7zCkpOxhgY0XtiOPDoYj6kNIeDz/Y1H++Jr++XMGHHLIoW8KZanXkEUgR4BVRDqoK/s7iffenkP3h4KqqiokVUgFGfJF6T8iqnNQ1Y8IvaqqzvffnkMPgOp3H5AhRyAtou/dKkwdiLwVTJcMD9meQ4+CsoiOrMLUhU1lLJslefT2HLoHFH/5W/ofADkW6WcQUlD5K//Joe8BmUS0EDQUmTqANMPUzSisUclXICmQ77s9hx4CrRZF2I1+DuZU0n9EZMgXlQFgalHHtziTQ1+FYv3uA5BBYRHzHqa3RXTqAgqFYybryc/k0I1QjkCOWNrBYg1Ck4BUtlTElq14/jM59GUIVS3oSGjJhlSgn7F7mGykgo6AjklVxyc/k0O3QCYRQFB6e0dzJmbqgiWx5qCWpnKJODmUY1UA7x1QlcIipi0AVGfMpmCRyPOfyaEvQ2i9ynYnqI7pqC1stW+6xHXEqSGTCPvgx1Sap5AKx1oHVVGY8LhEnBmyWpa97ZtsmBz0zeWEpKpje8Ql4tQQu0mwOucWYVRFMe8up3uWrwC1erfWmBP74Jts6GhWo4aguB9xeqjmI2pSomUhTCk0W1EdjCYgLhGnhg6eZfUjmjD88tIkxyXi5NAWUpRD9vKwuluNzeV0iTg11DzLPUlp/uRmTnbPMhWPNV4AYq9mVE9h8yf7TyrD/YgXgSKkEiFfVPpmLoRkfTJVGKZ/f0aBVaoaefIzOXQLtFmNLSs5w24h2EpgLQhxHXFy6NBnKfUlFIGgMnUz1l9Hvqr0ugrka3n6Mzl0C3TwHZv3sJU52JokkuuIl4GiWYhJggrEouRrUfIq2s/XAqwC+fJpPPTJz+TQ7VArdi5SOyBSQYa0CJa2BuQ/XeQTdL/tOXT36LP2R7TUpC2M0Poj5v15r2ucHNo6ZupQZy2Of+6PqGLh+YgXgfbZcMB68keCtlHxOshhq56POD0UgWB2QkglSv9xUcixqI1v5Gupgxx5lfrwk5/JoduhOhueL7VVCsDGgae3ggzt5yQetD2HHpOhqh3YBKRXENKMgKDkUIT0M9L/uN51ew49HDL38r1b5aAtSIu0anh56PYcuhO0j/FU42CTfyKqqioDQXXMIj6vcX6IQ7Jhn+2rjbgc5zW8z/I1IPFfL3TIIYd+c/0PiqGxwNzQDBUAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADqUlEQVR4nO1cS26rQBCshpGyxFIOkKOMb/CO9JQj5QbmKDlAJFhGwuqoPzOQrIJsxdh0LTBmKJmR2z3VnzExVqNv1nOAIDmC5AjS3ZBGchxHImBMcv1MRAfAR+YzSncxp/UI0oLUsgLo9DCBjuMTI78nMA8y+p6ArDcNhbQaQbonEtlvX86O6iO6T+LXw5nQq3t4mWC+5HiTx1uJIF2NNBLxCWoHbXUZn3UlueIn/RZB+nNS+vGe8pu8jGmiPACErmW6yic1Qboji2B/104kywTQDUB/GGTgnBjjs1yTu8a/fbwmSLcgnS2KsAt5aE1U6kE1pqmHvkQddzGn1QiSI/lvXzGqtxDhIOqhf/kk7g+tXJuqG7mDOTVBujAfkVQ4wNIOFmtAlKVCgtEKv3n7c1qPIBUw8wQ+aVJCkw3dJEsH7JrbRqe3yLWOmU8bn1MTpIstAvrFZzurYkINpJiF5qosTRUW8eCkMbkDeFXZaE5BxYQbiDoPE5UWiWx/TusRpALLYHN1D+oPTt3SW9ioexAZ3ficmiBdbBHQL17swJWCnC1qHcVRmPGERTwyCaYPFCISTEKoHYhTcHmpVlJuCYvYg7LM8u1rnbNGGO4oTE/O4jMs4sFJ8Ho3e8zpX3yxDV1E5hA0dMRu8hFsK0TJQphTKGuFC4xiIGERe1GWMB1RjOHHoVhOWMSDk1BCimmRvVyMzqtGlZxhEbtQlkNNUpqerMvJrCw1vR0+4tFJmKsZbEqh6slF9FkERuiIfVTDpwRIG0QuywWhsz4ZN4b+30ci6aNwN7LxOTVBusaqgbJWzAVQFRgl9ChBSPiI/fRZkh/aSQ5M0lVn/XXiLSjzWfojnqfNz6kJ0uVZ7KxewNRDLXPU9ERVGeEjdqIjgJ605TpNoh7kcCbOg/gDUQ+iMm7zeE2QbkNiL3ZKd6X1YsvGLm2SsPgDoP8yepvHW4kgXR59svVHlNSkDVixU6seVvBQRF1jLx0zAos1inAQeF3czCLyEbvbGw7pm5OefFGRZau4b+Sw0chH7CL6bG2dIMlVUX4XFTmqxpTtGxpu2ploTL1543NqgnStveHjk7dKKXQ7cP8iGrP8ncTln7QSQbplhgrWgY0Wms8mSU6RvDJGyVp1Hwn57Xn7c2qCdEUSq7yUv45YeAs1Fa+GT/c3p18hSN/zEVw6KX1xsJ1/RBpw0FFjTtGYsV/j4UlYJBty3dvnjbjf9mtEn+U+SBT/XmgIkiNIjiDB8AWKobHA4PnwjgAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
