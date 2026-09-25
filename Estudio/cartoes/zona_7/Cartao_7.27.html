@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 7.27</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -489,25 +493,25 @@
       <img class="map-image" src="mapa_7.27.jpg" alt="Mapa do território Território 7.27" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 75.675%; top: 36.067%; --ang: -39.0deg" data-ax="75.675" data-ay="36.067" data-nome="Rua Doutor Francisco Sá Carneiro"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Doutor Francisco Sá Carneiro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 75.675%; top: 34.906%; --ang: -39.0deg" data-ax="75.675" data-ay="34.906" data-nome="Rua Doutor Francisco Sá Carneiro"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Doutor Francisco Sá Carneiro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 37.634%; top: 81.603%; --ang: 15.2deg" data-ax="37.634" data-ay="81.603" data-nome="Avenida da República"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. da República</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 37.859%; top: 84.3%; --ang: 15.3deg" data-ax="37.859" data-ay="84.3" data-nome="Avenida da República"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. da República</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 57.915%; top: 25.466%; --ang: 9.9deg" data-ax="57.915" data-ay="25.466" data-nome="Rua Machado dos Santos"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Machado dos Santos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 57.939%; top: 23.426%; --ang: 9.9deg" data-ax="57.939" data-ay="23.426" data-nome="Rua Machado dos Santos"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Machado dos Santos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 65.822%; top: 32.596%; --ang: 0.0deg" data-ax="65.822" data-ay="32.596"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº449</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 65.822%; top: 31.146%; --ang: 0.0deg" data-ax="65.822" data-ay="31.146"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº449</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 30.171%; top: 25.577%; --ang: 0.0deg" data-ax="30.171" data-ay="25.577"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº531</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 30.171%; top: 23.542%; --ang: 0.0deg" data-ax="30.171" data-ay="23.542"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº531</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 33.562%; top: 73.173%; --ang: 0.0deg" data-ax="33.562" data-ay="73.173"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº994</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 33.562%; top: 75.104%; --ang: 0.0deg" data-ax="33.562" data-ay="75.104"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº994</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 52.536%; top: 76.538%; --ang: 0.0deg" data-ax="45.068" data-ay="76.538"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº974</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 52.568%; top: 78.75%; --ang: 0.0deg" data-ax="45.068" data-ay="78.75"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº974</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 30.89%; top: 42.788%; --ang: 0.0deg" data-ax="30.89" data-ay="42.788"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº82</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 30.89%; top: 42.188%; --ang: 0.0deg" data-ax="30.89" data-ay="42.188"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº82</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 30.89%; top: 51.538%; --ang: 0.0deg" data-ax="30.89" data-ay="51.538"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº58</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 30.89%; top: 51.667%; --ang: 0.0deg" data-ax="30.89" data-ay="51.667"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº58</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 81.625%; top: 64.822%; --ang: 87.7deg" data-ax="81.625" data-ay="64.822" data-nome="Praceta Doutor Francisco Sá Carneiro"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. Doutor Francisco Sá Carneiro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 81.586%; top: 63.714%; --ang: 87.8deg" data-ax="81.586" data-ay="63.714" data-nome="Praceta Doutor Francisco Sá Carneiro"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. Doutor Francisco Sá Carneiro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
@@ -523,7 +527,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 7.27</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEPklEQVR4nO2cQYrkOBBFX4wFtbQhD1BHkW9QRxrmSHUD+yh5gAZ5WSATs1BIlqt71XSS6SZikZTLeqQFgeIr9J2i/F6s//wmCE466aST38hNLGZ2YZUAbCKs017+X0auE9SR4XlP6+TLkaimQVVVlaiqqgl0GTPlL9UMjKrENLQhg+pyrXk6+WjSlpay+gxFIslcP3TZQsmrsmjNf+Q7nfxbyPDtWmKahHh/UyAHhUElphsSP2/5z3ynk38X+T2HWKfyITAmFcYfQSGj6/sphS42TycfTZrsYWh6yJQRMZmSJt4DMKrq8uSndfL1yH77JTODyr/3gMxbALa3IqdlBlhFRGR65tM6+Wok2kUaFMZc1yHN5S4wqC4M/Vjflzl5kFuwvs88Zuqas5cdmsybCFG/bJWyPtITn9bJlyNDWXjWGRT2ANstl7wCQddpyLBNNjx+3rKUIdeap5OPI2u1GjP1Q5WY+uajLtTLhUFLpfNa5mSNmiqmgo5OtN1Va1Hbbqz+z3PIyW/kKoGifdgCMrMLYHpI/5t2qWI74/syJ08RgF3UWom7ySO2IQMlcwKMCSn9oS1A/Ayuh5w8otNDRQWpHbeWy4Wh7O1tHQKs0XiteTr5OLJLmr4hVJRRldjWnR6q2HY95GQfdrjREsQWHjAlXVVQGWx/uffDyS7KHqyVsVKyyj5+tBY1se3aqKXNc8jJFlX7tERK8N10tnDUPO8POfk9rDXESU5ztBK70obVN/cxOnmKbh06vB/WWaSKonbcutRWtueQky2KCmolqyRIy5eSNLHb/rcDj2vN08nHkc3dAbaPx1SQ1S3NbVzutv+eQ062OBpCR75geuhYgo67rapda55OPpTc7AyjGBdjAmAX00ibCDHtwjqBLuOX+4ecPEc9LwMUFOxtDmD9SOj6rsB2K0VO4j2g7h9y8hSHu6PqofM7igl+ahf5vszJM1leQPwSXbaAGdEwE77Mo6rqPWAGkK2+On29eTr5IJKuIQRtCdLWBirCOtcjtaMRcK15Ovk4ssuhzucRTwYQbDdmieR9aifPcfheKemTDsNQs8Z2hyDgfWonf0XacesuMH5V3+smRSPJvL1V2z5UI9ol5+nkA8j2vgaY2EktS1oFO1c13Pvh5Cm0i0R1gejJedbUUjUbeQ452UWnc2LnQTtbQY6DtOReWCd/QdbfQSsvbdwDrO8ZmQGR90zpDx2e2XV65tM6+Wpk+f0hgaEULl2nIQvjoKwCun4MKowZiZ+72NjxWU/r5CuS59+wGrLEdCvHZsKYEEZQtpB1fc9B148fdpp2sXk6+Tiy9Yfaex3Vk3+o60MjlfA+tZN9lHXIlpYxB4n3N2X9yCjbLrDdVKim6nJkv07pSU/r5CuSxfthF+UnYnYhpj3AqIjdPS4R6xRda55OPo4suVFD20dbeNDjDtqR15qnk046+brk/y/ovo+OLttcAAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEu0lEQVR4nO1cW4rjSBCMSgnm04Y+wBxFvkEfadkj9Q2so/QBFqTPBplc8qGSPEwjUTPaXk1lfNiWVYFUkGRFPqoSoww9FRKBYG6BNkd8hmBugTZHfIZgHsock+OGR0KfWuh/6K8P+99G9ldgHtmecZ6FoFIiamGCeWhYgU6/BoDvl0luAMw8AbjI3aHJQxrm+7nmScE8mJnSyvs0JpHSbf7g+9iaXZnTup12niWgIlZNzPaH69QN14Tu/ZsY0tQy0HDqhhek7u1l+j3PpGD+0TYEkT3ykYDLwAmXf8SQJnD/fTrxPCmYBzPZZA+arIdcGaEbXEmjexd7kxv33/LMElARSxDMY5mPVfiVbrJ4/fXeIt1G1UjfTE6bCup15PWc8ywDFfJQDRO8gkRekJDM/BBLcCYBmzqou3qpjIjLNkH1MMfW8z43ibzc50im6Cq/JFbr+MO9lOeRvvBtC0GlRARzC605nv4GMPBogVHCL7ErIIH7ayOXunqJPHp7mZINOdc8KZgHr2UQQ5o/NJ+4Tj6yiGjPLOqqpsL6XPOkYB6fp55MBS2ZaL/LnqL2aCwrqLChTVBdzD5pICbBmSxjqoc0vXgbU+K/r3JpYntCxGU7QZUwW43t2VOJoofEVDCKClJDukzy34Bk+SGJ97u3NvTQDlCFeqibi6xLepFFAKlHcj+knNBDu0CVMLEYzTohZMpocont2Wmp29u4sKE9oEqY8OJGNhB3POqHGonBXAXZYP8VvR97QFXFZcjLmC1ZFserC1LjylGbrWphQ7tAlTAxa59sSHL5Q9PZfbXmRX5oN6gSJjw19KSM3NNkFaQQC7P1LfoY94Eq9EPIvR+eWcQsinK51fRQ+KFdoEqYMBWUlywzkGwvrEbTrcL/XPA41zwpmIfnhxQrET1XONia05bI38P/sKFtUCVMLAmhxV5mPTRlF7TczavaueZJwTySOXoNwxoXVQVpmcM00ij9Q4O2E2l+6CP6h/aCKquXQfuH9Ft3c0gd9nWQTny5GF9skdOiGUf/0D5QJUws3R2zHnreozj8JF0UcdkuUD3MUTcgfiTdiuiNaNr2oS36KoXE+1gDiLaHfOXbFoJKiQjmJnhJCK1c0FxuZRfWmob0qoc7o3PNk4L5X9gQL30e3VMDCDwac0OKPPVOUF01V4cWzZaGIZ5bY1dFEEHooV2gupid6WdtXJR9QJqiljZY0UjpJhsVXShpe8gXv20BqISkCOYm2PdriCGp2LEmoqcVjJ9Wtej92Amqcp8r5i4Qaxia1kOyFPKi2bnmScE8um6v8ObX59bY4bmQFr2w+0EVMRs/B802bcj2DTknxvJD6bsYkuSHlp5ZPV7mhPMsAxXyUNn5QwnQzUCwzdEJFzGVJJevjRxCNMkZVrrnTA8m+qq3pWD+b21oRjPpmWca6yfdVYaLVNHGdpIzrFruX3Uf2vnmScE8Pj/UzPs65p78RV0jayRD5Kn3garyQ2wXl6lNehRj/6qbXR9SIHthWem8EqIl+/46nG6eFMxDbegxl1HtiBhtHdJd0yziR+8ul5C7v/ZMCuYfxWzVNmbMfUQrx4P8Y/FXv/hMCuYGaGvApwjmFmhzxGcI5hbKNfW/L+i+jxZwwH8AAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
