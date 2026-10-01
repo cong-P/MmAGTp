@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua João Villaret</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,15 +489,15 @@
       <img class="map-image" src="mapa_4.13.jpg" alt="Mapa do território Território 4.13" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 33.398%; top: 33.015%; --ang: -37.6deg" data-ax="33.398" data-ay="33.015" data-nome="Rua João Villaret"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. João Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 55.835%; top: 35.396%; --ang: 0.0deg" data-ax="55.835" data-ay="35.396"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº285</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 28.485%; top: 50.185%; --ang: 0.0deg" data-ax="28.485" data-ay="50.185"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº315</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 63.398%; top: 9.571%; --ang: -37.6deg" data-ax="63.398" data-ay="9.571" data-nome="Rua João Villaret"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. João<br>Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua António Louro</li><li>Rua João Villaret</li><li>Rua do Douro</li><li>Rua do Guadiana</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua António Louro</li><li>Rua do Douro</li><li>Rua do Guadiana</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
