@@ -476,6 +476,8 @@
           
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta José Figueiredo da Fonseca</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Luís Marques</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -489,6 +491,8 @@
       <img class="map-image" src="mapa_5.37.jpg" alt="Mapa do território Território 5.37" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 49.591%; top: 82.101%; --ang: -4.7deg" data-ax="49.591" data-ay="82.101" data-nome="Rua Luís Marques"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Luís Marques</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta rua" style="left: 66.492%; top: 43.84%; --ang: 85.7deg" data-ax="66.492" data-ay="43.84" data-nome="Praceta José Figueiredo da Fonseca"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. José Figueiredo da Fonseca</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 47.694%; top: 33.354%; --ang: 0.0deg" data-ax="47.694" data-ay="33.354"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº149</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -497,7 +501,7 @@
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida da República</li><li>Rua Luís Marques</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida da República</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
