@@ -474,6 +474,10 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Fernando Pessoa</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua João Villaret</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,19 +491,19 @@
       <img class="map-image" src="mapa_4.19.jpg" alt="Mapa do território Território 4.19" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 61.259%; top: 79.183%; --ang: -26.1deg" data-ax="61.259" data-ay="79.183" data-nome="Rua João Villaret"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. João Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 34.96%; top: 56.514%; --ang: 60.2deg" data-ax="34.96" data-ay="56.514" data-nome="Rua Fernando Pessoa"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Fernando Pessoa</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 58.322%; top: 57.812%; --ang: 0.0deg" data-ax="58.322" data-ay="57.812"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº58</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 44.863%; top: 34.688%; --ang: 0.0deg" data-ax="44.863" data-ay="34.688"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 94</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 15.602%; top: 21.625%; --ang: 61.2deg" data-ax="15.602" data-ay="21.625" data-nome="Rua Fernando Pessoa"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Fernando<br>Pessoa</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 91.806%; top: 69.14%; --ang: -6.5deg" data-ax="91.806" data-ay="69.14" data-nome="Rua João Villaret"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. João<br>Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 75.336%; top: 84.109%; --ang: 85.3deg" data-ax="75.336" data-ay="84.109" data-nome="Travessa João Villaret"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Tv. João<br>Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua Fernando Pessoa</li><li>Rua João Villaret</li><li>Rua Laura Alves</li><li>Travessa João Villaret</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Laura Alves</li><li>Travessa João Villaret</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
