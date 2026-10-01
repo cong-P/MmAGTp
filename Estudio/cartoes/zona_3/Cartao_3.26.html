@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua João Villaret</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,6 +489,8 @@
       <img class="map-image" src="mapa_3.26.jpg" alt="Mapa do território Território 3.26" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 36.891%; top: 42.817%; --ang: -77.8deg" data-ax="36.891" data-ay="42.817" data-nome="Rua João Villaret"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. João Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 52.877%; top: 33.021%; --ang: 0.0deg" data-ax="52.877" data-ay="33.021"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">Nº8</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 54.726%; top: 48.646%; --ang: 0.0deg" data-ax="54.726" data-ay="48.646"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">Nº 141</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -495,13 +499,11 @@
       
       <div class="etiqueta vizinha" style="left: 14.419%; top: 60.941%; --ang: -10.3deg" data-ax="14.419" data-ay="60.941" data-nome="Rua dos Girassóis"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. dos Girassóis</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 39.074%; top: 16.959%; --ang: 87.0deg" data-ax="39.074" data-ay="16.959" data-nome="Rua João Villaret"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. João<br>Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <div class="etiqueta vizinha" style="left: 77.889%; top: 14.888%; --ang: 54.0deg" data-ax="77.889" data-ay="14.888" data-nome="Praceta dos Girassóis"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. dos Girassóis</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta dos Girassóis</li><li>Rua João Villaret</li><li>Rua dos Girassóis</li></ul>
+      <ul class="ruas-perto" hidden><li>Praceta dos Girassóis</li><li>Rua dos Girassóis</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
