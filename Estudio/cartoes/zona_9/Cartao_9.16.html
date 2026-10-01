@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Trindade Coelho</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,19 +489,19 @@
       <img class="map-image" src="mapa_9.16.jpg" alt="Mapa do território Território 9.16" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 68.33%; top: 52.045%; --ang: -86.2deg" data-ax="68.33" data-ay="52.045" data-nome="Rua Trindade Coelho"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Trindade Coelho</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 54.829%; top: 40.625%; --ang: 0.0deg" data-ax="54.829" data-ay="40.625"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº151</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 53.39%; top: 55.937%; --ang: 0.0deg" data-ax="53.39" data-ay="55.937"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº135</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 51.952%; top: 65.833%; --ang: 0.0deg" data-ax="51.952" data-ay="65.833"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº123</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 70.63%; top: 16.81%; --ang: -86.2deg" data-ax="70.63" data-ay="16.81" data-nome="Rua Trindade Coelho"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Trindade<br>Coelho</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <div class="etiqueta vizinha" style="left: 49.626%; top: 94.149%; --ang: 3.8deg" data-ax="49.626" data-ay="94.149" data-nome="Travessa Eduardo Costa"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Tv. Eduardo Costa</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua Doutor António Granjo</li><li>Rua Doutor Lopes de Oliveira</li><li>Rua Trindade Coelho</li><li>Travessa Eduardo Costa</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Doutor António Granjo</li><li>Rua Doutor Lopes de Oliveira</li><li>Travessa Eduardo Costa</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
