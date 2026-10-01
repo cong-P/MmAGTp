@@ -476,6 +476,8 @@
           
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Ana de Castro Osório</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Fernando Namora</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -489,17 +491,17 @@
       <img class="map-image" src="mapa_4.02.jpg" alt="Mapa do território Território 4.02" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 60.653%; top: 77.121%; --ang: 13.6deg" data-ax="60.653" data-ay="77.121" data-nome="Rua Fernando Namora"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Fernando Namora</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta rua" style="left: 18.35%; top: 53.519%; --ang: 81.6deg" data-ax="18.35" data-ay="53.519" data-nome="Rua Ana de Castro Osório"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Ana de Castro Osório</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 39.623%; top: 48.438%; --ang: 0.0deg" data-ax="39.623" data-ay="48.438"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 227</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 63.356%; top: 54.688%; --ang: 0.0deg" data-ax="63.356" data-ay="54.688"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 251</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 83.478%; top: 83.365%; --ang: 16.8deg" data-ax="83.478" data-ay="83.365" data-nome="Rua Fernando Namora"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Fernando<br>Namora</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua Fernando Namora</li></ul>
+      <ul class="ruas-perto" hidden></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
