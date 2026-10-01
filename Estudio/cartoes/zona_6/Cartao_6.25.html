@@ -474,12 +474,14 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Avenida dos Bombeiros Voluntários</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
       <div class="section reference">
         <span class="rotulo">Referência:</span>
-        <div class="caixa editable" contenteditable="true" spellcheck="false">Parque d&#39;«Os Santinhos»</div>
+        <div class="caixa editable" contenteditable="true" spellcheck="false">Parque d'«Os Santinhos»</div>
       </div>
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 30</div>
     </div>
@@ -487,13 +489,13 @@
       <img class="map-image" src="mapa_6.25.jpg" alt="Mapa do território Território 6.25" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 33.195%; top: 50.369%; --ang: -64.3deg" data-ax="33.195" data-ay="50.369" data-nome="Avenida dos Bombeiros Voluntários"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. dos Bombeiros<br>Voluntários</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 57.295%; top: 39.375%; --ang: 0.0deg" data-ax="57.295" data-ay="39.375"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº634</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 49.075%; top: 48.646%; --ang: 0.0deg" data-ax="49.075" data-ay="48.646"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº610</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 41.164%; top: 63.021%; --ang: 0.0deg" data-ax="41.164" data-ay="63.021"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº592</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 74.171%; top: 13.785%; --ang: -23.7deg" data-ax="74.171" data-ay="13.785" data-nome="Avenida dos Bombeiros Voluntários"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. dos Bombeiros<br>Voluntários</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 18.002%; top: 15.8%; --ang: 39.1deg" data-ax="18.002" data-ay="15.8" data-nome="Rua Dia Mundial da Criança"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Dia Mundial<br>da Criança</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
@@ -501,7 +503,7 @@
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida dos Bombeiros Voluntários</li><li>Largo Humberto Delgado</li><li>Rua Dia Mundial da Criança</li><li>Rua Maria Lamas</li><li>Rua Miguel Torga</li><li>Rua Odete de Saint-Maurice</li></ul>
+      <ul class="ruas-perto" hidden><li>Largo Humberto Delgado</li><li>Rua Dia Mundial da Criança</li><li>Rua Maria Lamas</li><li>Rua Miguel Torga</li><li>Rua Odete de Saint-Maurice</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
