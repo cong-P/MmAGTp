@@ -474,12 +474,16 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Avenida dos Bombeiros Voluntários</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Miguel Torga</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
       <div class="section reference">
         <span class="rotulo">Referência:</span>
-        <div class="caixa editable" contenteditable="true" spellcheck="false">Parque d&#39;«Os Santinhos»</div>
+        <div class="caixa editable" contenteditable="true" spellcheck="false">Parque d'«Os Santinhos»</div>
       </div>
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 28</div>
     </div>
@@ -487,17 +491,17 @@
       <img class="map-image" src="mapa_6.27.jpg" alt="Mapa do território Território 6.27" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 60.805%; top: 80.189%; --ang: -21.4deg" data-ax="60.805" data-ay="80.189" data-nome="Rua Miguel Torga"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Miguel Torga</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 38.735%; top: 18.596%; --ang: -21.8deg" data-ax="38.735" data-ay="18.596" data-nome="Avenida dos Bombeiros Voluntários"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. dos Bombeiros Voluntários</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 56.062%; top: 61.146%; --ang: 0.0deg" data-ax="56.062" data-ay="61.146"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº194</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 65.382%; top: 25.524%; --ang: -85.4deg" data-ax="65.382" data-ay="25.524" data-nome="Avenida dos Bombeiros Voluntários"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. dos Bombeiros<br>Voluntários</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 85.92%; top: 70.275%; --ang: -21.1deg" data-ax="85.92" data-ay="70.275" data-nome="Rua Miguel Torga"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Miguel Torga</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 89.166%; top: 40.645%; --ang: -27.9deg" data-ax="89.166" data-ay="40.645" data-nome="Rua Álvaro de Campos"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Álvaro<br>de Campos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida dos Bombeiros Voluntários</li><li>Rua Eça de Queiroz</li><li>Rua Miguel Torga</li><li>Rua Álvaro de Campos</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Eça de Queiroz</li><li>Rua Álvaro de Campos</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
