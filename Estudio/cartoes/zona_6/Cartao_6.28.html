@@ -474,18 +474,30 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Eça de Queiroz</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Miguel Torga</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Odete de Saint-Maurice</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
       <div class="section reference">
         <span class="rotulo">Referência:</span>
-        <div class="caixa editable" contenteditable="true" spellcheck="false">Parque d&#39;«Os Santinhos»</div>
+        <div class="caixa editable" contenteditable="true" spellcheck="false">Parque d'«Os Santinhos»</div>
       </div>
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 56</div>
     </div>
     <div class="map-container" id="mapa">
       <img class="map-image" src="mapa_6.28.jpg" alt="Mapa do território Território 6.28" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      
+      <div class="etiqueta rua" style="left: 90.976%; top: 52.869%; --ang: 70.0deg" data-ax="90.976" data-ay="52.869" data-nome="Rua Eça de Queiroz"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Eça de Queiroz</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 52.622%; top: 70.882%; --ang: -9.9deg" data-ax="52.622" data-ay="70.882" data-nome="Rua Odete de Saint-Maurice"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Odete de Saint-Maurice</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 33.355%; top: 41.899%; --ang: -21.3deg" data-ax="33.355" data-ay="41.899" data-nome="Rua Miguel Torga"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Miguel Torga</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 70.137%; top: 42.812%; --ang: 0.0deg" data-ax="70.137" data-ay="42.812"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº12</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
@@ -497,13 +509,9 @@
       
       <div class="etiqueta vizinha" style="left: 69.498%; top: 15.088%; --ang: 70.9deg" data-ax="69.498" data-ay="15.088" data-nome="Rua Álvaro de Campos"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Álvaro<br>de Campos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 47.629%; top: 71.766%; --ang: -9.9deg" data-ax="47.629" data-ay="71.766" data-nome="Rua Odete de Saint-Maurice"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Odete de Saint-Maurice</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 89.268%; top: 48.142%; --ang: 70.2deg" data-ax="89.268" data-ay="48.142" data-nome="Rua Eça de Queiroz"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Eça de Queiroz</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida dos Bombeiros Voluntários</li><li>Rua Eça de Queiroz</li><li>Rua Miguel Torga</li><li>Rua Odete de Saint-Maurice</li><li>Rua Álvaro de Campos</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida dos Bombeiros Voluntários</li><li>Rua Álvaro de Campos</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
