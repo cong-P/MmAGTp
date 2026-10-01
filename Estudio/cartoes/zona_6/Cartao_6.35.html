@@ -474,7 +474,11 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta Barbosa du Bocage</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta Luís de Camões</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Almeida Garrett</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
@@ -489,17 +493,19 @@
       <img class="map-image" src="mapa_6.35.jpg" alt="Mapa do território Território 6.35" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 46.986%; top: 33.713%; --ang: -22.7deg" data-ax="46.986" data-ay="33.713" data-nome="Praceta Luís de Camões"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. Luís de Camões</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 61.499%; top: 70.08%; --ang: -22.8deg" data-ax="61.499" data-ay="70.08" data-nome="Praceta Barbosa du Bocage"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. Barbosa<br>du Bocage</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 34.478%; top: 56.337%; --ang: 68.5deg" data-ax="34.478" data-ay="56.337" data-nome="Rua Almeida Garrett"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Almeida Garrett</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 47.997%; top: 33.284%; --ang: -22.7deg" data-ax="47.997" data-ay="33.284" data-nome="Praceta Luís de Camões"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. Luís de Camões</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 53.904%; top: 48.854%; --ang: 0.0deg" data-ax="53.904" data-ay="48.854"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº192</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 83.38%; top: 46.647%; --ang: -21.4deg" data-ax="83.38" data-ay="46.647" data-nome="Praceta Barbosa du Bocage"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. Barbosa<br>du Bocage</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 19.74%; top: 18.375%; --ang: 68.4deg" data-ax="19.74" data-ay="18.375" data-nome="Rua Almeida Garrett"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Almeida Garrett</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 11.594%; top: 29.921%; --ang: -22.1deg" data-ax="11.594" data-ay="29.921" data-nome="Praceta José Botelho"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. José<br>Botelho</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida Comandante Gilberto Duarte e Duarte</li><li>Praceta Barbosa du Bocage</li><li>Praceta José Botelho</li><li>Praceta Natália Correia</li><li>Rua Almeida Garrett</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida Comandante Gilberto Duarte e Duarte</li><li>Praceta José Botelho</li><li>Praceta Natália Correia</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
