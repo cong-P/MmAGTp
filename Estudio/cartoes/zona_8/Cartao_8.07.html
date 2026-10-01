@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta de Santa Teresinha</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,17 +489,17 @@
       <img class="map-image" src="mapa_8.07.jpg" alt="Mapa do território Território 8.07" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 48.921%; top: 64.479%; --ang: -83.4deg" data-ax="48.921" data-ay="64.479" data-nome="Praceta de Santa Teresinha"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. de Santa Teresinha</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 38.596%; top: 34.688%; --ang: 0.0deg" data-ax="38.596" data-ay="34.688"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº77</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 52.466%; top: 36.875%; --ang: 0.0deg" data-ax="52.466" data-ay="36.875"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº95</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 64.692%; top: 51.25%; --ang: 0.0deg" data-ax="64.692" data-ay="51.25"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº101</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 27.051%; top: 75.014%; --ang: -82.3deg" data-ax="27.051" data-ay="75.014" data-nome="Praceta de Santa Teresinha"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. de Santa Teresinha</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta de Santa Teresinha</li><li>Rua Cidade de Beja</li><li>Rua Cidade do Porto</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Cidade de Beja</li><li>Rua Cidade do Porto</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
