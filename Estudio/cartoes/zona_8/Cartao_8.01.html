@@ -476,6 +476,8 @@
           
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta Manuel da Fonseca</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Professor Branquinho da Fonseca</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -488,6 +490,8 @@
     <div class="map-container" id="mapa">
       <img class="map-image" src="mapa_8.01.jpg" alt="Mapa do território Território 8.01" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      
+      <div class="etiqueta rua" style="left: 47.634%; top: 24.079%; --ang: -39.7deg" data-ax="47.634" data-ay="24.079" data-nome="Rua Professor Branquinho da Fonseca"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Professor<br>Branquinho da Fonseca</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta rua" style="left: 47.938%; top: 62.473%; --ang: -7.2deg" data-ax="47.938" data-ay="62.473" data-nome="Praceta Manuel da Fonseca"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. Manuel<br>da Fonseca</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
@@ -507,7 +511,7 @@
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua Combatentes do Ultramar</li><li>Rua José Elias Garcia</li><li>Rua Paulo Falcão</li><li>Rua Professor Branquinho da Fonseca</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Combatentes do Ultramar</li><li>Rua José Elias Garcia</li><li>Rua Paulo Falcão</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
