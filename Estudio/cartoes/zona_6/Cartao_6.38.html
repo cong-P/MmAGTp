@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta Natália Correia</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,17 +489,17 @@
       <img class="map-image" src="mapa_6.38.jpg" alt="Mapa do território Território 6.38" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 44.708%; top: 34.088%; --ang: -21.7deg" data-ax="44.708" data-ay="34.088" data-nome="Praceta Natália Correia"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. Natália Correia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 43.219%; top: 48.958%; --ang: 0.0deg" data-ax="43.219" data-ay="48.958"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº163</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 54.11%; top: 43.646%; --ang: 0.0deg" data-ax="54.11" data-ay="43.646"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº150</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 62.595%; top: 11.673%; --ang: -21.7deg" data-ax="62.595" data-ay="11.673" data-nome="Praceta Natália Correia"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. Natália Correia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 8.668%; top: 64.728%; --ang: 68.4deg" data-ax="8.668" data-ay="64.728" data-nome="Rua Almeida Garrett"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Almeida Garrett</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta Barbosa du Bocage</li><li>Praceta Natália Correia</li><li>Rua Almeida Garrett</li><li>Rua António Louro</li><li>Rua Cesário Verde</li><li>Rua Professor Agostinho da Silva</li></ul>
+      <ul class="ruas-perto" hidden><li>Praceta Barbosa du Bocage</li><li>Rua Almeida Garrett</li><li>Rua António Louro</li><li>Rua Cesário Verde</li><li>Rua Professor Agostinho da Silva</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
