@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Doutor João Baptista Jacquet</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,13 +489,15 @@
       <img class="map-image" src="mapa_5.29.jpg" alt="Mapa do território Território 5.29" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 28.381%; top: 53.719%; --ang: 85.5deg" data-ax="28.381" data-ay="53.719" data-nome="Rua Doutor João Baptista Jacquet"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Doutor João Baptista Jacquet</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 47.438%; top: 60.391%; --ang: 0.0deg" data-ax="47.438" data-ay="60.391"><span class="txt" style="font-size: 12.4pt" contenteditable="true" spellcheck="false">nº52</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 45.317%; top: 76.426%; --ang: 0.0deg" data-ax="45.317" data-ay="76.426"><span class="txt" style="font-size: 12.4pt" contenteditable="true" spellcheck="false">nº34</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta Doutor Francisco Sepúlveda da Fonseca</li><li>Praceta Doutor Henrique Barata Pereira</li><li>Rua Doutor João Baptista Jacquet</li><li>Rua Padre José Baptista da Silva</li></ul>
+      <ul class="ruas-perto" hidden><li>Praceta Doutor Francisco Sepúlveda da Fonseca</li><li>Praceta Doutor Henrique Barata Pereira</li><li>Rua Padre José Baptista da Silva</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
