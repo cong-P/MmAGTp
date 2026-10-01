@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Eça de Queiroz</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Ondina Pereira</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
@@ -489,17 +491,17 @@
       <img class="map-image" src="mapa_6.48.jpg" alt="Mapa do território Território 6.48" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 35.24%; top: 55.712%; --ang: 68.9deg" data-ax="35.24" data-ay="55.712" data-nome="Rua Eça de Queiroz"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Eça de Queiroz</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta rua" style="left: 42.854%; top: 28.756%; --ang: -20.0deg" data-ax="42.854" data-ay="28.756" data-nome="Rua Ondina Pereira"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Ondina Pereira</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 49.075%; top: 45.417%; --ang: 0.0deg" data-ax="49.075" data-ay="45.417"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 175</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 55.445%; top: 62.604%; --ang: 0.0deg" data-ax="55.445" data-ay="62.604"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 56</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 20.123%; top: 16.931%; --ang: 68.2deg" data-ax="20.123" data-ay="16.931" data-nome="Rua Eça de Queiroz"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Eça de Queiroz</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua Alexandre Herculano</li><li>Rua Eça de Queiroz</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Alexandre Herculano</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
