@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Henrique Barrilaro Ruas</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -486,6 +488,8 @@
     <div class="map-container" id="mapa">
       <img class="map-image" src="mapa_6.22.jpg" alt="Mapa do território Território 6.22" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      
+      <div class="etiqueta rua" style="left: 62.204%; top: 65.249%; --ang: -71.4deg" data-ax="62.204" data-ay="65.249" data-nome="Rua Henrique Barrilaro Ruas"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Henrique Barrilaro Ruas</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 48.048%; top: 48.333%; --ang: 0.0deg" data-ax="48.048" data-ay="48.333"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº141</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
@@ -501,7 +505,7 @@
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida Comandante Gilberto Duarte e Duarte</li><li>Avenida dos Bombeiros Voluntários</li><li>Rua Amílcar Cabral</li><li>Rua Henrique Barrilaro Ruas</li><li>Rua Mário Gomes</li><li>Rua da Fraternidade</li><li>Travessa dos Combatentes</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida Comandante Gilberto Duarte e Duarte</li><li>Avenida dos Bombeiros Voluntários</li><li>Rua Amílcar Cabral</li><li>Rua Mário Gomes</li><li>Rua da Fraternidade</li><li>Travessa dos Combatentes</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
