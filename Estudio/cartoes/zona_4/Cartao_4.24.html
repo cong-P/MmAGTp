@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua do Tejo</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,6 +489,8 @@
       <img class="map-image" src="mapa_4.24.jpg" alt="Mapa do território Território 4.24" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 24.539%; top: 35.893%; --ang: -60.2deg" data-ax="24.539" data-ay="35.893" data-nome="Rua do Tejo"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. do Tejo</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 36.13%; top: 41.042%; --ang: 0.0deg" data-ax="36.13" data-ay="41.042"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">N.º 174</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 69.11%; top: 60.312%; --ang: 0.0deg" data-ax="69.11" data-ay="60.312"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">N.º 130</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -495,11 +499,9 @@
       
       <div class="etiqueta porta" style="left: 43.425%; top: 47.604%; --ang: 0.0deg" data-ax="43.425" data-ay="47.604"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº166</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 16.309%; top: 50.521%; --ang: -60.5deg" data-ax="16.309" data-ay="50.521" data-nome="Rua do Tejo"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. do Tejo</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua do Guadiana</li><li>Rua do Tejo</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua do Guadiana</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
