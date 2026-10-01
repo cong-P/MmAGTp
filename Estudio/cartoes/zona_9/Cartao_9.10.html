@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua de Timor</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,6 +489,8 @@
       <img class="map-image" src="mapa_9.10.jpg" alt="Mapa do território Território 9.10" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 69.563%; top: 53.086%; --ang: -81.1deg" data-ax="69.563" data-ay="53.086" data-nome="Rua de Timor"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. de Timor</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 51.233%; top: 64.896%; --ang: 0.0deg" data-ax="51.233" data-ay="64.896"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº41</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 53.801%; top: 49.583%; --ang: 0.0deg" data-ax="53.801" data-ay="49.583"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº59</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -495,13 +499,11 @@
       
       <div class="etiqueta vizinha" style="left: 82.113%; top: 18.951%; --ang: 30.5deg" data-ax="82.113" data-ay="18.951" data-nome="Rua da Cidade de Évora"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Cidade de Évora</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 64.137%; top: 88.213%; --ang: -80.9deg" data-ax="64.137" data-ay="88.213" data-nome="Rua de Timor"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Timor</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <div class="etiqueta vizinha" style="left: 8.126%; top: 46.379%; --ang: -81.5deg" data-ax="8.126" data-ay="46.379" data-nome="Rua José Carlos da Maia"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. José Carlos da Maia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua José Carlos da Maia</li><li>Rua da Cidade de Évora</li><li>Rua de Cidade de Lagos</li><li>Rua de Timor</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua José Carlos da Maia</li><li>Rua da Cidade de Évora</li><li>Rua de Cidade de Lagos</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
