@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Infante Dom Henrique</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,6 +489,8 @@
       <img class="map-image" src="mapa_11.32.jpg" alt="Mapa do território Território 11.32" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 67.163%; top: 45.115%; --ang: 74.3deg" data-ax="67.163" data-ay="45.115" data-nome="Rua Infante Dom Henrique"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Infante Dom Henrique</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 52.324%; top: 63.42%; --ang: 0.0deg" data-ax="52.324" data-ay="63.42"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº49</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 47.373%; top: 44.468%; --ang: 0.0deg" data-ax="47.373" data-ay="44.468"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº71</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -495,7 +499,7 @@
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta Pero da Covilhã</li><li>Rua Infante Dom Henrique</li></ul>
+      <ul class="ruas-perto" hidden><li>Praceta Pero da Covilhã</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
