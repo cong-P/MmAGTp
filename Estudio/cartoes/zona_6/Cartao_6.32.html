@@ -474,7 +474,11 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Avenida Comandante Gilberto Duarte e Duarte</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta Luís de Camões</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Almeida Garrett</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
@@ -489,19 +493,19 @@
       <img class="map-image" src="mapa_6.32.jpg" alt="Mapa do território Território 6.32" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 40.919%; top: 31.14%; --ang: -24.3deg" data-ax="40.919" data-ay="31.14" data-nome="Avenida Comandante Gilberto Duarte e Duarte"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. Comandante Gilberto Duarte e Duarte</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta rua" style="left: 52.482%; top: 69.202%; --ang: -22.6deg" data-ax="52.482" data-ay="69.202" data-nome="Praceta Luís de Camões"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. Luís<br>de Camões</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta rua" style="left: 32.808%; top: 58.384%; --ang: 68.6deg" data-ax="32.808" data-ay="58.384" data-nome="Rua Almeida Garrett"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Almeida Garrett</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 47.637%; top: 44.583%; --ang: 0.0deg" data-ax="47.637" data-ay="44.583"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 162</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 77.387%; top: 13.843%; --ang: -26.8deg" data-ax="77.387" data-ay="13.843" data-nome="Avenida Comandante Gilberto Duarte e Duarte"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. Comandante Gilberto<br>Duarte e Duarte</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 43.166%; top: 85.109%; --ang: 68.4deg" data-ax="43.166" data-ay="85.109" data-nome="Rua Almeida Garrett"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Almeida<br>Garrett</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 18.451%; top: 72.729%; --ang: -22.0deg" data-ax="18.451" data-ay="72.729" data-nome="Praceta José Botelho"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. José Botelho</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida Comandante Gilberto Duarte e Duarte</li><li>Praceta Barbosa du Bocage</li><li>Praceta José Botelho</li><li>Rua Almeida Garrett</li></ul>
+      <ul class="ruas-perto" hidden><li>Praceta Barbosa du Bocage</li><li>Praceta José Botelho</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
