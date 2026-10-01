@@ -474,6 +474,10 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Avenida Comandante Gilberto Duarte e Duarte</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Henrique Barrilaro Ruas</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,15 +491,17 @@
       <img class="map-image" src="mapa_6.21.jpg" alt="Mapa do território Território 6.21" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 34.554%; top: 39.061%; --ang: -71.8deg" data-ax="34.554" data-ay="39.061" data-nome="Rua Henrique Barrilaro Ruas"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Henrique Barrilaro Ruas</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 70.922%; top: 53.612%; --ang: 84.5deg" data-ax="70.922" data-ay="53.612" data-nome="Avenida Comandante Gilberto Duarte e Duarte"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. Comandante Gilberto Duarte e Duarte</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 51.541%; top: 36.771%; --ang: 0.0deg" data-ax="51.541" data-ay="36.771"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº118</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 45.685%; top: 52.917%; --ang: 0.0deg" data-ax="45.685" data-ay="52.917"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº96</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 34.671%; top: 38.591%; --ang: -71.7deg" data-ax="34.671" data-ay="38.591" data-nome="Rua Henrique Barrilaro Ruas"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Henrique Barrilaro Ruas</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida Comandante Gilberto Duarte e Duarte</li><li>Avenida dos Bombeiros Voluntários</li><li>Rua Henrique Barrilaro Ruas</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida dos Bombeiros Voluntários</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
