@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta de Santa Teresinha</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,6 +489,8 @@
       <img class="map-image" src="mapa_8.06.jpg" alt="Mapa do território Território 8.06" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 65.389%; top: 66.396%; --ang: -82.3deg" data-ax="65.389" data-ay="66.396" data-nome="Praceta de Santa Teresinha"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. de Santa Teresinha</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 52.466%; top: 28.75%; --ang: 0.0deg" data-ax="52.466" data-ay="28.75"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº65</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 53.288%; top: 47.188%; --ang: 0.0deg" data-ax="53.288" data-ay="47.188"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº47</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -495,13 +499,11 @@
       
       <div class="etiqueta vizinha" style="left: 15.643%; top: 69.972%; --ang: 25.3deg" data-ax="15.643" data-ay="69.972" data-nome="Rua Cidade de Beja"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Cidade de Beja</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 78.727%; top: 43.762%; --ang: 7.2deg" data-ax="78.727" data-ay="43.762" data-nome="Praceta de Santa Teresinha"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. de Santa<br>Teresinha</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <div class="etiqueta vizinha" style="left: 30.26%; top: 37.896%; --ang: -79.7deg" data-ax="30.26" data-ay="37.896" data-nome="Rua Cidade do Porto"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Cidade do Porto</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta de Santa Teresinha</li><li>Rua Cidade de Beja</li><li>Rua Cidade do Porto</li><li>Rua da Cidade de Évora</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Cidade de Beja</li><li>Rua Cidade do Porto</li><li>Rua da Cidade de Évora</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
