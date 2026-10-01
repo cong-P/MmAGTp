@@ -474,6 +474,10 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Diogo Barbosa Machado</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Quirino Evangelista</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,11 +491,11 @@
       <img class="map-image" src="mapa_1.13.jpg" alt="Mapa do território Território 1.13" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 21.937%; top: 62.153%; --ang: 0.0deg" data-ax="21.937" data-ay="62.153"><span class="txt" style="font-size: 12.6pt" contenteditable="true" spellcheck="false">Nº 15</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 14.011%; top: 64.048%; --ang: 56.4deg" data-ax="14.011" data-ay="64.048" data-nome="Rua Quirino Evangelista"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Quirino<br>Evangelista</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 35.624%; top: 59.163%; --ang: 0.0deg" data-ax="28.501" data-ay="59.163"><span class="txt" style="font-size: 12.6pt" contenteditable="true" spellcheck="false">Nº 31</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 38.493%; top: 64.132%; --ang: -23.9deg" data-ax="38.493" data-ay="64.132" data-nome="Rua Diogo Barbosa Machado"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Diogo<br>Barbosa Machado</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 24.32%; top: 82.421%; --ang: 61.0deg" data-ax="24.32" data-ay="82.421" data-nome="Rua Quirino Evangelista"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Quirino<br>Evangelista</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 28.501%; top: 55.978%; --ang: 0.0deg" data-ax="28.501" data-ay="59.163"><span class="txt" style="font-size: 12.6pt" contenteditable="true" spellcheck="false">Nº 31</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 49.584%; top: 23.314%; --ang: -23.6deg" data-ax="49.584" data-ay="23.314" data-nome="Rua António dos Santos"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. António dos Santos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
@@ -501,7 +505,7 @@
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida José Maria da Silva</li><li>Praceta Moinhos de Rana</li><li>Rua 2 de Setembro de 1945</li><li>Rua Afonso Gonçalves Baldaia</li><li>Rua Antão Gonçalves</li><li>Rua António Luis Verney</li><li>Rua António dos Santos</li><li>Rua Bernardo Santareno</li><li>Rua Diogo Barbosa Machado</li><li>Rua Diogo Cão</li><li>Rua Mira Sol</li><li>Rua Quirino Evangelista</li><li>Rua Vila de Mértola</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida José Maria da Silva</li><li>Praceta Moinhos de Rana</li><li>Rua 2 de Setembro de 1945</li><li>Rua Afonso Gonçalves Baldaia</li><li>Rua Antão Gonçalves</li><li>Rua António Luis Verney</li><li>Rua António dos Santos</li><li>Rua Bernardo Santareno</li><li>Rua Diogo Cão</li><li>Rua Mira Sol</li><li>Rua Vila de Mértola</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
