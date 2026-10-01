@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua António Louro</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua João Villaret</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
@@ -489,6 +491,8 @@
       <img class="map-image" src="mapa_4.12.jpg" alt="Mapa do território Território 4.12" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 12.753%; top: 73.933%; --ang: 66.0deg" data-ax="12.753" data-ay="73.933" data-nome="Rua António Louro"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. António Louro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta rua" style="left: 55.778%; top: 59.13%; --ang: -37.6deg" data-ax="55.778" data-ay="59.13" data-nome="Rua João Villaret"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. João Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 22.783%; top: 61.879%; --ang: 0.0deg" data-ax="22.783" data-ay="61.879"><span class="txt" style="font-size: 12.5pt" contenteditable="true" spellcheck="false">nº 354</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -501,7 +505,7 @@
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua António Louro</li><li>Rua Carlos Botelho</li><li>Rua Fernando Namora</li><li>Rua Paul Harris</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Carlos Botelho</li><li>Rua Fernando Namora</li><li>Rua Paul Harris</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
