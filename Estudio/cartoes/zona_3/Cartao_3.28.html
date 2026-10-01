@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua dos Girassóis</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,13 +489,13 @@
       <img class="map-image" src="mapa_3.28.jpg" alt="Mapa do território Território 3.28" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta vizinha" style="left: 38.587%; top: 29.072%; --ang: -8.1deg" data-ax="38.587" data-ay="29.072" data-nome="Rua dos Girassóis"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. dos Girassóis</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 14.292%; top: 27.526%; --ang: 23.6deg" data-ax="14.292" data-ay="27.526" data-nome="Rua dos Girassóis"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. dos<br>Girassóis</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 55.463%; top: 19.104%; --ang: -77.9deg" data-ax="55.463" data-ay="19.104" data-nome="Rua João Villaret"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. João<br>Villaret</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta dos Girassóis</li><li>Rua Bernardino Moreira</li><li>Rua Humberto Delgado</li><li>Rua João Villaret</li><li>Rua Vitor Hugo Moreira</li><li>Rua dos Girassóis</li></ul>
+      <ul class="ruas-perto" hidden><li>Praceta dos Girassóis</li><li>Rua Bernardino Moreira</li><li>Rua Humberto Delgado</li><li>Rua João Villaret</li><li>Rua Vitor Hugo Moreira</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
