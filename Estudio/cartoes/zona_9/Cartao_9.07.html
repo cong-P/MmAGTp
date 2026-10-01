@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua José Carlos da Maia</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -486,6 +488,8 @@
     <div class="map-container" id="mapa">
       <img class="map-image" src="mapa_9.07.jpg" alt="Mapa do território Território 9.07" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      
+      <div class="etiqueta rua" style="left: 51.582%; top: 62.449%; --ang: 0.0deg" data-ax="51.582" data-ay="62.449" data-nome="Rua José Carlos da Maia"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. José Carlos da Maia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 44.966%; top: 74.167%; --ang: 0.0deg" data-ax="44.966" data-ay="74.167"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº14</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
@@ -503,17 +507,17 @@
       
       <div class="etiqueta vizinha" style="left: 69.134%; top: 22.453%; --ang: 30.4deg" data-ax="69.134" data-ay="22.453" data-nome="Rua da Cidade de Évora"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Cidade de Évora</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 34.223%; top: 54.929%; --ang: 87.5deg" data-ax="34.223" data-ay="54.929" data-nome="Rua Cidade de Coimbra"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Cidade<br>de Coimbra</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 62.613%; top: 62.807%; --ang: -79.4deg" data-ax="62.613" data-ay="62.807" data-nome="Rua de Timor"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Timor</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 70.108%; top: 40.715%; --ang: -77.6deg" data-ax="70.108" data-ay="40.715" data-nome="Rua de Timor"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Timor</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 25.102%; top: 22.955%; --ang: 73.9deg" data-ax="25.102" data-ay="22.955" data-nome="Rua da Cidade de Coimbra"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Cidade de Coimbra</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 10.83%; top: 81.357%; --ang: 13.3deg" data-ax="10.83" data-ay="81.357" data-nome="Rua Cidade de Tomar"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Cidade<br>de Tomar</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta vizinha" style="left: 10.838%; top: 50.382%; --ang: 60.6deg" data-ax="10.838" data-ay="50.382" data-nome="Rua de Santa Teresinha"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Santa<br>Teresinha</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida da República</li><li>Avenida dos Príncipes</li><li>Praceta de Santa Teresinha</li><li>Praça Mário Azevedo Gomes</li><li>Rua Camilo Dionísio Álvares</li><li>Rua Cidade de Beja</li><li>Rua Cidade de Coimbra</li><li>Rua Cidade de Silves</li><li>Rua Cidade de Tomar</li><li>Rua Cidade do Porto</li><li>Rua Doutor Elísio de Moura</li><li>Rua Doutor Flávio Resende</li><li>Rua Jorge Alves</li><li>Rua José Carlos da Maia</li><li>Rua João de Deus</li><li>Rua Teófilo Braga</li><li>Rua Trindade Coelho</li><li>Rua da Cidade de Coimbra</li><li>Rua da Cidade de Évora</li><li>Rua de Cidade de Lagos</li><li>Rua de Santa Teresinha</li><li>Rua de Timor</li><li>Travessa Eduardo Costa</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida da República</li><li>Avenida dos Príncipes</li><li>Praceta de Santa Teresinha</li><li>Praça Mário Azevedo Gomes</li><li>Rua Camilo Dionísio Álvares</li><li>Rua Cidade de Beja</li><li>Rua Cidade de Coimbra</li><li>Rua Cidade de Silves</li><li>Rua Cidade de Tomar</li><li>Rua Cidade do Porto</li><li>Rua Doutor Elísio de Moura</li><li>Rua Doutor Flávio Resende</li><li>Rua Jorge Alves</li><li>Rua João de Deus</li><li>Rua Teófilo Braga</li><li>Rua Trindade Coelho</li><li>Rua da Cidade de Coimbra</li><li>Rua da Cidade de Évora</li><li>Rua de Cidade de Lagos</li><li>Rua de Santa Teresinha</li><li>Rua de Timor</li><li>Travessa Eduardo Costa</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
