@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Avenida da República</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua José Carlos da Maia</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
@@ -489,6 +491,8 @@
       <img class="map-image" src="mapa_9.08.jpg" alt="Mapa do território Território 9.08" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 48.127%; top: 90.085%; --ang: 0.0deg" data-ax="48.127" data-ay="90.085" data-nome="Avenida da República"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. da República</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta rua" style="left: 45.688%; top: 58.954%; --ang: -81.5deg" data-ax="45.688" data-ay="58.954" data-nome="Rua José Carlos da Maia"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. José Carlos da Maia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 60.472%; top: 10.623%; --ang: 0.0deg" data-ax="60.472" data-ay="10.623"><span class="txt" style="font-size: 12.0pt" contenteditable="true" spellcheck="false">nº13</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -501,21 +505,19 @@
       
       <div class="etiqueta porta" style="left: 56.699%; top: 82.697%; --ang: 0.0deg" data-ax="51.664" data-ay="82.697"><span class="txt" style="font-size: 12.0pt" contenteditable="true" spellcheck="false">nº5</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 24.045%; top: 81.49%; --ang: 21.7deg" data-ax="24.045" data-ay="81.49" data-nome="Avenida da República"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. da República</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <div class="etiqueta vizinha" style="left: 82.167%; top: 18.802%; --ang: 31.2deg" data-ax="82.167" data-ay="18.802" data-nome="Rua da Cidade de Évora"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Cidade de Évora</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 59.741%; top: 64.203%; --ang: -80.5deg" data-ax="59.741" data-ay="64.203" data-nome="Rua de Timor"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. de Timor</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 73.332%; top: 79.762%; --ang: 41.3deg" data-ax="73.332" data-ay="79.762" data-nome="Praça Mário Azevedo Gomes"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pç. Mário<br>Azevedo Gomes</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 21.531%; top: 63.389%; --ang: -84.3deg" data-ax="21.531" data-ay="63.389" data-nome="Rua Cidade de Coimbra"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Cidade<br>de Coimbra</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 20.168%; top: 73.309%; --ang: -82.5deg" data-ax="20.168" data-ay="73.309" data-nome="Rua Cidade de Coimbra"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Cidade de Coimbra</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 11.228%; top: 21.888%; --ang: 80.1deg" data-ax="11.228" data-ay="21.888" data-nome="Rua da Cidade de Coimbra"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Cidade<br>de Coimbra</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida da República</li><li>Avenida dos Príncipes</li><li>Praça Mário Azevedo Gomes</li><li>Rua Cidade de Coimbra</li><li>Rua Cidade de Silves</li><li>Rua Cidade de Tomar</li><li>Rua Doutor Elísio de Moura</li><li>Rua Doutor Flávio Resende</li><li>Rua da Cidade de Coimbra</li><li>Rua da Cidade de Évora</li><li>Rua de Cidade de Lagos</li><li>Rua de Santa Teresinha</li><li>Rua de Timor</li><li>Travessa Eduardo Costa</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida dos Príncipes</li><li>Praça Mário Azevedo Gomes</li><li>Rua Cidade de Coimbra</li><li>Rua Cidade de Silves</li><li>Rua Cidade de Tomar</li><li>Rua Doutor Elísio de Moura</li><li>Rua Doutor Flávio Resende</li><li>Rua da Cidade de Coimbra</li><li>Rua da Cidade de Évora</li><li>Rua de Cidade de Lagos</li><li>Rua de Santa Teresinha</li><li>Rua de Timor</li><li>Travessa Eduardo Costa</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
