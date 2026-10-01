@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Avenida da República</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praça Mário Azevedo Gomes</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
@@ -491,6 +493,8 @@
       
       <div class="etiqueta rua" style="left: 36.874%; top: 40.2%; --ang: 12.3deg" data-ax="36.874" data-ay="40.2" data-nome="Praça Mário Azevedo Gomes"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pç. Mário<br>Azevedo Gomes</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta rua" style="left: 52.201%; top: 84.64%; --ang: 21.7deg" data-ax="52.201" data-ay="84.64" data-nome="Avenida da República"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. da República</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 65.58%; top: 23.401%; --ang: 0.0deg" data-ax="65.58" data-ay="23.401"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº316</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 62.665%; top: 36.955%; --ang: 0.0deg" data-ax="62.665" data-ay="36.955"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº332</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -501,13 +505,11 @@
       
       <div class="etiqueta porta" style="left: 32.812%; top: 54.28%; --ang: 0.0deg" data-ax="32.812" data-ay="54.28"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº405</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 12.285%; top: 75.369%; --ang: 3.3deg" data-ax="12.285" data-ay="75.369" data-nome="Avenida da República"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. da<br>República</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <div class="etiqueta vizinha" style="left: 95.529%; top: 37.818%; --ang: -85.7deg" data-ax="95.529" data-ay="37.818" data-nome="Travessa Eduardo Costa"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Tv. Eduardo Costa</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida da República</li><li>Rua de Timor</li><li>Travessa Eduardo Costa</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua de Timor</li><li>Travessa Eduardo Costa</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
