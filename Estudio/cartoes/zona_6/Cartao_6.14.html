@@ -474,6 +474,10 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta Miguel Torga</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Melvin Jones</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Plácido de Abreu</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
@@ -489,6 +493,10 @@
       <img class="map-image" src="mapa_6.14.jpg" alt="Mapa do território Território 6.14" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 84.884%; top: 35.99%; --ang: 56.0deg" data-ax="84.884" data-ay="35.99" data-nome="Rua Melvin Jones"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Melvin Jones</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta rua" style="left: 74.398%; top: 55.09%; --ang: -30.5deg" data-ax="74.398" data-ay="55.09" data-nome="Praceta Miguel Torga"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. Miguel Torga</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta rua" style="left: 42.674%; top: 44.134%; --ang: -32.9deg" data-ax="42.674" data-ay="44.134" data-nome="Rua Plácido de Abreu"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Plácido de Abreu</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 30.014%; top: 64.899%; --ang: 0.0deg" data-ax="30.014" data-ay="64.899"><span class="txt" style="font-size: 12.6pt" contenteditable="true" spellcheck="false">nº80</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -499,13 +507,9 @@
       
       <div class="etiqueta porta" style="left: 65.283%; top: 42.749%; --ang: 0.0deg" data-ax="65.283" data-ay="42.749"><span class="txt" style="font-size: 12.6pt" contenteditable="true" spellcheck="false">nº121</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 55.018%; top: 66.679%; --ang: -30.5deg" data-ax="55.018" data-ay="66.679" data-nome="Praceta Miguel Torga"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Pct. Miguel Torga</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 71.816%; top: 15.074%; --ang: 59.0deg" data-ax="71.816" data-ay="15.074" data-nome="Rua Melvin Jones"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Melvin Jones</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Praceta Fernando Pessoa</li><li>Praceta Miguel Torga</li><li>Rua Brito Pais</li><li>Rua Melvin Jones</li></ul>
+      <ul class="ruas-perto" hidden><li>Praceta Fernando Pessoa</li><li>Rua Brito Pais</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
