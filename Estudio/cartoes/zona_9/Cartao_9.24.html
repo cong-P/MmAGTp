@@ -474,6 +474,8 @@
         <span class="rotulo">Localizações:</span>
         <ol class="ruas">
           
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Avenida da República</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
@@ -487,6 +489,8 @@
       <img class="map-image" src="mapa_9.24.jpg" alt="Mapa do território Território 9.24" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
+      <div class="etiqueta rua" style="left: 42.866%; top: 21.812%; --ang: -7.0deg" data-ax="42.866" data-ay="21.812" data-nome="Avenida da República"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. da República</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       <div class="etiqueta porta" style="left: 17.231%; top: 39.372%; --ang: 0.0deg" data-ax="17.231" data-ay="39.372"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº1535</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta porta" style="left: 23.357%; top: 32.871%; --ang: 0.0deg" data-ax="31.987" data-ay="36.071"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº1523</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
@@ -499,17 +503,13 @@
       
       <div class="etiqueta porta" style="left: 79.41%; top: 69.709%; --ang: 0.0deg" data-ax="79.41" data-ay="66.509"><span class="txt" style="font-size: 12.7pt" contenteditable="true" spellcheck="false">nº1485E</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 15.6%; top: 19.781%; --ang: 15.8deg" data-ax="15.6" data-ay="19.781" data-nome="Avenida da República"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. da República</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
-      <div class="etiqueta vizinha" style="left: 33.153%; top: 11.928%; --ang: -85.8deg" data-ax="33.153" data-ay="11.928" data-nome="Rua Trindade Coelho"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Trindade<br>Coelho</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
-      
       <div class="etiqueta vizinha" style="left: 7.263%; top: 36.841%; --ang: -89.4deg" data-ax="7.263" data-ay="36.841" data-nome="Rua João de Deus"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. João de Deus</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 25.736%; top: 88.16%; --ang: 24.5deg" data-ax="25.736" data-ay="88.16" data-nome="Rua Camilo Dionísio Álvares"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Camilo Dionísio Álvares</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida da República</li><li>Rua Camilo Dionísio Álvares</li><li>Rua Doutor António Granjo</li><li>Rua João de Deus</li><li>Rua Trindade Coelho</li><li>Rua da Vigia</li><li>Rua das Clementinas</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua Camilo Dionísio Álvares</li><li>Rua Doutor António Granjo</li><li>Rua João de Deus</li><li>Rua Trindade Coelho</li><li>Rua da Vigia</li><li>Rua das Clementinas</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
