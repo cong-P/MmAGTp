@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
-<head>
+<html lang="pt-PT"><head>
 <meta charset="UTF-8">
 <title>Território 11.02</title>
 <style>
@@ -460,7 +459,7 @@
     }
   }
 </style>
-</head>
+<style type="text/css"></style></head>
 <!-- `data-cartao`: a versão do que este cartão sabe fazer sozinho. As
      páginas que o abrem para editar (ver public/territorios/estudio/
      cartaoExtras.js) dão aos cartões antigos, que não a têm, o arrasto a
@@ -472,9 +471,9 @@
       <div class="section header editable" contenteditable="true" spellcheck="false">Território 11.02</div>
       <div class="section locations">
         <span class="rotulo">Localizações:</span>
-        <ol class="ruas">
+        <ol class="ruas" style="font-size: 13.5pt;">
           
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua de Ambriz</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua de Ambriz</span><button class="apagar-linha" title="Remover rua">×</button></li>
           
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
@@ -486,32 +485,32 @@
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 43</div>
     </div>
     <div class="map-container" id="mapa">
-      <img class="map-image" src="mapa_11.02.jpg" alt="Mapa do território Território 11.02" />
+      <img class="map-image" src="mapa_11.02.jpg" alt="Mapa do território Território 11.02">
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 78.553%; top: 45.89%; --ang: 73.9deg" data-ax="78.553" data-ay="45.89" data-nome="Rua de Ambriz"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. de Ambriz</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 78.553%; top: 45.89%; --ang: 73.9deg" data-ax="78.553" data-ay="45.89" data-nome="Rua de Ambriz"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. de Ambriz</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta porta" style="left: 53.082%; top: 41.979%; --ang: 0.0deg" data-ax="53.082" data-ay="41.979"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">978 LT2</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 53.082%; top: 41.979%; --ang: 0.0deg" data-ax="53.082" data-ay="41.979"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">LT2</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta porta" style="left: 60.073%; top: 47.902%; --ang: 0.0deg" data-ax="69.315" data-ay="44.688"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">978 LT1</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 67.753809%; top: 45.335576%; --ang: 0.0deg;" data-ax="69.315" data-ay="44.688"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">LT1</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta vizinha" style="left: 30.478%; top: 74.169%; --ang: 60.6deg" data-ax="30.478" data-ay="74.169" data-nome="Rua Vasco da Gama"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Vasco da Gama</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 30.478%; top: 74.169%; --ang: 60.6deg" data-ax="30.478" data-ay="74.169" data-nome="Rua Vasco da Gama"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Vasco da Gama</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua Vasco da Gama</li><li>Rua de Luanda</li></ul>
+      <ul class="ruas-perto" hidden=""><li>Rua Vasco da Gama</li><li>Rua de Luanda</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
       </div>
-    </div>
+    <div class="etiqueta porta" style="left: 51.137426%; top: 34.507721%; --ang: 0deg;"><span class="txt" contenteditable="true" spellcheck="false">Nº 948</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div><div class="etiqueta porta" style="left: 40.340926%; top: 45.875248%; --ang: 0deg;"><span class="txt" contenteditable="true" spellcheck="false">LT3</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div></div>
   </div>
 
   <!-- Verso -->
   <div class="card verso">
     <p class="titulo-verso">Território 11.02</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADlUlEQVR4nO1cW4qrQBCt0oZ8KmQBsxSzg7vW2UFcShYQsD8HWupSjzZm7lyIGCaaroIRtfvgNFZOPVskWCx9tRwD4CATB5k4aDegiCaniAgQA+AJRjtjgb4FPUPEsIs1LRcHZSEaahKBjhLoAaBma8IDs1Gyy/PG11Q5aDUI9bfPesB8AAAjEtEXQv+R8ihzyWntkxaKg14LivLiD8oHmShGhG549pMeFQe9GDQiEb99cRyYD5QUjDee+aQHxUG/DgpypOka+Y8ghgR9OwB0Zx6MRwBoeFb83X+vctArQKNGEWomuqEmZYbuIkYkZKKQSe1O1rRYHGQS7LcvEgGo//jC+aGtmR7SjEY2v6bKQes0Ih6THCaDAQgN24+GJzQD04PNJp288TVVDlqZjwAWzjPIpaYdLFFhA8wRMnpuyPMRRWhEd0tO8TsXZfghV6VpKteIdwYBEaX82xcqaLJuTBpB56wWqi+uEe/PEcQaIWGG3hO1EOF7My1RBdn4mioHPSfWIIk1ILbsVJpuIAccMk0GaBdrqhy03mrQ5ExwpKnhptS3ZraCZ7sfUYhGgBY2c3VTB8St+OZjukYUVQ0HpQeLPpUoxMEwonA/oiCNOOdkQzYYmR5UNB8hPqZzRCkcke68Bwk97v0I1RK3GgWAmqT1bmEBq2VJf522zaRc7oqHPLr9NS0XB2Ux33HIgYRSxvCDZ6lJCeeIcjxL0ryUZi9zY6WlK41B3I8opWMGucRpxc7I9qIZwzwl1VwDzvrrNr6mykEr/YgvftMjznNQ0lCXU9lmRDJb7GFNy8VB37vqasLucuBe7GvQy769an8Edp9Hwo5kD4f3R5TQMUPSEUMARgrYXUKC7pN7Z4A7LqWbCmtCTVNtfE2Vg9ZHn8CkoJsx4oGthhgRcSW50sUd+0940nJx0EvqGqTxpVU4pH3qdqbBaA5BtTi+8TVVDloZfcIs7TDvoNMJlp4w8ejz3UFwK3rSlJz6J5+dicLzEYXtDQfZv2VtdHiKAegsO/+m3V2ej3h7UGC7kORUAgnJVXEhIxFESUkdpw4rjj5l8sbXVDnoCTlL4Dcdj4kARmOF/k8KtoNHPiexmzVVDlpf6YLcIKU35ezWiKtTpNLlsUZZoNFS2X3LZ1NDtiW6p0aqXa3pQXHQ/74xw5JbqnJXnZXJechjjWJ2+UE2CbddPXr3vlbufZbvDkL/eqGKg0wcZOIgUPkLy5/b1SOym2IAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADlUlEQVR4nO1cW4qrQBCt0oZ8KmQBsxSzg7vW2UFcShYQsD8HWupSjzZm7lyIGCaaroIRtfvgNFZOPVskWCx9tRwD4CATB5k4aDegiCaniAgQA+AJRjtjgb4FPUPEsIs1LRcHZSEaahKBjhLoAaBma8IDs1Gyy/PG11Q5aDUI9bfPesB8AAAjEtEXQv+R8ihzyWntkxaKg14LivLiD8oHmShGhG549pMeFQe9GDQiEb99cRyYD5QUjDee+aQHxUG/DgpypOka+Y8ghgR9OwB0Zx6MRwBoeFb83X+vctArQKNGEWomuqEmZYbuIkYkZKKQSe1O1rRYHGQS7LcvEgGo//jC+aGtmR7SjEY2v6bKQes0Ih6THCaDAQgN24+GJzQD04PNJp288TVVDlqZjwAWzjPIpaYdLFFhA8wRMnpuyPMRRWhEd0tO8TsXZfghV6VpKteIdwYBEaX82xcqaLJuTBpB56wWqi+uEe/PEcQaIWGG3hO1EOF7My1RBdn4mioHPSfWIIk1ILbsVJpuIAccMk0GaBdrqhy03mrQ5ExwpKnhptS3ZraCZ7sfUYhGgBY2c3VTB8St+OZjukYUVQ0HpQeLPpUoxMEwonA/oiCNOOdkQzYYmR5UNB8hPqZzRCkcke68Bwk97v0I1RK3GgWAmqT1bmEBq2VJf522zaRc7oqHPLr9NS0XB2Ux33HIgYRSxvCDZ6lJCeeIcjxL0ryUZi9zY6WlK41B3I8opWMGucRpxc7I9qIZwzwl1VwDzvrrNr6mykEr/YgvftMjznNQ0lCXU9lmRDJb7GFNy8VB37vqasLucuBe7GvQy769an8Edp9Hwo5kD4f3R5TQMUPSEUMARgrYXUKC7pN7Z4A7LqWbCmtCTVNtfE2Vg9ZHn8CkoJsx4oGthhgRcSW50sUd+0940nJx0EvqGqTxpVU4pH3qdqbBaA5BtTi+8TVVDloZfcIs7TDvoNMJlp4w8ejz3UFwK3rSlJz6J5+dicLzEYXtDQfZv2VtdHiKAegsO/+m3V2ej3h7UGC7kORUAgnJVXEhIxFESUkdpw4rjj5l8sbXVDnoCTlL4Dcdj4kARmOF/k8KtoNHPiexmzVVDlpf6YLcIKU35ezWiKtTpNLlsUZZoNFS2X3LZ1NDtiW6p0aqXa3pQXHQ/74xw5JbqnJXnZXJechjjWJ2+UE2CbddPXr3vlbufZbvDkL/eqGKg0wcZOIgUPkLy5/b1SOym2IAAAAASUVORK5CYII=" alt="Código QR para abrir no Google Maps">
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
@@ -838,5 +837,5 @@
     ajustarLista();
   });
 </script>
-</body>
-</html>
+
+</body></html>
