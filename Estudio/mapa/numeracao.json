@@ -66,7 +66,7 @@
   "lat": 38.684522,
   "lon": -9.342793,
   "nome_original": "COMERCIAL",
-  "numero": 40,
+  "numero": 39,
   "zona": 5
  },
  "38.68457,-9.34602": {
@@ -342,6 +342,13 @@
   "numero": 17,
   "zona": 10
  },
+ "38.68663,-9.35295": {
+  "lat": 38.686632,
+  "lon": -9.352954,
+  "nome_original": "Território 10.16",
+  "numero": 16,
+  "zona": 10
+ },
  "38.68667,-9.35427": {
   "lat": 38.686665,
   "lon": -9.354268,
@@ -409,7 +416,7 @@
   "lat": 38.687784,
   "lon": -9.346207,
   "nome_original": "Território nº05.13",
-  "numero": 13,
+  "numero": 12,
   "zona": 5
  },
  "38.68778,-9.34873": {
@@ -430,7 +437,7 @@
   "lat": 38.687858,
   "lon": -9.344259,
   "nome_original": "Território nº05.27",
-  "numero": 27,
+  "numero": 26,
   "zona": 5
  },
  "38.68788,-9.35347": {
@@ -451,21 +458,21 @@
   "lat": 38.687976,
   "lon": -9.341639,
   "nome_original": "Território nº05.28",
-  "numero": 28,
+  "numero": 27,
   "zona": 5
  },
  "38.68813,-9.34788": {
   "lat": 38.688127,
   "lon": -9.347879,
   "nome_original": "Território nº05.12",
-  "numero": 12,
+  "numero": 11,
   "zona": 5
  },
  "38.68816,-9.34579": {
   "lat": 38.688157,
   "lon": -9.345788,
   "nome_original": "Território nº05.14",
-  "numero": 14,
+  "numero": 13,
   "zona": 5
  },
  "38.68818,-9.35876": {
@@ -493,14 +500,14 @@
   "lat": 38.688239,
   "lon": -9.34174,
   "nome_original": "Polígono 192",
-  "numero": 39,
+  "numero": 38,
   "zona": 5
  },
  "38.68824,-9.34349": {
   "lat": 38.688245,
   "lon": -9.343488,
   "nome_original": "Território nº05.36",
-  "numero": 36,
+  "numero": 35,
   "zona": 5
  },
  "38.68835,-9.35500": {
@@ -514,35 +521,35 @@
   "lat": 38.688458,
   "lon": -9.342855,
   "nome_original": "Território nº05.35",
-  "numero": 35,
+  "numero": 34,
   "zona": 5
  },
  "38.68851,-9.34222": {
   "lat": 38.688509,
   "lon": -9.342224,
   "nome_original": "Território nº05.34",
-  "numero": 34,
+  "numero": 33,
   "zona": 5
  },
  "38.68858,-9.34617": {
   "lat": 38.688579,
   "lon": -9.346174,
   "nome_original": "Território nº05.15",
-  "numero": 15,
+  "numero": 14,
   "zona": 5
  },
  "38.68876,-9.34488": {
   "lat": 38.688755,
   "lon": -9.344876,
   "nome_original": "Território nº05.26",
-  "numero": 26,
+  "numero": 25,
   "zona": 5
  },
  "38.68877,-9.34361": {
   "lat": 38.688765,
   "lon": -9.343607,
   "nome_original": "Território nº05.37",
-  "numero": 37,
+  "numero": 36,
   "zona": 5
  },
  "38.68877,-9.35249": {
@@ -556,7 +563,7 @@
   "lat": 38.688783,
   "lon": -9.346234,
   "nome_original": "Território nº05.16",
-  "numero": 16,
+  "numero": 15,
   "zona": 5
  },
  "38.68885,-9.35186": {
@@ -570,14 +577,14 @@
   "lat": 38.688969,
   "lon": -9.341408,
   "nome_original": "Território nº05.29",
-  "numero": 29,
+  "numero": 28,
   "zona": 5
  },
  "38.68898,-9.34790": {
   "lat": 38.688977,
   "lon": -9.347897,
   "nome_original": "Território nº05.11",
-  "numero": 11,
+  "numero": 10,
   "zona": 5
  },
  "38.68908,-9.34955": {
@@ -591,21 +598,21 @@
   "lat": 38.689088,
   "lon": -9.342012,
   "nome_original": "Território nº05.33",
-  "numero": 33,
+  "numero": 32,
   "zona": 5
  },
  "38.68909,-9.34619": {
   "lat": 38.689088,
   "lon": -9.34619,
   "nome_original": "Território nº05.10",
-  "numero": 10,
+  "numero": 9,
   "zona": 5
  },
  "38.68912,-9.34676": {
   "lat": 38.689124,
   "lon": -9.346762,
   "nome_original": "Território nº05.09",
-  "numero": 9,
+  "numero": 8,
   "zona": 5
  },
  "38.68915,-9.35402": {
@@ -633,7 +640,7 @@
   "lat": 38.689204,
   "lon": -9.342763,
   "nome_original": "Território nº05.32",
-  "numero": 32,
+  "numero": 31,
   "zona": 5
  },
  "38.68924,-9.34937": {
@@ -654,7 +661,7 @@
   "lat": 38.689265,
   "lon": -9.347277,
   "nome_original": "Território nº05.08",
-  "numero": 8,
+  "numero": 7,
   "zona": 5
  },
  "38.68928,-9.35355": {
@@ -668,21 +675,21 @@
   "lat": 38.689302,
   "lon": -9.343515,
   "nome_original": "Território nº05.38",
-  "numero": 38,
+  "numero": 37,
   "zona": 5
  },
  "38.68943,-9.34782": {
   "lat": 38.689433,
   "lon": -9.347818,
   "nome_original": "Território nº05.07",
-  "numero": 7,
+  "numero": 6,
   "zona": 5
  },
  "38.68954,-9.34475": {
   "lat": 38.689536,
   "lon": -9.34475,
   "nome_original": "Território nº05.23",
-  "numero": 23,
+  "numero": 22,
   "zona": 5
  },
  "38.68956,-9.35756": {
@@ -696,21 +703,21 @@
   "lat": 38.689602,
   "lon": -9.345271,
   "nome_original": "Território nº05.24",
-  "numero": 24,
+  "numero": 23,
   "zona": 5
  },
  "38.68961,-9.34247": {
   "lat": 38.689614,
   "lon": -9.342466,
   "nome_original": "Território nº05.31",
-  "numero": 31,
+  "numero": 30,
   "zona": 5
  },
  "38.68962,-9.34613": {
   "lat": 38.689621,
   "lon": -9.346129,
   "nome_original": "Território nº05.17",
-  "numero": 17,
+  "numero": 16,
   "zona": 5
  },
  "38.68965,-9.35854": {
@@ -731,14 +738,14 @@
   "lat": 38.689695,
   "lon": -9.34182,
   "nome_original": "Território nº05.30",
-  "numero": 30,
+  "numero": 29,
   "zona": 5
  },
  "38.68971,-9.34570": {
   "lat": 38.689706,
   "lon": -9.345698,
   "nome_original": "Território nº05.25",
-  "numero": 25,
+  "numero": 24,
   "zona": 5
  },
  "38.68976,-9.35284": {
@@ -759,7 +766,7 @@
   "lat": 38.689869,
   "lon": -9.355233,
   "nome_original": "Território nº131",
-  "numero": 25,
+  "numero": 24,
   "zona": 9
  },
  "38.68990,-9.35138": {
@@ -773,14 +780,14 @@
   "lat": 38.689941,
   "lon": -9.344971,
   "nome_original": "Território nº05.22",
-  "numero": 22,
+  "numero": 21,
   "zona": 5
  },
  "38.68997,-9.34631": {
   "lat": 38.68997,
   "lon": -9.346306,
   "nome_original": "Território nº05.18",
-  "numero": 18,
+  "numero": 17,
   "zona": 5
  },
  "38.69011,-9.36186": {
@@ -794,14 +801,14 @@
   "lat": 38.69012,
   "lon": -9.345693,
   "nome_original": "Território nº05.19",
-  "numero": 19,
+  "numero": 18,
   "zona": 5
  },
  "38.69017,-9.34928": {
   "lat": 38.690165,
   "lon": -9.349281,
   "nome_original": "Território nº05.06",
-  "numero": 6,
+  "numero": 5,
   "zona": 5
  },
  "38.69019,-9.34841": {
@@ -822,28 +829,28 @@
   "lat": 38.690353,
   "lon": -9.356488,
   "nome_original": "Território nº93",
-  "numero": 22,
+  "numero": 21,
   "zona": 9
  },
  "38.69039,-9.34562": {
   "lat": 38.690394,
   "lon": -9.345625,
   "nome_original": "Território nº05.20",
-  "numero": 20,
+  "numero": 19,
   "zona": 5
  },
  "38.69040,-9.34509": {
   "lat": 38.690398,
   "lon": -9.345087,
   "nome_original": "Território nº05.21",
-  "numero": 21,
+  "numero": 20,
   "zona": 5
  },
  "38.69044,-9.35729": {
   "lat": 38.69044,
   "lon": -9.357291,
   "nome_original": "Território nº91",
-  "numero": 24,
+  "numero": 23,
   "zona": 9
  },
  "38.69052,-9.35165": {
@@ -857,7 +864,7 @@
   "lat": 38.690593,
   "lon": -9.356983,
   "nome_original": "Território nº92",
-  "numero": 23,
+  "numero": 22,
   "zona": 9
  },
  "38.69075,-9.35448": {
@@ -885,14 +892,14 @@
   "lat": 38.690784,
   "lon": -9.359333,
   "nome_original": "Território nº9.14",
-  "numero": 14,
+  "numero": 13,
   "zona": 9
  },
  "38.69081,-9.35572": {
   "lat": 38.690808,
   "lon": -9.355723,
   "nome_original": "Território nº09.20",
-  "numero": 21,
+  "numero": 20,
   "zona": 9
  },
  "38.69090,-9.36172": {
@@ -920,28 +927,28 @@
   "lat": 38.691231,
   "lon": -9.356726,
   "nome_original": "Território nº09.18",
-  "numero": 19,
+  "numero": 18,
   "zona": 9
  },
  "38.69124,-9.35843": {
   "lat": 38.69124,
   "lon": -9.358428,
   "nome_original": "Território nº9.13",
-  "numero": 13,
+  "numero": 12,
   "zona": 9
  },
  "38.69128,-9.35918": {
   "lat": 38.691279,
   "lon": -9.359183,
   "nome_original": "Território nº9.12",
-  "numero": 12,
+  "numero": 11,
   "zona": 9
  },
  "38.69130,-9.35782": {
   "lat": 38.691304,
   "lon": -9.357815,
   "nome_original": "Território nº09.14",
-  "numero": 15,
+  "numero": 14,
   "zona": 9
  },
  "38.69134,-9.36207": {
@@ -976,14 +983,14 @@
   "lat": 38.691687,
   "lon": -9.357234,
   "nome_original": "Território nº09.17",
-  "numero": 18,
+  "numero": 17,
   "zona": 9
  },
  "38.69173,-9.36009": {
   "lat": 38.691726,
   "lon": -9.36009,
   "nome_original": "Território nº9.06",
-  "numero": 6,
+  "numero": 5,
   "zona": 9
  },
  "38.69174,-9.34762": {
@@ -1004,7 +1011,7 @@
   "lat": 38.691821,
   "lon": -9.355369,
   "nome_original": "Território nº88",
-  "numero": 26,
+  "numero": 25,
   "zona": 9
  },
  "38.69184,-9.35005": {
@@ -1018,14 +1025,14 @@
   "lat": 38.69198,
   "lon": -9.356279,
   "nome_original": "Território nº09.19",
-  "numero": 20,
+  "numero": 19,
   "zona": 9
  },
  "38.69206,-9.35762": {
   "lat": 38.692063,
   "lon": -9.357618,
   "nome_original": "Território nº09.15",
-  "numero": 16,
+  "numero": 15,
   "zona": 9
  },
  "38.69216,-9.35440": {
@@ -1039,7 +1046,7 @@
   "lat": 38.692227,
   "lon": -9.35948,
   "nome_original": "Território nº9.08",
-  "numero": 8,
+  "numero": 7,
   "zona": 9
  },
  "38.69228,-9.34900": {
@@ -1060,14 +1067,14 @@
   "lat": 38.692346,
   "lon": -9.354907,
   "nome_original": "Território nº127",
-  "numero": 27,
+  "numero": 26,
   "zona": 9
  },
  "38.69242,-9.35775": {
   "lat": 38.692418,
   "lon": -9.357749,
   "nome_original": "Território nº09.16",
-  "numero": 17,
+  "numero": 16,
   "zona": 9
  },
  "38.69245,-9.34694": {
@@ -1088,7 +1095,7 @@
   "lat": 38.692505,
   "lon": -9.359775,
   "nome_original": "Território nº9.07",
-  "numero": 7,
+  "numero": 6,
   "zona": 9
  },
  "38.69253,-9.35352": {
@@ -1102,7 +1109,7 @@
   "lat": 38.692574,
   "lon": -9.358974,
   "nome_original": "Território nº9.11",
-  "numero": 11,
+  "numero": 10,
   "zona": 9
  },
  "38.69269,-9.34928": {
@@ -1123,7 +1130,7 @@
   "lat": 38.692731,
   "lon": -9.36141,
   "nome_original": "Território nº9.04",
-  "numero": 4,
+  "numero": 3,
   "zona": 9
  },
  "38.69274,-9.34355": {
@@ -1137,7 +1144,7 @@
   "lat": 38.692981,
   "lon": -9.358907,
   "nome_original": "Território nº9.10",
-  "numero": 10,
+  "numero": 9,
   "zona": 9
  },
  "38.69300,-9.34734": {
@@ -1172,7 +1179,7 @@
   "lat": 38.693103,
   "lon": -9.360404,
   "nome_original": "Território nº9.05",
-  "numero": 5,
+  "numero": 4,
   "zona": 9
  },
  "38.69313,-9.34546": {
@@ -1214,7 +1221,7 @@
   "lat": 38.6934,
   "lon": -9.358961,
   "nome_original": "Território nº9.09",
-  "numero": 9,
+  "numero": 8,
   "zona": 9
  },
  "38.69344,-9.34848": {
@@ -2236,14 +2243,14 @@
   "lat": 38.702638,
   "lon": -9.343109,
   "nome_original": "Território nº84",
-  "numero": 9,
+  "numero": 8,
   "zona": 2
  },
  "38.70283,-9.34381": {
   "lat": 38.702835,
   "lon": -9.343813,
   "nome_original": "41",
-  "numero": 10,
+  "numero": 9,
   "zona": 2
  },
  "38.70307,-9.34622": {
