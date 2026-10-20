@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Território 10.16</title>
 <style>
-  /* Cartão pensado para ser impresso em A5 paisagem (210 x 148 mm).
-     Tudo em mm/pt para o tamanho no papel não depender do zoom do browser. */
+  /* O cartão impresso tem 14,5 x 9,5 cm, o tamanho dos que a congregação
+     usa. Desenha-se aqui maior, a 210 x 137,59 mm (a mesma forma), e a
+     impressão do Engine encolhe-o para 145 x 95 mm (x 0,6905): assim as
+     letras e as margens continuam afinadas como estavam no A5, e é só a
+     altura que mudou. Tudo em mm/pt para o tamanho no papel não depender do
+     zoom do browser. */
   @page {
-    size: 210mm 148mm;
+    size: 210mm 137.59mm;
     margin: 0;
   }
 
@@ -22,7 +26,7 @@
   .card {
     display: flex;
     width: 210mm;
-    height: 148mm;
+    height: 137.59mm;
     border: 1.2mm solid #000;
     box-sizing: border-box;
     background-color: #fff;
@@ -35,6 +39,9 @@
     flex-direction: column;
     border-right: 1.2mm solid #000;
     box-sizing: border-box;
+    /* Âncora da caixa de sugestões do "+ Rua": a secção das localizações tem
+       overflow escondido e recortava-a. */
+    position: relative;
   }
 
   .section {
@@ -176,6 +183,10 @@
     line-height: 1.15;
     cursor: move;
     white-space: nowrap;
+    /* Num ecrã de toque, sem isto o dedo pousado numa etiqueta rolava a
+       página e o arrasto era cancelado a meio — não havia forma de mudar
+       uma etiqueta de sítio senão com rato. */
+    touch-action: none;
   }
 
   .etiqueta .txt {
@@ -185,26 +196,27 @@
   }
 
   /* Contorno branco à volta das letras, como nos mapas: acompanha a estrada
-     e deixa ver o que está por baixo */
+     e deixa ver o que está por baixo. Os tamanhos são para quem vê mal, em
+     papel; o gerador escreve-os em cada etiqueta (e usa-os para as afastar
+     umas das outras), estes são só para as que se acrescentam à mão. */
   .etiqueta.rua .txt {
-    font-size: 10.5pt;
-    -webkit-text-stroke: 3.2px #fff;
+    font-size: 12pt;
+    -webkit-text-stroke: 3.6px #fff;
     paint-order: stroke fill;
   }
 
   /* Ruas da vizinhança: servem para dar referências a quem procura o
-     território, por isso são visivelmente secundárias — mais pequenas e a
-     cinzento, para não se confundirem com as ruas a trabalhar */
+     território, por isso são secundárias — um pouco mais pequenas e em
+     cinzento escuro — mas continuam a negrito: fininhas não se liam */
   .etiqueta.vizinha .txt {
-    font-size: 9pt;
-    font-weight: normal;
-    color: #3c3c3c;
-    -webkit-text-stroke: 3px #fff;
+    font-size: 10.5pt;
+    color: #3a3a3a;
+    -webkit-text-stroke: 3.2px #fff;
     paint-order: stroke fill;
   }
 
   .etiqueta.porta .txt {
-    font-size: 8.5pt;
+    font-size: 12pt;
     background-color: #fff;
     border: 0.35mm solid #000;
     border-radius: 0.6mm;
@@ -267,6 +279,12 @@
   .etiqueta.a-rodar .rodar {
     display: block;
   }
+  /* Num ecrã de toque não há hover nenhum: é o toque que marca a etiqueta em
+     que se está a mexer, e só essa mostra o × e a pega de rodar. */
+  .etiqueta.tocada .apagar,
+  .etiqueta.tocada .rodar {
+    display: block;
+  }
   /* Traço a ligar a pega à etiqueta, para se perceber que pertencem uma à
      outra */
   .etiqueta .rodar::before {
@@ -313,6 +331,47 @@
   }
   .ruas li:hover .apagar-linha {
     visibility: visible;
+  }
+  /* Sem rato o hover nunca acontece, e o × de remover uma rua ficava
+     invisível para sempre. */
+  @media (hover: none) {
+    .ruas .apagar-linha { visibility: visible; }
+  }
+
+  /* As ruas à volta que o "+ Rua" propõe */
+  .sugestoes {
+    position: absolute;
+    z-index: 5;
+    max-height: 38mm;
+    overflow-y: auto;
+    padding: 0.8mm;
+    border: 0.3mm solid #333;
+    border-radius: 1mm;
+    background-color: #fff;
+    box-shadow: 0 1mm 3mm rgba(0, 0, 0, 0.25);
+  }
+  .sugestoes button {
+    display: block;
+    width: 100%;
+    padding: 1mm 1.5mm;
+    border: 0;
+    border-radius: 0.8mm;
+    background: none;
+    font-family: inherit;
+    font-size: 8.5pt;
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .sugestoes button:hover {
+    background-color: #eef1f8;
+  }
+  .sugestoes .a-mao {
+    border-top: 0.3mm solid #e2e8f0;
+    margin-top: 0.8mm;
+    padding-top: 1.2mm;
+    font-weight: bold;
+    color: #526CA2;
   }
 
   .btn-linha {
@@ -394,6 +453,7 @@
     }
     .ferramentas,
     .btn-linha,
+    .sugestoes,
     .apagar,
     .apagar-linha {
       display: none !important;
@@ -401,7 +461,11 @@
   }
 </style>
 </head>
-<body>
+<!-- `data-cartao`: a versão do que este cartão sabe fazer sozinho. As
+     páginas que o abrem para editar (ver public/territorios/estudio/
+     cartaoExtras.js) dão aos cartões antigos, que não a têm, o arrasto a
+     dedo e as sugestões do "+ Rua". -->
+<body data-cartao="2">
   <!-- Frente -->
   <div class="card" style="page-break-after: always; margin-bottom: 10mm;">
     <div class="sidebar">
@@ -415,7 +479,7 @@
           <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua João Luis Ricardo</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
-        <button class="btn-linha" onclick="novaRua()">+ Rua</button>
+        <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
       <div class="section reference">
         <span class="rotulo">Referência:</span>
@@ -427,20 +491,27 @@
       <img class="map-image" src="mapa_10.16.jpg" alt="Mapa do território Território 10.16" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 50.685%; top: 43.59%; --ang: 0.0deg" data-ax="50.685" data-ay="43.59"><span class="txt" contenteditable="true" spellcheck="false">nº76</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 51.312%; top: 34.312%; --ang: -1.1deg" data-ax="51.312" data-ay="34.312" data-nome="Rua Gomes Freire Andrade"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Gomes Freire Andrade</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 52.329%; top: 62.308%; --ang: 0.0deg" data-ax="52.329" data-ay="62.308"><span class="txt" contenteditable="true" spellcheck="false">nº58</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 39.077%; top: 55.799%; --ang: 90.0deg" data-ax="39.077" data-ay="55.799" data-nome="Rua João Luis Ricardo"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. João Luis Ricardo</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 35.414%; top: 51.93%; --ang: -89.8deg" data-ax="35.414" data-ay="51.93"><span class="txt" contenteditable="true" spellcheck="false">R. João Luis Ricardo</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 50.514%; top: 44.792%; --ang: 0.0deg" data-ax="50.514" data-ay="44.792"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº76</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 49.863%; top: 30.744%; --ang: -2.3deg" data-ax="49.863" data-ay="30.744"><span class="txt" contenteditable="true" spellcheck="false">R. Gomes Freire<br>Andrade</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 51.747%; top: 60.0%; --ang: 0.0deg" data-ax="51.747" data-ay="60.0"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº58</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 70.634%; top: 18.395%; --ang: 75.8deg" data-ax="62.917" data-ay="17.655"><span class="txt" contenteditable="true" spellcheck="false">R. Doutor Jacinto Nunes</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 94.214%; top: 17.505%; --ang: 89.0deg" data-ax="94.214" data-ay="17.505" data-nome="Avenida Amadeu Duarte"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">Av. Amadeu Duarte</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 85.67%; top: 21.841%; --ang: 87.0deg" data-ax="85.67" data-ay="21.841"><span class="txt" contenteditable="true" spellcheck="false">Av. Amadeu Duarte</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 62.875%; top: 82.288%; --ang: 89.2deg" data-ax="62.875" data-ay="82.288" data-nome="Rua da Esperança"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. da Esperança</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 7.688%; top: 57.269%; --ang: -72.9deg" data-ax="7.688" data-ay="57.269"><span class="txt" contenteditable="true" spellcheck="false">R. Moreira Pinto</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 57.902%; top: 16.59%; --ang: 75.8deg" data-ax="57.902" data-ay="16.59" data-nome="Rua Doutor Jacinto Nunes"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Doutor<br>Jacinto Nunes</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
+      <div class="etiqueta vizinha" style="left: 92.738%; top: 66.137%; --ang: 77.7deg" data-ax="92.738" data-ay="66.137" data-nome="Rua Sampaio Bruno"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Sampaio Bruno</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <div class="etiqueta vizinha" style="left: 20.714%; top: 47.816%; --ang: -72.9deg" data-ax="20.714" data-ay="47.816" data-nome="Rua Moreira Pinto"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Moreira Pinto</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
+      <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
+           propor: o mapa só nomeia algumas, para não se encher de nomes -->
+      <ul class="ruas-perto" hidden><li>Avenida Amadeu Duarte</li><li>Rua Doutor Jacinto Nunes</li><li>Rua Gomes Freire de Andrade</li><li>Rua Moreira Pinto</li><li>Rua Sampaio Bruno</li><li>Rua da Esperança</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -452,7 +523,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 10.16</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADT0lEQVR4nO2cTY6kOBCFvxiQammkOUAdBW5WmiPNDeAodQNYlmT0ZuEfTLfUUneOMrPIYIEyCz6VrQzCL55tTPz2sfz1+ww45JBD3xTaLB/TZmY2AMsA6cK0mcHWU27q7908h+4PdZIkAZ2A3Rg/e8zeJc3pb8AoSVrv3zyHHgDlZ5/dNG99vjSuu0H4MptCJKeMhzTPoTtCffslxN5G7T2wG2wDLBOI7e/4mOY59Fho62GxEiTLu2Qfitj0v/8nh54WSj9/lgoh9mIbsPHfLsLWRy3DKiACQcB23+Y59BBoT1UEbG+yqUhJmwD7+OyxKSWPUol8hz459KdQn5/9dERYhg6W96obwpdpGTpaJ+vJ++TQLRDS2klz+tJJc4gwrl0tRjtJium+fMuT98mhWyAkJZEgzUFiVCSd0q8PpFOyIoI8Il4B0lzNhlxrdJLW3aiJwqYgSZ/uWV4cSs9+PiXjEjSHSEkZ0k8Dy5P3yaFboEYfMK4lLMZDM6Rs0Z1i48n75NAtUFGWSUdEIKWH2AiMcl+OF4+IS0M0hcS4ApzCglH10wr4qHF5qIwaIdLOc65ALkZ1yiAeEVeHOERCygdprKCMEFJJD2MRGB4Rl4Yah6pZJJGUZThpzCQ5XUdcHcoR8YNN1X4qdehxs0fElaFGVBbHgbxeam4q0lp/eERcHWp8KZI/WWuNYyIjGdhl6PCIuDSUfYazSUkTG0AbID6vcXWo1ZPtiVxcHA6VjxqvAbXl5pxOdfr7iIiaLbz6vDyUZ7lrPvhh5rtciI3a9Ii4NFT9iLJYhjK11ejJuTqa7kdcHqo54rAmTypSR47wNVQvAZ2LzLq7K5QRInvcvqruZaAmHyTZmFLGWoNhPawrHzVeAaoTWu1SqSwrTotum2UzHhEXh4694YB9KHuWECJmQ9m5MQF5V+jz98mhP4Z6oEtug0He3WXjuvcQ8j15v8YGOVSevE8O3Q6VveFg0/ZWBOSWV2WTtn0NlJXa36JPDt1ca5z05Hnl7bGexj3Ll4LqtOc/w255G0/4Si+a0ZySxwOb59D9oDK5sRvLsJt9rJBeHsD2pvTegAnwncDXh8ocBvy027M6VLkiDbVAffI+OXQLZP72QocccugXx3+z2RMCDwNCqgAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,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" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
@@ -511,21 +582,120 @@
   }
 
   // --- Lista de ruas -------------------------------------------------------
-  function novaRua() {
+  function acrescentarRua(texto, aEditar) {
     const lista = document.querySelector('.ruas');
     const numerada = !!lista.querySelector('.num');
     const li = document.createElement('li');
     li.innerHTML = (numerada
         ? '<span class="num">' + (lista.children.length + 1) + '</span>'
         : '<span class="traco">&ndash;</span>') +
-      '<span class="nome" contenteditable="true" spellcheck="false">Nova rua</span>' +
+      '<span class="nome" contenteditable="true" spellcheck="false"></span>' +
       '<button class="apagar-linha" title="Remover rua">&times;</button>';
+    const nome = li.querySelector('.nome');
+    nome.textContent = texto;
     lista.appendChild(li);
     ajustarLista();
-    const nome = li.querySelector('.nome');
     nome.focus();
-    document.getSelection().selectAllChildren(nome);
+    if (aEditar) document.getSelection().selectAllChildren(nome);
   }
+
+  /* As ruas à volta já estão no cartão: são as etiquetas do mapa. Servem de
+     lista de onde escolher, para não se escrever à mão (e mal) um nome que o
+     mapa já sabe. Só aparecem as que ainda faltam na lista das localizações. */
+  function chaveRua(nome) {
+    return String(nome || '').toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, '');
+  }
+
+  // Os cartões antigos não trazem o nome por extenso na etiqueta, só o que
+  // está desenhado no mapa ("R. das Flores"). Desfaz-se a abreviatura, senão
+  // a mesma rua aparecia como sugestão por já estar na lista com outro nome.
+  const TIPOS_DE_VIA = {
+    'r.': 'Rua', 'av.': 'Avenida', 'tv.': 'Travessa', 'pct.': 'Praceta',
+    'lg.': 'Largo', 'bc.': 'Beco', 'estr.': 'Estrada', 'pç.': 'Praça',
+    'cç.': 'Calçada', 'cam.': 'Caminho', 'al.': 'Alameda', 'rot.': 'Rotunda',
+    'esc.': 'Escadinhas', 'qta.': 'Quinta', 'jd.': 'Jardim', 'imp.': 'Impasse'
+  };
+
+  function nomeDaEtiqueta(etiqueta) {
+    if (etiqueta.dataset.nome) return etiqueta.dataset.nome;
+    const txt = etiqueta.querySelector('.txt');
+    if (!txt) return '';
+    const palavras = txt.innerText.replace(/\s+/g, ' ').trim().split(' ');
+    const porExtenso = TIPOS_DE_VIA[(palavras[0] || '').toLowerCase()];
+    if (porExtenso) palavras[0] = porExtenso;
+    return palavras.join(' ');
+  }
+
+  function ruasSugeridas() {
+    const jaLa = {};
+    document.querySelectorAll('.ruas .nome').forEach(function(n) {
+      jaLa[chaveRua(n.dataset.completo || '')] = true;
+      jaLa[chaveRua(n.textContent)] = true;
+    });
+    const vistas = {};
+    const faltam = [];
+    function juntar(nome) {
+      const chave = chaveRua(nome);
+      if (!chave || jaLa[chave] || vistas[chave]) return;
+      vistas[chave] = true;
+      faltam.push(nome);
+    }
+    document.querySelectorAll('.etiqueta.rua, .etiqueta.vizinha').forEach(function(e) {
+      juntar(nomeDaEtiqueta(e));
+    });
+    document.querySelectorAll('.ruas-perto li').forEach(function(li) {
+      juntar(li.textContent.trim());
+    });
+    return faltam.sort(function(a, b) { return a.localeCompare(b, 'pt'); });
+  }
+
+  function fecharSugestoes() {
+    const caixa = document.querySelector('.sugestoes');
+    if (caixa) caixa.remove();
+  }
+
+  function novaRua(botao) {
+    if (document.querySelector('.sugestoes')) { fecharSugestoes(); return; }
+    const faltam = ruasSugeridas();
+    if (!faltam.length) { acrescentarRua('Nova rua', true); return; }
+
+    const caixa = document.createElement('div');
+    caixa.className = 'sugestoes';
+    faltam.forEach(function(nome) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = nome;
+      b.onclick = function() { fecharSugestoes(); acrescentarRua(nome, false); };
+      caixa.appendChild(b);
+    });
+    const mao = document.createElement('button');
+    mao.type = 'button';
+    mao.className = 'a-mao';
+    mao.textContent = '✎ Escrever à mão';
+    mao.onclick = function() { fecharSugestoes(); acrescentarRua('Nova rua', true); };
+    caixa.appendChild(mao);
+
+    /* Na coluna toda, e não dentro das localizações: essa tem o overflow
+       escondido (é o que faz a lista encolher em vez de crescer) e recortava
+       a caixa. As medidas são as do próprio cartão, por isso continuam certas
+       mesmo quando a página o encolhe para caber no ecrã. */
+    const barra = botao.closest('.sidebar');
+    barra.appendChild(caixa);
+    caixa.style.left = botao.offsetLeft + 'px';
+    caixa.style.top = (botao.offsetTop + botao.offsetHeight + 2) + 'px';
+    const limite = barra.clientHeight - 4;
+    if (caixa.offsetTop + caixa.offsetHeight > limite) {
+      caixa.style.top = Math.max(2, limite - caixa.offsetHeight) + 'px';
+    }
+  }
+
+  document.addEventListener('click', function(ev) {
+    if (!ev.target.closest('.sugestoes') && !ev.target.closest('.btn-linha')) {
+      fecharSugestoes();
+    }
+  }, true);
 
   // Se a lista for numerada, os números têm de acompanhar as remoções
   function renumerar() {
@@ -567,25 +737,50 @@
     document.getSelection().selectAllChildren(txt);
   }
 
-  // Arrastar para acertar a posição; roda do rato por cima roda a etiqueta
+  /* Arrastar para acertar a posição; a pega roda a etiqueta, e a roda do rato
+     também. Eventos de PONTEIRO, e não de rato: são os mesmos para rato,
+     caneta e dedo, e sem eles não havia maneira nenhuma de mexer uma etiqueta
+     de sítio no telemóvel ou no tablet. */
   let arrasto = null;
 
   let rotacao = null;
 
-  document.addEventListener('mousedown', function(ev) {
+  /* Sem rato não há hover, e o × e a pega de rodar (que só aparecem no hover)
+     nunca se veriam. Num toque é a própria etiqueta tocada que os mostra. */
+  function marcarTocada(etiqueta) {
+    document.querySelectorAll('.etiqueta.tocada').forEach(function(e) {
+      if (e !== etiqueta) e.classList.remove('tocada');
+    });
+    if (etiqueta) etiqueta.classList.add('tocada');
+  }
+
+  document.addEventListener('pointerdown', function(ev) {
+    if (ev.button > 0) return;                  // botão do meio ou da direita
     const pega = ev.target.closest('.rodar');
     if (pega) {
       rotacao = pega.closest('.etiqueta');
       rotacao.classList.add('a-rodar');
+      marcarTocada(rotacao);
+      pega.setPointerCapture(ev.pointerId);
       ev.preventDefault();
       return;
     }
     const etiqueta = ev.target.closest('.etiqueta');
-    if (!etiqueta || ev.target.closest('.apagar')) return;
-    arrasto = {etiqueta: etiqueta, x0: ev.clientX, y0: ev.clientY, moveu: false};
+    if (!etiqueta) { marcarTocada(null); return; }
+    marcarTocada(etiqueta);
+    if (ev.target.closest('.apagar')) return;
+    arrasto = {etiqueta: etiqueta, x0: ev.clientX, y0: ev.clientY,
+               moveu: false, ponteiro: ev.pointerId,
+               // Um dedo treme sempre um pouco ao pousar; o rato não.
+               folga: ev.pointerType === 'mouse' ? 4 : 9};
+    // Sem capturar o ponteiro, um dedo (ou um rato) que saia de cima da
+    // etiqueta deixa de dar notícias e ela fica a meio do caminho.
+    etiqueta.setPointerCapture(ev.pointerId);
+    // De propósito sem preventDefault: um toque que não chegue a ser arrasto
+    // tem de continuar a pôr o cursor dentro do texto, para se poder corrigir.
   });
 
-  document.addEventListener('mousemove', function(ev) {
+  document.addEventListener('pointermove', function(ev) {
     if (rotacao) {
       // A pega está por cima da etiqueta: o ângulo é o do ponteiro visto do
       // centro, com os 90 graus dessa posição descontados
@@ -596,9 +791,9 @@
       ev.preventDefault();
       return;
     }
-    if (!arrasto) return;
+    if (!arrasto || ev.pointerId !== arrasto.ponteiro) return;
     if (!arrasto.moveu &&
-        Math.abs(ev.clientX - arrasto.x0) + Math.abs(ev.clientY - arrasto.y0) < 4) return;
+        Math.abs(ev.clientX - arrasto.x0) + Math.abs(ev.clientY - arrasto.y0) < arrasto.folga) return;
     arrasto.moveu = true;
     const area = document.getElementById('mapa').getBoundingClientRect();
     arrasto.etiqueta.style.left =
@@ -609,13 +804,18 @@
     ev.preventDefault();
   });
 
-  document.addEventListener('mouseup', function() {
+  function largarPonteiro() {
     if (rotacao) {
       rotacao.classList.remove('a-rodar');
       rotacao = null;
     }
     arrasto = null;
-  });
+  }
+
+  document.addEventListener('pointerup', largarPonteiro);
+  // O browser pode tirar-nos o ponteiro a meio (um segundo dedo no ecrã, uma
+  // chamada a entrar): sem isto ficava um arrasto preso para sempre.
+  document.addEventListener('pointercancel', largarPonteiro);
 
   document.addEventListener('wheel', function(ev) {
     const etiqueta = ev.target.closest('.etiqueta');
