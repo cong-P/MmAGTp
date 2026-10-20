@@ -115,8 +115,8 @@
   "lat": 38.685099,
   "lon": -9.35074,
   "nome_original": "Território 10.24",
-  "numero": 24,
-  "zona": 10
+  "numero": 2,
+  "zona": 0
  },
  "38.68517,-9.34807": {
   "lat": 38.685174,
@@ -227,8 +227,8 @@
   "lat": 38.686026,
   "lon": -9.343146,
   "nome_original": "Território 11.43",
-  "numero": 43,
-  "zona": 11
+  "numero": 3,
+  "zona": 0
  },
  "38.68603,-9.34552": {
   "lat": 38.686027,
@@ -1438,7 +1438,7 @@
   "lat": 38.694454,
   "lon": -9.348296,
   "nome_original": "Polígono 209",
-  "numero": 39,
+  "numero": 38,
   "zona": 6
  },
  "38.69450,-9.35402": {
@@ -1473,7 +1473,7 @@
   "lat": 38.694671,
   "lon": -9.349021,
   "nome_original": "Polígono 201",
-  "numero": 37,
+  "numero": 36,
   "zona": 6
  },
  "38.69468,-9.35288": {
@@ -1508,7 +1508,7 @@
   "lat": 38.694794,
   "lon": -9.348701,
   "nome_original": "Polígono 200",
-  "numero": 38,
+  "numero": 37,
   "zona": 6
  },
  "38.69485,-9.35456": {
@@ -1536,7 +1536,7 @@
   "lat": 38.694942,
   "lon": -9.348247,
   "nome_original": "Polígono 199",
-  "numero": 40,
+  "numero": 39,
   "zona": 6
  },
  "38.69495,-9.34692": {
@@ -1564,7 +1564,7 @@
   "lat": 38.695094,
   "lon": -9.349063,
   "nome_original": "Polígono 194",
-  "numero": 36,
+  "numero": 35,
   "zona": 6
  },
  "38.69510,-9.34402": {
@@ -1606,7 +1606,7 @@
   "lat": 38.695284,
   "lon": -9.348416,
   "nome_original": "Polígono 196",
-  "numero": 41,
+  "numero": 40,
   "zona": 6
  },
  "38.69536,-9.34567": {
@@ -1634,7 +1634,7 @@
   "lat": 38.69548,
   "lon": -9.349418,
   "nome_original": "Polígono 187",
-  "numero": 35,
+  "numero": 34,
   "zona": 6
  },
  "38.69556,-9.35821": {
@@ -1648,21 +1648,21 @@
   "lat": 38.695584,
   "lon": -9.349052,
   "nome_original": "Polígono 188",
-  "numero": 34,
+  "numero": 33,
   "zona": 6
  },
  "38.69569,-9.35126": {
   "lat": 38.695687,
   "lon": -9.351258,
   "nome_original": "COMERCIAL",
-  "numero": 29,
-  "zona": 6
+  "numero": 1,
+  "zona": 0
  },
  "38.69571,-9.34858": {
   "lat": 38.695711,
   "lon": -9.348581,
   "nome_original": "Polígono 189",
-  "numero": 42,
+  "numero": 41,
   "zona": 6
  },
  "38.69579,-9.34717": {
@@ -1690,7 +1690,7 @@
   "lat": 38.695877,
   "lon": -9.349602,
   "nome_original": "Polígono 184",
-  "numero": 32,
+  "numero": 31,
   "zona": 6
  },
  "38.69588,-9.35355": {
@@ -1718,7 +1718,7 @@
   "lat": 38.695979,
   "lon": -9.349276,
   "nome_original": "Polígono 185",
-  "numero": 33,
+  "numero": 32,
   "zona": 6
  },
  "38.69609,-9.34655": {
@@ -1732,14 +1732,14 @@
   "lat": 38.696134,
   "lon": -9.350344,
   "nome_original": "Polígono 182",
-  "numero": 30,
+  "numero": 29,
   "zona": 6
  },
  "38.69614,-9.34881": {
   "lat": 38.696137,
   "lon": -9.348808,
   "nome_original": "Polígono 186",
-  "numero": 43,
+  "numero": 42,
   "zona": 6
  },
  "38.69621,-9.34743": {
@@ -1753,7 +1753,7 @@
   "lat": 38.696241,
   "lon": -9.349888,
   "nome_original": "Polígono 183",
-  "numero": 31,
+  "numero": 30,
   "zona": 6
  },
  "38.69626,-9.34229": {
@@ -1781,7 +1781,7 @@
   "lat": 38.696479,
   "lon": -9.349156,
   "nome_original": "Polígono 182",
-  "numero": 44,
+  "numero": 43,
   "zona": 6
  },
  "38.69652,-9.34698": {
@@ -1795,14 +1795,14 @@
   "lat": 38.696599,
   "lon": -9.350546,
   "nome_original": "Polígono 181",
-  "numero": 48,
+  "numero": 47,
   "zona": 6
  },
  "38.69666,-9.34974": {
   "lat": 38.69666,
   "lon": -9.349742,
   "nome_original": "Polígono 175",
-  "numero": 46,
+  "numero": 45,
   "zona": 6
  },
  "38.69670,-9.34768": {
@@ -1816,14 +1816,14 @@
   "lat": 38.696739,
   "lon": -9.350141,
   "nome_original": "Polígono 176",
-  "numero": 47,
+  "numero": 46,
   "zona": 6
  },
  "38.69684,-9.34913": {
   "lat": 38.696838,
   "lon": -9.34913,
   "nome_original": "Polígono 174",
-  "numero": 45,
+  "numero": 44,
   "zona": 6
  },
  "38.69684,-9.35320": {
@@ -1844,7 +1844,7 @@
   "lat": 38.697047,
   "lon": -9.35053,
   "nome_original": "Polígono 158",
-  "numero": 49,
+  "numero": 48,
   "zona": 6
  },
  "38.69719,-9.34303": {
@@ -1879,7 +1879,7 @@
   "lat": 38.697364,
   "lon": -9.350783,
   "nome_original": "Polígono 159",
-  "numero": 50,
+  "numero": 49,
   "zona": 6
  },
  "38.69747,-9.35171": {
@@ -1893,7 +1893,7 @@
   "lat": 38.69752,
   "lon": -9.348648,
   "nome_original": "Polígono 129",
-  "numero": 57,
+  "numero": 56,
   "zona": 6
  },
  "38.69759,-9.35833": {
@@ -1907,7 +1907,7 @@
   "lat": 38.697684,
   "lon": -9.349763,
   "nome_original": "Polígono 173",
-  "numero": 56,
+  "numero": 55,
   "zona": 6
  },
  "38.69770,-9.35284": {
@@ -1921,7 +1921,7 @@
   "lat": 38.697716,
   "lon": -9.350819,
   "nome_original": "Polígono 157",
-  "numero": 51,
+  "numero": 50,
   "zona": 6
  },
  "38.69792,-9.35191": {
@@ -1942,7 +1942,7 @@
   "lat": 38.698034,
   "lon": -9.351582,
   "nome_original": "Polígono 142",
-  "numero": 52,
+  "numero": 51,
   "zona": 6
  },
  "38.69804,-9.34641": {
@@ -1956,7 +1956,7 @@
   "lat": 38.69806,
   "lon": -9.351036,
   "nome_original": "Polígono 144",
-  "numero": 53,
+  "numero": 52,
   "zona": 6
  },
  "38.69836,-9.35971": {
@@ -1970,21 +1970,21 @@
   "lat": 38.698366,
   "lon": -9.350991,
   "nome_original": "Polígono 143",
-  "numero": 54,
+  "numero": 53,
   "zona": 6
  },
  "38.69840,-9.35039": {
   "lat": 38.6984,
   "lon": -9.350386,
   "nome_original": "Polígono 139",
-  "numero": 55,
+  "numero": 54,
   "zona": 6
  },
  "38.69842,-9.34933": {
   "lat": 38.69842,
   "lon": -9.349327,
   "nome_original": "Polígono 125",
-  "numero": 58,
+  "numero": 57,
   "zona": 6
  },
  "38.69855,-9.34498": {
