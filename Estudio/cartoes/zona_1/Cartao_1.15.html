@@ -472,13 +472,11 @@
       <div class="section header editable" contenteditable="true" spellcheck="false">Território 1.15</div>
       <div class="section locations">
         <span class="rotulo">Localizações:</span>
-        <ol class="ruas">
-          
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Bernardo Santareno</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
-          
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Carlos Daniel</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
-          
-        </ol>
+        <ol class="ruas"><li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Bernardo Santareno</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+<li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Carlos Daniel</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+<li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Quirino Evangelista</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+<li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Alexandre O&#39;Neill</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+<li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Luís António Verney</span><button class="apagar-linha" title="Remover rua">&times;</button></li></ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
       <div class="section reference">
@@ -507,15 +505,16 @@
       
       <div class="etiqueta porta" style="left: 69.212%; top: 31.146%; --ang: 0.0deg" data-ax="69.212" data-ay="31.146"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">Nº 59</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 10.885%; top: 29.343%; --ang: 62.5deg" data-ax="10.885" data-ay="29.343" data-nome="Rua Quirino Evangelista"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Quirino<br>Evangelista</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 10.885%; top: 29.343%; --ang: 62.5deg" data-ax="10.885" data-ay="29.343" data-nome="Rua Quirino Evangelista"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Quirino<br>Evangelista</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 19.684%; top: 8.741%; --ang: -25.0deg" data-ax="19.684" data-ay="8.741" data-nome="Rua António Luis Verney"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. António<br>Luis Verney</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 19.684%; top: 8.741%; --ang: -25.0deg" data-ax="19.684" data-ay="8.741" data-nome="Rua Luís António Verney"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Luís<br>António Verney</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <div class="etiqueta vizinha" style="left: 83.33%; top: 78.174%; --ang: 58.2deg" data-ax="83.33" data-ay="78.174" data-nome="Rua Hermínia Silva"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Hermínia Silva</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 53.518%; top: 81.771%; --ang: -34.8deg" data-ax="53.518" data-ay="81.771" data-nome="Rua Alexandre O&#x27;Neill"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Alexandre O'Neill</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Avenida Almeida Garrett</li><li>Avenida José Maria da Silva</li><li>Praceta Hermínia Silva</li><li>Praceta Moinhos de Rana</li><li>Rua Alexandre O'Neill</li><li>Rua António Luis Verney</li><li>Rua Hermínia Silva</li><li>Rua Quirino Evangelista</li><li>Travessa da Bela Vista</li></ul>
+      <ul class="ruas-perto" hidden><li>Avenida Almeida Garrett</li><li>Avenida José Maria da Silva</li><li>Praceta Hermínia Silva</li><li>Praceta Moinhos de Rana</li><li>Rua Alexandre O'Neill</li><li>Rua Luís António Verney</li><li>Rua Hermínia Silva</li><li>Rua Quirino Evangelista</li><li>Travessa da Bela Vista</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
