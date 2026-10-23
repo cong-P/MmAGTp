@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
-<head>
+<html lang="pt-PT"><head>
 <meta charset="UTF-8">
 <title>Território 10.10</title>
 <style>
@@ -460,7 +459,7 @@
     }
   }
 </style>
-</head>
+<style type="text/css"></style></head>
 <!-- `data-cartao`: a versão do que este cartão sabe fazer sozinho. As
      páginas que o abrem para editar (ver public/territorios/estudio/
      cartaoExtras.js) dão aos cartões antigos, que não a têm, o arrasto a
@@ -472,8 +471,8 @@
       <div class="section header editable" contenteditable="true" spellcheck="false">Território 10.10</div>
       <div class="section locations">
         <span class="rotulo">Localizações:</span>
-        <ol class="ruas"><li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Ramalho Ortigão</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
-<li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Cândido dos Reis</span><button class="apagar-linha" title="Remover rua">&times;</button></li></ol>
+        <ol class="ruas" style="font-size: 13.5pt;"><li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Ramalho Ortigão</span><button class="apagar-linha" title="Remover rua">×</button></li>
+<li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Cândido dos Reis</span><button class="apagar-linha" title="Remover rua">×</button></li></ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
       <div class="section reference">
@@ -483,28 +482,28 @@
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 31</div>
     </div>
     <div class="map-container" id="mapa">
-      <img class="map-image" src="mapa_10.10.jpg" alt="Mapa do território Território 10.10" />
+      <img class="map-image" src="mapa_10.10.jpg" alt="Mapa do território Território 10.10">
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta porta" style="left: 52.834%; top: 23.446%; --ang: 0.0deg" data-ax="52.834" data-ay="23.446"><span class="txt" style="font-size: 12.6pt" contenteditable="true" spellcheck="false">nº35</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 52.834%; top: 23.446%; --ang: 0.0deg" data-ax="52.834" data-ay="23.446"><span class="txt" style="font-size: 12.6pt" contenteditable="true" spellcheck="false">nº35</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta vizinha" style="left: 88.862%; top: 11.442%; --ang: 0.6deg" data-ax="88.862" data-ay="11.442" data-nome="Rua Ramalho Ortigão"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Ramalho<br>Ortigão</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua Cândido dos Reis</li><li>Rua Ramalho Ortigão</li></ul>
+      <ul class="ruas-perto" hidden=""><li>Rua Cândido dos Reis</li><li>Rua Ramalho Ortigão</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
       </div>
-    </div>
+    <div class="etiqueta rua" style="left: 21.713321%; top: 49.195886%; --ang: 87.9deg;"><span class="txt" contenteditable="true" spellcheck="false">Rua Cândido dos Reis</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div><div class="etiqueta rua" style="left: 49.403381%; top: 10.887577%; --ang: 0deg;"><span class="txt" contenteditable="true" spellcheck="false">Rua Ramalho Ortigão</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div><div class="etiqueta rua" style="left: 52.379697%; top: 37.672801%; --ang: 0deg;"><span class="txt" contenteditable="true" spellcheck="false">Vila<br>Marisa</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div></div>
   </div>
 
   <!-- Verso -->
   <div class="card verso">
     <p class="titulo-verso">Território 10.10</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADnUlEQVR4nO1cUY6bQAy1GaR8BikHyFHIDXqknik3gKPsDeAzEsiVn8dAqlZamqgKYH+wMwxPuxZej/3sgYVWS1usxxAFKEuAsgRoM6Ces9xwpy8pT22hJCz4Q+UmdFovAXIR6ZJAqJaBpDnjIkKkI+nwVNJVFX24+XCdigC9DGL73+9LovrLR/AWN9gGpJ/cyCZ0WikB+guIb+eBqO5GJoIx9MxwHhvW6VsSoD+CkprASai9ujG0V91E4DI2qtM3JUBZ7FVLno0sbUWsW8dA9b3CglB7S6QuQ7eODehUBOhFixjZZ2ngursMvJjeL7hH1Nrd9Pk6FQF6zSLOE0nVw1tozKBpRnt9cJ4u3Mg//6YiQBvKPgmi+SXiScs+kW4iGUVuOj0S2eeuQTQzDtLotJkXPMPAyDgLNZWwiF2DaH7dVKu3qNVAwFWpqWT3YBkpjCYYqoPsGmd3AJji7ZupdLPz0HvBWe4dROYKGqOtYRG+YSCsmFxGZivCR+wdRO4Fkl1yNQMVDqx7cSN7kIgs9w4iDyCTOwAvZHiAsSSwI444BKhXlur8YGloZP5pJY2BmCvtjqmm6MGM5r//eeslQK+z2IQ6Z92Btk7CKG7YhcZSYCBKXPImdCoC9Ibss5uZCcQMmbj01ogptgg+Yu8gMjuojZX0nBPppsmC0cwGEhaxe1DC5qBxRA4cvE9m9BYZ+I3+ZLnpJnRaLQFyyZSUYJuYqhmLtNQ3EWM0I/s8Qu3zYQGjUI/BWFIthChSa59pQKedED20e6L7fJ2KAL2Bjzi7F5iYCdCVHlY8UdnhI/aefSbhuhm1IWJQV5AbaLQ1wlct8UzDNnQqAvQmzrI2snpZCs3N+gu/ET7iOB0zsqhuPvHZMx8RkeWxTvCozAWtXPtc1DWiP+JAoLYaGXaQ6xp9qS4Do9PUWqc5CXjMbei0TgL0VNdgHbC24+dQ8j4i8RTOgWaJyFJjzA3oVAToxchyksUZz7k/AoQVAgzfU2LX2DOI5voWTd2V88JTA2b0UB0FlMxD5E4Jp62tpNFiI7FMBKFGxBFHiSNSzinaH0PJ9Rf6I3BvLO3kH4542XMfrlMRoHfwEcn3hekEz9wfMa8GQ7V7UPnbXOxHryeBG8w06+gvdvxP2irOfR4CJLnc9fDvCpl7QH+EtktghC9JRPZ5qLPh/UWpiAvl7krruKxIPyJRioYVGkd8vk5FgF4AcXy90CRAWQKUJUBk8gtE295++S3i0wAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADnUlEQVR4nO1cUY6bQAy1GaR8BikHyFHIDXqknik3gKPsDeAzEsiVn8dAqlZamqgKYH+wMwxPuxZej/3sgYVWS1usxxAFKEuAsgRoM6Ces9xwpy8pT22hJCz4Q+UmdFovAXIR6ZJAqJaBpDnjIkKkI+nwVNJVFX24+XCdigC9DGL73+9LovrLR/AWN9gGpJ/cyCZ0WikB+guIb+eBqO5GJoIx9MxwHhvW6VsSoD+CkprASai9ujG0V91E4DI2qtM3JUBZ7FVLno0sbUWsW8dA9b3CglB7S6QuQ7eODehUBOhFixjZZ2ngursMvJjeL7hH1Nrd9Pk6FQF6zSLOE0nVw1tozKBpRnt9cJ4u3Mg//6YiQBvKPgmi+SXiScs+kW4iGUVuOj0S2eeuQTQzDtLotJkXPMPAyDgLNZWwiF2DaH7dVKu3qNVAwFWpqWT3YBkpjCYYqoPsGmd3AJji7ZupdLPz0HvBWe4dROYKGqOtYRG+YSCsmFxGZivCR+wdRO4Fkl1yNQMVDqx7cSN7kIgs9w4iDyCTOwAvZHiAsSSwI444BKhXlur8YGloZP5pJY2BmCvtjqmm6MGM5r//eeslQK+z2IQ6Z92Btk7CKG7YhcZSYCBKXPImdCoC9Ibss5uZCcQMmbj01ogptgg+Yu8gMjuojZX0nBPppsmC0cwGEhaxe1DC5qBxRA4cvE9m9BYZ+I3+ZLnpJnRaLQFyyZSUYJuYqhmLtNQ3EWM0I/s8Qu3zYQGjUI/BWFIthChSa59pQKedED20e6L7fJ2KAL2Bjzi7F5iYCdCVHlY8UdnhI/aefSbhuhm1IWJQV5AbaLQ1wlct8UzDNnQqAvQmzrI2snpZCs3N+gu/ET7iOB0zsqhuPvHZMx8RkeWxTvCozAWtXPtc1DWiP+JAoLYaGXaQ6xp9qS4Do9PUWqc5CXjMbei0TgL0VNdgHbC24+dQ8j4i8RTOgWaJyFJjzA3oVAToxchyksUZz7k/AoQVAgzfU2LX2DOI5voWTd2V88JTA2b0UB0FlMxD5E4Jp62tpNFiI7FMBKFGxBFHiSNSzinaH0PJ9Rf6I3BvLO3kH4542XMfrlMRoHfwEcn3hekEz9wfMa8GQ7V7UPnbXOxHryeBG8w06+gvdvxP2irOfR4CJLnc9fDvCpl7QH+EtktghC9JRPZ5qLPh/UWpiAvl7krruKxIPyJRioYVGkd8vk5FgF4AcXy90CRAWQKUJUBk8gtE295++S3i0wAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps">
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
@@ -831,5 +830,5 @@
     ajustarLista();
   });
 </script>
-</body>
-</html>
+
+</body></html>
