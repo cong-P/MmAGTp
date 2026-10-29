@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-PT"><head>
+<html lang="pt-PT">
+<head>
 <meta charset="UTF-8">
 <title>Território 6.51</title>
 <style>
@@ -459,7 +460,7 @@
     }
   }
 </style>
-<style type="text/css"></style></head>
+</head>
 <!-- `data-cartao`: a versão do que este cartão sabe fazer sozinho. As
      páginas que o abrem para editar (ver public/territorios/estudio/
      cartaoExtras.js) dão aos cartões antigos, que não a têm, o arrasto a
@@ -471,11 +472,11 @@
       <div class="section header editable" contenteditable="true" spellcheck="false">Território 6.51</div>
       <div class="section locations">
         <span class="rotulo">Localizações:</span>
-        <ol class="ruas" style="font-size: 13.5pt;">
+        <ol class="ruas">
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Avenida dos Bombeiros Voluntários</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Avenida dos Bombeiros Voluntários</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
-          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Álvaro de Campos</span><button class="apagar-linha" title="Remover rua">×</button></li>
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Álvaro de Campos</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
           
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
@@ -487,24 +488,24 @@
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 32</div>
     </div>
     <div class="map-container" id="mapa">
-      <img class="map-image" src="mapa_6.51.jpg" alt="Mapa do território Território 6.51">
+      <img class="map-image" src="mapa_6.51.jpg" alt="Mapa do território Território 6.51" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 57.952%; top: 72.45%; --ang: 70.7deg" data-ax="57.952" data-ay="72.45" data-nome="Rua Álvaro de Campos"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Álvaro<br>de Campos</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 59.142%; top: 45.172%; --ang: -88.9deg" data-ax="59.142" data-ay="45.172" data-nome="Rua Álvaro de Campos"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Álvaro<br>de Campos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 51.36%; top: 15.87%; --ang: -21.5deg" data-ax="51.36" data-ay="15.87" data-nome="Avenida dos Bombeiros Voluntários"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. dos Bombeiros Voluntários</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 48.711%; top: 18.389%; --ang: -21.5deg" data-ax="48.711" data-ay="18.389" data-nome="Avenida dos Bombeiros Voluntários"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. dos Bombeiros Voluntários</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 45.76105%; top: 66.598379%; --ang: 0.0deg;" data-ax="46.815" data-ay="66.042"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 128</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 49.281%; top: 66.562%; --ang: 0.0deg" data-ax="49.281" data-ay="66.562"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 128</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 47.74%; top: 46.354%; --ang: 0.0deg" data-ax="47.74" data-ay="46.354"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 118</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 42.158%; top: 46.875%; --ang: 0.0deg" data-ax="50.205" data-ay="46.875"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 118</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 49.075%; top: 30.0%; --ang: 0.0deg" data-ax="49.075" data-ay="30.0"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 104</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 51.541%; top: 30.521%; --ang: 0.0deg" data-ax="51.541" data-ay="30.521"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 104</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta vizinha" style="left: 80.168%; top: 74.834%; --ang: -22.9deg" data-ax="80.168" data-ay="74.834" data-nome="Rua Miguel Torga"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Miguel Torga</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta vizinha" style="left: 61.245%; top: 83.951%; --ang: -20.8deg" data-ax="61.245" data-ay="83.951" data-nome="Rua Miguel Torga"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Miguel Torga</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden=""><li>Rua 4 de Fevereiro</li><li>Rua Eça de Queiroz</li><li>Rua Miguel Torga</li></ul>
+      <ul class="ruas-perto" hidden><li>Rua 4 de Fevereiro</li><li>Rua Eça de Queiroz</li><li>Rua Miguel Torga</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -516,7 +517,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 6.51</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADc0lEQVR4nO1cW46jQAwsA9J8gjQHmKPAzVZ7MzhKDjBS+BwJ5JUf3QRp9wNltBNo10emgS4lrXjsstsdYhzGVB3nAEFyBMkRpNOQZnIMOupWogGrjAC9jymNiKg5xZqOI0gJzPeaFejtLzPQymV6oFP8qdwbX3xNVZCeJpH978PdA/ONiH93K2GiBuotzJcMz77TQQTpv5Oax4u5A08ko1YEZ3sHel7pe96pCtL5LAIA9ff3hfpRR2sDtJ8/+fGqIP2ojrjX4hryS6u3F5sSOqIg0mpZhN3o7/nl1oCG+Y1NPUw6qTvJmg4jSAkpncgOAOIyxCLQLvDLPcJHXJnUAPP7oi8E1HBP0TIIs4uMTVqyTX7xNVVBejpqYOpW4hEpYEimqe5B5/Bo3kJCx8dyjjUdRpASNEKwhQmLEIuYhUpJ+falVmUPsryMqHFxUsumHdUsiDpNM74IFjXmJj8QHxHKsqTsU+CxohX3gL3fUJchl+Ejrp5rLBYmbGTGIMLh4XKLLhE1rk6C6QPkupTaxqg7Xfrtm7L0UeiI65OwCxjIL2oWe+eh9hIWcXUSLBqMKaVINUu3iJSCbtoidMTFSbCdizHll6lImVJQnZJtw+PHi6+pCtJ3WARMJGhK4TpiJzB8zyuiRiE6on9IQd0z2FONGmYqaiDhI4rREUu6YXoyxQqvVKY8NJRlKRWqUZXClnM+ZJ9ZTISOKIKEtKUB9wwWOrJ7sOQie5DwEcXoCHbPYBrTI8SuPyIrirCIS5OQvm6BFiVy/NhG21aoFSpefE1VkJ7smOmgUoExp96Y/tYsLNueBDQLTx9fxBPVTFamevE1VUF6jtSqFwBoSFVJ66IxCaFnOOY3PteajiNIOxIN+u3Pb6yHdzRg6FkeL0DIlF+ceyZOsaaDCNJfeqj6rWaZ9ry8dLWlI6Esy+rFhiCVJ3Iemswi6hHFnQ2HViq/ZFSzHhXXSKIT7dCG9eW+/pqOI0gOkQW11Z8kkWgIbc2YBs011ATebSJjNrUZ3fkFnQ2fG1MPfohLOvGtHT/9nMQPfbyDCNLz+xrwBinf5Hrc7NymZEUROqKcs+E10/TB0oT/2VjUMEizfj8iKlTFkNg7KeVgVzqloXag7sF/R2T23x86yZoOIkj/2Ps05KLEYytN9FkWQaL49UJDkBxBcgQJhj+9lANwoJ+VggAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps">
+    <img src="data:image/png;base64,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" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
@@ -534,7 +535,7 @@
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'Cartao_6.52.html';
+      a.download = 'Cartao_6.51.html';
       a.click();
       URL.revokeObjectURL(url);
     }
@@ -843,5 +844,5 @@
     ajustarLista();
   });
 </script>
-
-</body></html>
+</body>
+</html>
