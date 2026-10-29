@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
-<head>
+<html lang="pt-PT"><head>
 <meta charset="UTF-8">
 <title>Território 6.51</title>
 <style>
@@ -460,7 +459,7 @@
     }
   }
 </style>
-</head>
+<style type="text/css"></style></head>
 <!-- `data-cartao`: a versão do que este cartão sabe fazer sozinho. As
      páginas que o abrem para editar (ver public/territorios/estudio/
      cartaoExtras.js) dão aos cartões antigos, que não a têm, o arrasto a
@@ -472,11 +471,11 @@
       <div class="section header editable" contenteditable="true" spellcheck="false">Território 6.51</div>
       <div class="section locations">
         <span class="rotulo">Localizações:</span>
-        <ol class="ruas">
+        <ol class="ruas" style="font-size: 13.5pt;">
           
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Avenida dos Bombeiros Voluntários</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Avenida dos Bombeiros Voluntários</span><button class="apagar-linha" title="Remover rua">×</button></li>
           
-          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Rua Álvaro de Campos</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          <li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Rua Álvaro de Campos</span><button class="apagar-linha" title="Remover rua">×</button></li>
           
         </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
@@ -488,24 +487,24 @@
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 32</div>
     </div>
     <div class="map-container" id="mapa">
-      <img class="map-image" src="mapa_6.51.jpg" alt="Mapa do território Território 6.51" />
+      <img class="map-image" src="mapa_6.51.jpg" alt="Mapa do território Território 6.51">
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 57.952%; top: 72.45%; --ang: 70.7deg" data-ax="57.952" data-ay="72.45" data-nome="Rua Álvaro de Campos"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Álvaro<br>de Campos</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 57.952%; top: 72.45%; --ang: 70.7deg" data-ax="57.952" data-ay="72.45" data-nome="Rua Álvaro de Campos"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. Álvaro<br>de Campos</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta rua" style="left: 51.36%; top: 15.87%; --ang: -21.5deg" data-ax="51.36" data-ay="15.87" data-nome="Avenida dos Bombeiros Voluntários"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. dos Bombeiros Voluntários</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta rua" style="left: 51.36%; top: 15.87%; --ang: -21.5deg" data-ax="51.36" data-ay="15.87" data-nome="Avenida dos Bombeiros Voluntários"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Av. dos Bombeiros Voluntários</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta porta" style="left: 38.767%; top: 66.042%; --ang: 0.0deg" data-ax="46.815" data-ay="66.042"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 128</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 45.76105%; top: 66.598379%; --ang: 0.0deg;" data-ax="46.815" data-ay="66.042"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 128</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta porta" style="left: 47.74%; top: 46.354%; --ang: 0.0deg" data-ax="47.74" data-ay="46.354"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 118</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 47.74%; top: 46.354%; --ang: 0.0deg" data-ax="47.74" data-ay="46.354"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 118</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta porta" style="left: 49.075%; top: 30.0%; --ang: 0.0deg" data-ax="49.075" data-ay="30.0"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 104</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta porta" style="left: 49.075%; top: 30.0%; --ang: 0.0deg" data-ax="49.075" data-ay="30.0"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº 104</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
-      <div class="etiqueta vizinha" style="left: 80.168%; top: 74.834%; --ang: -22.9deg" data-ax="80.168" data-ay="74.834" data-nome="Rua Miguel Torga"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Miguel Torga</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
+      <div class="etiqueta vizinha" style="left: 80.168%; top: 74.834%; --ang: -22.9deg" data-ax="80.168" data-ay="74.834" data-nome="Rua Miguel Torga"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. Miguel Torga</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden><li>Rua 4 de Fevereiro</li><li>Rua Eça de Queiroz</li><li>Rua Miguel Torga</li></ul>
+      <ul class="ruas-perto" hidden=""><li>Rua 4 de Fevereiro</li><li>Rua Eça de Queiroz</li><li>Rua Miguel Torga</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -517,7 +516,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 6.51</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADc0lEQVR4nO1cW46jQAwsA9J8gjQHmKPAzVZ7MzhKDjBS+BwJ5JUf3QRp9wNltBNo10emgS4lrXjsstsdYhzGVB3nAEFyBMkRpNOQZnIMOupWogGrjAC9jymNiKg5xZqOI0gJzPeaFejtLzPQymV6oFP8qdwbX3xNVZCeJpH978PdA/ONiH93K2GiBuotzJcMz77TQQTpv5Oax4u5A08ko1YEZ3sHel7pe96pCtL5LAIA9ff3hfpRR2sDtJ8/+fGqIP2ojrjX4hryS6u3F5sSOqIg0mpZhN3o7/nl1oCG+Y1NPUw6qTvJmg4jSAkpncgOAOIyxCLQLvDLPcJHXJnUAPP7oi8E1HBP0TIIs4uMTVqyTX7xNVVBejpqYOpW4hEpYEimqe5B5/Bo3kJCx8dyjjUdRpASNEKwhQmLEIuYhUpJ+falVmUPsryMqHFxUsumHdUsiDpNM74IFjXmJj8QHxHKsqTsU+CxohX3gL3fUJchl+Ejrp5rLBYmbGTGIMLh4XKLLhE1rk6C6QPkupTaxqg7Xfrtm7L0UeiI65OwCxjIL2oWe+eh9hIWcXUSLBqMKaVINUu3iJSCbtoidMTFSbCdizHll6lImVJQnZJtw+PHi6+pCtJ3WARMJGhK4TpiJzB8zyuiRiE6on9IQd0z2FONGmYqaiDhI4rREUu6YXoyxQqvVKY8NJRlKRWqUZXClnM+ZJ9ZTISOKIKEtKUB9wwWOrJ7sOQie5DwEcXoCHbPYBrTI8SuPyIrirCIS5OQvm6BFiVy/NhG21aoFSpefE1VkJ7smOmgUoExp96Y/tYsLNueBDQLTx9fxBPVTFamevE1VUF6jtSqFwBoSFVJ66IxCaFnOOY3PteajiNIOxIN+u3Pb6yHdzRg6FkeL0DIlF+ceyZOsaaDCNJfeqj6rWaZ9ry8dLWlI6Esy+rFhiCVJ3Iemswi6hHFnQ2HViq/ZFSzHhXXSKIT7dCG9eW+/pqOI0gOkQW11Z8kkWgIbc2YBs011ATebSJjNrUZ3fkFnQ2fG1MPfohLOvGtHT/9nMQPfbyDCNLz+xrwBinf5Hrc7NymZEUROqKcs+E10/TB0oT/2VjUMEizfj8iKlTFkNg7KeVgVzqloXag7sF/R2T23x86yZoOIkj/2Ps05KLEYytN9FkWQaL49UJDkBxBcgQJhj+9lANwoJ+VggAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADc0lEQVR4nO1cW46jQAwsA9J8gjQHmKPAzVZ7MzhKDjBS+BwJ5JUf3QRp9wNltBNo10emgS4lrXjsstsdYhzGVB3nAEFyBMkRpNOQZnIMOupWogGrjAC9jymNiKg5xZqOI0gJzPeaFejtLzPQymV6oFP8qdwbX3xNVZCeJpH978PdA/ONiH93K2GiBuotzJcMz77TQQTpv5Oax4u5A08ko1YEZ3sHel7pe96pCtL5LAIA9ff3hfpRR2sDtJ8/+fGqIP2ojrjX4hryS6u3F5sSOqIg0mpZhN3o7/nl1oCG+Y1NPUw6qTvJmg4jSAkpncgOAOIyxCLQLvDLPcJHXJnUAPP7oi8E1HBP0TIIs4uMTVqyTX7xNVVBejpqYOpW4hEpYEimqe5B5/Bo3kJCx8dyjjUdRpASNEKwhQmLEIuYhUpJ+falVmUPsryMqHFxUsumHdUsiDpNM74IFjXmJj8QHxHKsqTsU+CxohX3gL3fUJchl+Ejrp5rLBYmbGTGIMLh4XKLLhE1rk6C6QPkupTaxqg7Xfrtm7L0UeiI65OwCxjIL2oWe+eh9hIWcXUSLBqMKaVINUu3iJSCbtoidMTFSbCdizHll6lImVJQnZJtw+PHi6+pCtJ3WARMJGhK4TpiJzB8zyuiRiE6on9IQd0z2FONGmYqaiDhI4rREUu6YXoyxQqvVKY8NJRlKRWqUZXClnM+ZJ9ZTISOKIKEtKUB9wwWOrJ7sOQie5DwEcXoCHbPYBrTI8SuPyIrirCIS5OQvm6BFiVy/NhG21aoFSpefE1VkJ7smOmgUoExp96Y/tYsLNueBDQLTx9fxBPVTFamevE1VUF6jtSqFwBoSFVJ66IxCaFnOOY3PteajiNIOxIN+u3Pb6yHdzRg6FkeL0DIlF+ceyZOsaaDCNJfeqj6rWaZ9ry8dLWlI6Esy+rFhiCVJ3Iemswi6hHFnQ2HViq/ZFSzHhXXSKIT7dCG9eW+/pqOI0gOkQW11Z8kkWgIbc2YBs011ATebSJjNrUZ3fkFnQ2fG1MPfohLOvGtHT/9nMQPfbyDCNLz+xrwBinf5Hrc7NymZEUROqKcs+E10/TB0oT/2VjUMEizfj8iKlTFkNg7KeVgVzqloXag7sF/R2T23x86yZoOIkj/2Ps05KLEYytN9FkWQaL49UJDkBxBcgQJhj+9lANwoJ+VggAAAABJRU5ErkJggg==" alt="Código QR para abrir no Google Maps">
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
@@ -844,5 +843,5 @@
     ajustarLista();
   });
 </script>
-</body>
-</html>
+
+</body></html>
