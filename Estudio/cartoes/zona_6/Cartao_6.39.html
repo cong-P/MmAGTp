@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-PT"><head>
+<html lang="pt-PT">
+<head>
 <meta charset="UTF-8">
 <title>Território 6.39</title>
 <style>
@@ -459,7 +460,7 @@
     }
   }
 </style>
-<style type="text/css"></style></head>
+</head>
 <!-- `data-cartao`: a versão do que este cartão sabe fazer sozinho. As
      páginas que o abrem para editar (ver public/territorios/estudio/
      cartaoExtras.js) dão aos cartões antigos, que não a têm, o arrasto a
@@ -471,7 +472,11 @@
       <div class="section header editable" contenteditable="true" spellcheck="false">Território 6.39</div>
       <div class="section locations">
         <span class="rotulo">Localizações:</span>
-        <ol class="ruas" style="font-size: 13.5pt;"><li><span class="traco">–</span><span class="nome" contenteditable="true" spellcheck="false">Praceta Natália Correia</span><button class="apagar-linha" title="Remover rua">×</button></li></ol>
+        <ol class="ruas">
+          
+          <li><span class="traco">&ndash;</span><span class="nome" contenteditable="true" spellcheck="false">Praceta Natália Correia</span><button class="apagar-linha" title="Remover rua">&times;</button></li>
+          
+        </ol>
         <button class="btn-linha" onclick="novaRua(this)">+ Rua</button>
       </div>
       <div class="section reference">
@@ -481,20 +486,20 @@
       <div class="section fogos editable" contenteditable="true" spellcheck="false">Fogos: 36</div>
     </div>
     <div class="map-container" id="mapa">
-      <img class="map-image" src="mapa_6.39.jpg" alt="Mapa do território Território 6.39">
+      <img class="map-image" src="mapa_6.39.jpg" alt="Mapa do território Território 6.39" />
       <svg class="chamadas" id="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
       
-      <div class="etiqueta rua" style="left: 29.967%; top: 38.822%; --ang: -22.0deg" data-ax="29.967" data-ay="38.822" data-nome="Praceta Natália Correia"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. Natália Correia</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta rua" style="left: 36.543%; top: 39.447%; --ang: -22.0deg" data-ax="36.543" data-ay="39.447" data-nome="Praceta Natália Correia"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">Pct. Natália Correia</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta rua" style="left: 78.105%; top: 37.341%; --ang: 66.3deg" data-ax="78.105" data-ay="37.341" data-nome="Rua António Louro"><span class="txt" style="font-size: 12pt" contenteditable="true" spellcheck="false">R. António Louro</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 48.253%; top: 50.729%; --ang: 0.0deg" data-ax="48.253" data-ay="50.729"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº122</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 41.678%; top: 50.104%; --ang: 0.0deg" data-ax="41.678" data-ay="50.104"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº122</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta porta" style="left: 28.63%; top: 53.75%; --ang: 0.0deg" data-ax="36.13" data-ay="53.75"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº136</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
-      <div class="etiqueta porta" style="left: 28.619701%; top: 52.379606%; --ang: 0.0deg;" data-ax="29.555" data-ay="53.125"><span class="txt" style="font-size: 12.8pt" contenteditable="true" spellcheck="false">nº136</span><button class="rodar" title="Arrastar para rodar">↻</button><button class="apagar" title="Remover etiqueta">×</button></div>
+      <div class="etiqueta vizinha" style="left: 80.032%; top: 27.211%; --ang: 66.3deg" data-ax="80.032" data-ay="27.211" data-nome="Rua António Louro"><span class="txt" style="font-size: 10.5pt" contenteditable="true" spellcheck="false">R. António Louro</span><button class="rodar" title="Arrastar para rodar">&#8635;</button><button class="apagar" title="Remover etiqueta">&times;</button></div>
       
       <!-- As ruas que se veem no mapa e não estão na lista, para o "+ Rua" as
            propor: o mapa só nomeia algumas, para não se encher de nomes -->
-      <ul class="ruas-perto" hidden=""></ul>
+      <ul class="ruas-perto" hidden><li>Rua António Louro</li></ul>
       <div class="ferramentas">
         <button onclick="novaEtiqueta('rua')">+ Rua no mapa</button>
         <button onclick="novaEtiqueta('porta')">+ Nº</button>
@@ -506,7 +511,7 @@
   <div class="card verso">
     <p class="titulo-verso">Território 6.39</p>
     <p class="aviso editable" contenteditable="true" spellcheck="false">Deverá devolver o território<br>ao fim de no máximo 4 meses</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAADrklEQVR4nO1cS27jMAx9tA10aQM5QI/i3GCOVPRIvYF9lB6ggL0MoIADkpLszMyinrSNP+RCkWQ9JIIJ8pGiQozF0hfLMYCDojgoioM2AxopyvmPXgPoCH3qEVG1iT0tFwfNQCWrADUzd7X0UDLa9wr2QHpotT8k0GJx0DZAlbYElAHAtQLqa8XAhbhvQNyfyyBPAYwN0L797M8rHPRQ0ChGQeyB2ggxGWj5Qt/wTZ8VBz0YVDKdxWRo8zJcjUx8xzd9Uhz0IK/BcXQ1Fsk9lQF9M+g8A+MJYjLEjPzszysc9AjQ1aKIyCeHkulFCKTwSTqP0sjKXhc1G9nTYnFQEp7JAHCncxpS1EGGMRKZSbfyPRUOus9rjKegjQYcMeqoGSREU2WilmyLV76nwkH3g3phD9lGaNZKzYMOuDNrIeuew2b2tEwcFEXMwJVYSaWlHaTXvpWBWpa5ehAb8SQE4xSo9QzVUXjEoKYgpys5SJJS7IHyiEGtRcxROI/YNQj2ultNVota2NuvRSPUHhizvFEQ14j9ew2IMBAqQn2ZDYH6Iw3HJuUtVr6nwkF3ew2YS7B8hMxaAls8hC5SXyEdm1v5ngoHfYVGIOYeZo25juQ1IsFwjdg5CEocOEeakVTqXMpQJVLpPOIoNiIktUi+YlILW5J1Q5e4RhxDI4BZwDHphjKKHHB4FvtQzPKGY0b/cRObej7iCCCk5FSICYjoMObuJKYidIlojWvEnkEw09ApU7B3rr3b6HOKRNxGHOPsk6RD7ftT9hpSbGkPROqPiuzAw8819g6CsYc2u44p0jRrkesjNA51r3GkihlYicxUop+GRipniYqV76lw0N3MEpZ5kk+jl5qpnB7kXJXbiN2DqlgvBSEJLPc1tIZq1JoJKb/9JSdddYpIf/rnFQ56lNcYYhmEBaP5+HuW43avcRjQqGXYUpD9HKANeqrAr5TKsK1sX698Kvlc/56Wi4P+ZpYciUM6yMhsM9EKz0ccBDTmG+E3R5x6QZy7XJCt1sLzEbsHVZFKQorwszIAVWC5v0VSb6s3uVjYZly88j0VDrobRPa/EGYPrjRV4vOrcIszbm+AbmJPC8VBSWaF1u0UYUyHndOSzCicRxwHVEbd6BsxFOpErLnIkUZmGZva0yfFQf++G15x3wyT/5DjriemthNlkH8Usacr31PhoK+pzoe8c9Jrnpa9lKH8qQwn3ilzlTPLI2Sxk0w9q5eSXpge8Tb2VDjIxEFRHBTlv2KN34z92U0enr12AAAAAElFTkSuQmCC" alt="Código QR para abrir no Google Maps">
+    <img src="data:image/png;base64,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" alt="Código QR para abrir no Google Maps" />
     <p class="legenda">Faça scan para abrir no Google Maps</p>
   </div>
 
@@ -524,7 +529,7 @@
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'Cartao_6.40.html';
+      a.download = 'Cartao_6.39.html';
       a.click();
       URL.revokeObjectURL(url);
     }
@@ -833,5 +838,5 @@
     ajustarLista();
   });
 </script>
-
-</body></html>
+</body>
+</html>
